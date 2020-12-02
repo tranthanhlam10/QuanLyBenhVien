@@ -115,5 +115,21 @@ namespace QuanLyPhongKham.DAL
                 MessageBox.Show("Phiếu hẹn nhập viện đã bị xoá,bấm xem để xem dữ liệu mới", "Thông báo", MessageBoxButtons.OK);
             }
         }
+        public int GetNextID()
+        {
+            int nextID = 1;
+
+            string Query = String.Empty;
+            Query += "SELECT TOP 1 MaGH FROM GiayHenNhapVien ";
+            Query += "ORDER BY MaGH DESC";
+
+            DataTable dt = DataProvider.Instance.ExecuteQuery(Query, null);
+            if (dt.Rows.Count > 0)
+            {
+                Int32.TryParse(dt.Rows[0]["MaGH"].ToString(), out nextID);
+                ++nextID;
+            }
+            return nextID;
+        }
     }
 }

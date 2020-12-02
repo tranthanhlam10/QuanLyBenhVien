@@ -63,15 +63,16 @@ namespace QuanLyPhongKham.GUI
 
                 tabcontrolmain.Controls.Remove(tabp_kho);
                 tabcontrolmain.Controls.Remove(tabp_dth);
+                tabcontrolmain.Controls.Remove(xetnghiem);
             }
-            else if (this.chucvi.CompareTo("3") == 0)//Tiep tan
+            else if (this.chucvi.CompareTo("3") == 0)//Y ta
             {
                 tabcontrolmain.Controls.Remove(tabp_pnh);
-
+                tabcontrolmain.Controls.Remove(NhapVien);
                 tabcontrolmain.Controls.Remove(tabp_kho);
                 tabcontrolmain.Controls.Remove(tabp_dth);
             }
-            else if (this.chucvi.CompareTo("4") == 0)//Thu kho
+            else if (this.chucvi.CompareTo("4") == 0)// thu kh
             {
                 tabcontrolmain.Controls.Remove(tabp_dth);
                 tabcontrolmain.Controls.Remove(tabp_hsbn);
@@ -118,7 +119,7 @@ namespace QuanLyPhongKham.GUI
 
                 listDT.Clear();
                 dgvDT.Rows.Clear();
-                tb_maDT.Text = ObjDonThuocBLL.Instance.GetNextID().ToString();
+                tb_maDT.Text = ObjDonThuocBLL.Instance.GetNextID().ToString(); // load mã đơn thuuososc tự động
                 tb_maNV.Text = tb_maBNThuoc.Text = String.Empty;
             }
         }
@@ -700,7 +701,8 @@ namespace QuanLyPhongKham.GUI
 
         private void btThemXN_Click(object sender, EventArgs e)
         {
-           ObjXetNghiemBLL.Instance.Add();
+            tbMPKB.Text = ObjXetNghiemBLL.Instance.GetNextID().ToString();
+            ObjXetNghiemBLL.Instance.Add();
             dgvXetNghiem.DataSource = ObjXetNghiemBLL.Instance.GetListPXN();
 
         }
@@ -728,8 +730,12 @@ namespace QuanLyPhongKham.GUI
 
         private void tb_ThemPhieu_Click(object sender, EventArgs e)
         {
+
+
+            tbMPH.Text = ObjGiayHenNhapVienBLL.Instance.GetNextID().ToString();
             ObjGiayHenNhapVienBLL.Instance.Add();
             dgvGH.DataSource = ObjGiayHenNhapVienBLL.Instance.GetListGHNV();
+
         }
 
         private void tb_XoaPhieu_Click(object sender, EventArgs e)
@@ -740,6 +746,11 @@ namespace QuanLyPhongKham.GUI
         }
 
         private void dgvGH_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void tb_pn_id_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -52,5 +52,9 @@ namespace QuanLyPhongKham.BLL
         {
             ObjPhieuXetNghiemDAL.Instance.Xoa();
         }
+        public int GetNextID()
+        {
+             return ObjPhieuXetNghiemDAL.Instance.GetNextID();
+        }
     }
 }
