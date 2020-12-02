@@ -684,13 +684,18 @@ namespace QuanLyPhongKham.GUI
 
         private void dgvXetNghiem_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            tbMBN.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["MaBN"].Value.ToString();
-            cbLXN.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["LoaiXetNghiem"].Value.ToString();
-            dtimeNXN.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["NgXetNghiem"].Value.ToString();
-            tbMBS.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["MaNV"].Value.ToString();
-            tbMPKB.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["MaPKB"].Value.ToString();
-            tbKLB.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["Ketqua"].Value.ToString();
-            tbTBN.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["TenBN"].Value.ToString();
+            int index = e.RowIndex;
+            if (index >= 0)
+            {
+
+                tbMBN.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["MaBN"].Value.ToString();
+                cbLXN.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["LoaiXetNghiem"].Value.ToString();
+                dtimeNXN.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["NgXetNghiem"].Value.ToString();
+                tbMBS.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["MaNV"].Value.ToString();
+                tbMPKB.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["MaPKB"].Value.ToString();
+                tbKLB.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["Ketqua"].Value.ToString();
+                tbTBN.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["TenBN"].Value.ToString();
+            }
         }
 
         private void btThemXN_Click(object sender, EventArgs e)
@@ -708,12 +713,17 @@ namespace QuanLyPhongKham.GUI
 
         private void dgvGH_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            tbMPH.Text = dgvGH.Rows[e.RowIndex].Cells["MaGH"].Value.ToString();
-            tbNV1.Text = dgvGH.Rows[e.RowIndex].Cells["MaNV"].Value.ToString();
-            tbMaBN1.Text = dgvGH.Rows[e.RowIndex].Cells["MaBN"].Value.ToString();
-            dtGHNV.Text = dgvGH.Rows[e.RowIndex].Cells["NgNhapVen"].Value.ToString();
-            cbSoPhong.Text = dgvGH.Rows[e.RowIndex].Cells["SoPhong"].Value.ToString();
-            tbGhiChu.Text = dgvGH.Rows[e.RowIndex].Cells["GhiChu"].Value.ToString();
+            int index = e.RowIndex;
+            if (index >= 0)
+            {
+
+                tbMPH.Text = dgvGH.Rows[e.RowIndex].Cells["MaGH"].Value.ToString();
+                tbNV1.Text = dgvGH.Rows[e.RowIndex].Cells["MaNV"].Value.ToString();
+                tbMaBN1.Text = dgvGH.Rows[e.RowIndex].Cells["Mabenhnhan"].Value.ToString();
+                dtGHNV.Text = dgvGH.Rows[e.RowIndex].Cells["NgNhapVen"].Value.ToString();
+                cbSoPhong.Text = dgvGH.Rows[e.RowIndex].Cells["SoPhong"].Value.ToString();
+                tbGhiChu.Text = dgvGH.Rows[e.RowIndex].Cells["GhiChu"].Value.ToString();
+            }
         }
 
         private void tb_ThemPhieu_Click(object sender, EventArgs e)
@@ -726,6 +736,11 @@ namespace QuanLyPhongKham.GUI
         {
             ObjGiayHenNhapVienBLL.Instance.Xoa();
             dgvGH.DataSource = ObjGiayHenNhapVienBLL.Instance.GetListGHNV();
+
+        }
+
+        private void dgvGH_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
 
