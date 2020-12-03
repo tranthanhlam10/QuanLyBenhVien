@@ -92,7 +92,7 @@ namespace QuanLyPhongKham.DAL
             string MaNV = ((frmMain)main).tbMBS.Text.ToString();
             string Ketqua = ((frmMain)main).tbKLB.Text.ToString();
             string NgayXetNghiem = ((frmMain)main).dtimeNXN.Value.ToString("MM/dd/yyyy");
-            string MaPKB = ((frmMain)main).tbMPKB.Text.ToString();
+            string MaPKB = ((frmMain)main).MaPXN.Text.ToString();
             string LoaiXetNghiem = ((frmMain)main).cbLXN.Text.ToString();
 
 
@@ -118,10 +118,10 @@ namespace QuanLyPhongKham.DAL
         public void Xoa()
         {
             System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["frmMain"];
-            string id_xoa = ((frmMain)f).tbMPKB.Text.ToString();
+           string id_xoa = ((frmMain)f).MaPXN.Text.ToString();
 
             string DeleteQuery = "DELETE FROM GiayXetNghiem WHERE MaPKB = '" + id_xoa + "'";
-            int result = DataProvider.Instance.ExecuteNonQuery(DeleteQuery, null);
+           int result = DataProvider.Instance.ExecuteNonQuery(DeleteQuery, null);
             if (result > 0)
             {
                 MessageBox.Show("Kết quả xét nghiệm đã bị xoá,bấm xem để xem dữ liệu mới", "Thông báo", MessageBoxButtons.OK);

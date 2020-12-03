@@ -24,7 +24,7 @@ namespace QuanLyPhongKham.GUI
         private int nextPNID;
         private Dictionary<string, string[]> listPhNhap = new Dictionary<string, string[]>();
         private Dictionary<string, string[]> listDT = new Dictionary<string, string[]>();
-        
+        private Dictionary<string, string[]> listPHNV = new Dictionary<string, string[]>();
 
         public frmMain(string acc, string pass, string chucvi)
         {
@@ -54,7 +54,7 @@ namespace QuanLyPhongKham.GUI
             Application.Exit();
         }
 
-        public void Phanquyen()
+        public void Phanquyen() // Phân quyền đăng nhập
         {
             if (this.chucvi.CompareTo("2") == 0) //Bacsi
             {
@@ -81,7 +81,7 @@ namespace QuanLyPhongKham.GUI
             }
         }
 
-        private void btt_Add_Click(object sender, EventArgs e)
+        private void btt_Add_Click(object sender, EventArgs e) // thêm bệnh nhân, thuốc và đơn thuốc
         {
             int check = CheckTabPage();
             if (check == 0)
@@ -119,7 +119,7 @@ namespace QuanLyPhongKham.GUI
 
                 listDT.Clear();
                 dgvDT.Rows.Clear();
-                tb_maDT.Text = ObjDonThuocBLL.Instance.GetNextID().ToString(); // load mã đơn thuuososc tự động
+                tb_maDT.Text = ObjDonThuocBLL.Instance.GetNextID().ToString(); // load mã đơn thuốc tự động
                 tb_maNV.Text = tb_maBNThuoc.Text = String.Empty;
             }
         }
@@ -127,17 +127,17 @@ namespace QuanLyPhongKham.GUI
 
 
 
-        private void btt_hsbn_Reload_Click(object sender, EventArgs e)
+        private void btt_hsbn_Reload_Click(object sender, EventArgs e) // load lại dnah sách bệnh nhân
         {
             dgvHoSo.DataSource = ObjBenhNhanBLL.Instance.GetData();
         }
 
-        private void btt_khothuoc_Reload_Click(object sender, EventArgs e)
+        private void btt_khothuoc_Reload_Click(object sender, EventArgs e) // load lại danh sách kho thuốc
         {
             dgvKhoThuoc.DataSource = ObjThuocBLL.Instance.GetData();
         }
 
-        private void dgvHoSo_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvHoSo_CellClick(object sender, DataGridViewCellEventArgs e) // sự kiện click trên dgv Hồ sơ
         {
             int index = e.RowIndex;
             if (index >= 0)
@@ -154,7 +154,7 @@ namespace QuanLyPhongKham.GUI
             }
         }
 
-        private void dgvHoSo_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvHoSo_CellContentClick(object sender, DataGridViewCellEventArgs e) // sự kiện click trên dgv hồ sơ
         {
             int index = e.RowIndex;
             if (index >= 0)
@@ -205,7 +205,7 @@ namespace QuanLyPhongKham.GUI
             }*/
         }
 
-        private void btt_in_Click(object sender, EventArgs e)
+        private void btt_in_Click(object sender, EventArgs e) // in phiếu khám bệnh
         {
             var resultDialog = MessageBox.Show("In phiếu khám bệnh?", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
             
@@ -215,17 +215,17 @@ namespace QuanLyPhongKham.GUI
 
                 if (result)
                 {
-                    MessageBox.Show("In pkb thành công");
+                    MessageBox.Show("In phiếu khám bệnh thành công");
                     ObjPkbBLL.Instance.Add();
                 }
                 else
                 {
-                    MessageBox.Show("In pkb thất bại");
+                    MessageBox.Show("In phiếu khám bệnh thất bại");
                 }
             }
         }
 
-        private bool PrintPDFPKB()
+        private bool PrintPDFPKB() // hàm hiển thị print dialog
         {
             printDocument1.DefaultPageSettings.Landscape = true;
             printDocument1.DefaultPageSettings.PaperSize.RawKind = (int)PaperKind.A3;
@@ -247,7 +247,7 @@ namespace QuanLyPhongKham.GUI
             return false;
         }
 
-        private void updateSLInThuoc(string maThuoc, int sl)
+        private void updateSLInThuoc(string maThuoc, int sl) // update số lượng in thuốc
         {
             DataTable dt = ObjThuocBLL.Instance.GetInfoByID(maThuoc);
             if (dt.Rows.Count > 0)
@@ -263,7 +263,7 @@ namespace QuanLyPhongKham.GUI
             }
         }
 
-        private void insertIntoCTPN()
+        private void insertIntoCTPN() // thêm dữ liệu thuốc và chi tiết phiếu nhập
         {
             for (int row = 0; row < dgvPNH.Rows.Count; ++row)
             {
@@ -308,7 +308,7 @@ namespace QuanLyPhongKham.GUI
         }
         
 
-        private void bttn_in_phnhap_Click(object sender, EventArgs e)
+        private void bttn_in_phnhap_Click(object sender, EventArgs e) // in phiếu nhập
         {
             var resultDialog = MessageBox.Show("In phiếu nhập hàng?", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
 
@@ -339,7 +339,7 @@ namespace QuanLyPhongKham.GUI
             tb_pn_id.Text = nextPNID.ToString();
         }
 
-        private bool PrintPDFPN()
+        private bool PrintPDFPN() // hàm hiển thị print dialog phiếu nhập
         {
             printDocument2.DefaultPageSettings.Landscape = true;
             printDocument2.DefaultPageSettings.PaperSize.RawKind = (int)PaperKind.A3;
@@ -362,7 +362,7 @@ namespace QuanLyPhongKham.GUI
             return false;
         }
 
-        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
+        private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e) // in thông tin khám bênh của bệnh nhân
         {
             e.Graphics.ScaleTransform(1.5f, 1.5f);
             
@@ -403,7 +403,7 @@ namespace QuanLyPhongKham.GUI
             graphic.DrawImage(Properties.Resources.pill, startX, startY + 260);
         }
 
-        private void printDocument2_PrintPage(object sender, PrintPageEventArgs e)
+        private void printDocument2_PrintPage(object sender, PrintPageEventArgs e) // in phiếu nhập hàng ( thuốc )
         {
             e.Graphics.ScaleTransform(0.6f, 0.6f);
 
@@ -468,22 +468,19 @@ namespace QuanLyPhongKham.GUI
             graphic.DrawImage(Properties.Resources.pill, startX, startY + offset);
         }
 
-        private void btt_pkb_findnv_Click(object sender, EventArgs e)
+        private void btt_pkb_findnv_Click(object sender, EventArgs e) // tìm thông tin nhân viên
         {
             dgv_pkb_nv.DataSource = ObjPkbBLL.Instance.FindNv(tb_pkb_findnv.Text);
         }
 
-        private void btt_pkb_findbn_Click(object sender, EventArgs e)
+        private void btt_pkb_findbn_Click(object sender, EventArgs e) // tìm thông tin bệnh nhân
         {
             dgv_pkb_bn.DataSource= ObjPkbBLL.Instance.FindBn(tb_pkb_findbn.Text);
         }
 
-        private void tb_pkb_findnv_TextChanged(object sender, EventArgs e)
-        {
+      
 
-        }
-
-        private void tb_pkb_findnv_Click(object sender, EventArgs e)
+        private void tb_pkb_findnv_Click(object sender, EventArgs e) 
         {
             tb_pkb_findnv.Text = "";
         }
@@ -493,24 +490,24 @@ namespace QuanLyPhongKham.GUI
             tb_pkb_findbn.Text = "";
         }
 
-        private void btt_hoadon_thanhtien_Click(object sender, EventArgs e)
+        private void btt_hoadon_thanhtien_Click(object sender, EventArgs e) // tính tiền hóa đơn viện phí
         {
             dgv_hoadon.DataSource = ObjHoaDonBLL.Instance.Check();
             tb_hoadon_trigia.Text = dgv_hoadon.Rows[0].Cells["Thanh tien"].Value.ToString();
         }
 
-        private void btt_hoadon_luu_Click(object sender, EventArgs e)
+        private void btt_hoadon_luu_Click(object sender, EventArgs e) // lưu thông tin hóa đơn
         {
             ObjHoaDonBLL.Instance.AddHD();
         }
 
-        private void btt_hoadon_danhsach_Click(object sender, EventArgs e)
+        private void btt_hoadon_danhsach_Click(object sender, EventArgs e) // xem danh sách các hóa đơn
         {
             dgv_hoadon.DataSource= ObjHoaDonBLL.Instance.Show();
         }
 
 
-        private void dgvDT_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvDT_CellClick(object sender, DataGridViewCellEventArgs e) // sự kiện click trong dgv đơn thuốc
         {
             if (e.RowIndex != -1)
             {
@@ -523,32 +520,32 @@ namespace QuanLyPhongKham.GUI
             }
         }
 
-        private void btt_hsbn_them_Click(object sender, EventArgs e)
+        private void btt_hsbn_them_Click(object sender, EventArgs e) // thên hồ sơ bệnh nhân
         {
             ObjBenhNhanBLL.Instance.Add();
         }
 
-        private void btt_hsbn_sua_Click(object sender, EventArgs e)
+        private void btt_hsbn_sua_Click(object sender, EventArgs e) // sửa hồ sơ bệnh nhân
         {
             ObjBenhNhanBLL.Instance.SuaBN();
         }
 
-        private void btt_hsbn_xoa_Click(object sender, EventArgs e)
+        private void btt_hsbn_xoa_Click(object sender, EventArgs e) // xóa hồ sơ bệnh nhân
         {
             ObjBenhNhanBLL.Instance.Xoa();
         }
 
-        private void btt_hsbn_tim_Click(object sender, EventArgs e)
+        private void btt_hsbn_tim_Click(object sender, EventArgs e) // hiển thị chi tiết thông tin bệnh nhân
         {
             dgvHoSo.DataSource = ObjBenhNhanBLL.Instance.FindBN();
         }
 
-        private void btt_hoadon_tim_Click(object sender, EventArgs e)
+        private void btt_hoadon_tim_Click(object sender, EventArgs e) // tìm hóa đơn
         {
             dgv_hoadon.DataSource = ObjHoaDonBLL.Instance.Find();
         }
 
-        private void btt_pnh_them_Click(object sender, EventArgs e)
+        private void btt_pnh_them_Click(object sender, EventArgs e) // thêm phiếu nhập hàng
         {
 
                 try
@@ -579,7 +576,7 @@ namespace QuanLyPhongKham.GUI
 
         }
 
-        private void btt_pnh_xoa_Click(object sender, EventArgs e)
+        private void btt_pnh_xoa_Click(object sender, EventArgs e) // xóa phiếu nhập hàng
         {
             {
                 if (dgvPNH.Rows.Count == 0)
@@ -593,7 +590,7 @@ namespace QuanLyPhongKham.GUI
         }
 
 
-        private void btt_doanhthu_find_Click(object sender, EventArgs e)
+        private void btt_doanhthu_find_Click(object sender, EventArgs e) // hiển thị thông tin doanh thu của bệnh viện
         {
             dgv_doanhthu.DataSource = ObjHoaDonBLL.Instance.TongHop();
             int tongbn = 0; int doanhthu=0; int i = 0;
@@ -610,7 +607,7 @@ namespace QuanLyPhongKham.GUI
 
         }
 
-        private void bttn_insertDT_Click(object sender, EventArgs e)
+        private void bttn_insertDT_Click(object sender, EventArgs e) // thêm đơn thuốc
         {
             ObjDonThuocBLL.Instance.Add();
 
@@ -640,7 +637,7 @@ namespace QuanLyPhongKham.GUI
             tb_maNV.Text = tb_maBNThuoc.Text = String.Empty;
         }
 
-        private void dgvXetNghiem_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvXetNghiem_CellContentClick(object sender, DataGridViewCellEventArgs e) // sự kiện click trên dgv xét nghiệm
         {
             int index = e.RowIndex;
             if (index >= 0)
@@ -650,27 +647,27 @@ namespace QuanLyPhongKham.GUI
                 cbLXN.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["LoaiXetNghiem"].Value.ToString();
                 dtimeNXN.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["NgXetNghiem"].Value.ToString();
                 tbMBS.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["MaNV"].Value.ToString();
-                tbMPKB.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["MaPKB"].Value.ToString();
+               // tbMXN.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["MaPKB"].Value.ToString();
                 tbKLB.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["Ketqua"].Value.ToString();
                 tbTBN.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["TenBN"].Value.ToString();
             }
         }
 
-        private void btThemXN_Click(object sender, EventArgs e)
+        private void btThemXN_Click(object sender, EventArgs e) // thêm phiếu xét nghiệm
         {
-            tbMPKB.Text = ObjXetNghiemBLL.Instance.GetNextID().ToString();
+            MaPXN.Text = ObjXetNghiemBLL.Instance.GetNextID().ToString();
             ObjXetNghiemBLL.Instance.Add();
             dgvXetNghiem.DataSource = ObjXetNghiemBLL.Instance.GetListPXN();
 
         }
 
-        private void btXoaXN_Click(object sender, EventArgs e)
+        private void btXoaXN_Click(object sender, EventArgs e) // xóa phiếu xét nghiệm
         {
             ObjXetNghiemBLL.Instance.Xoa();
             dgvXetNghiem.DataSource = ObjXetNghiemBLL.Instance.GetListPXN();
         }
 
-        private void dgvGH_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvGH_CellContentClick(object sender, DataGridViewCellEventArgs e) // sự kiện click trên dgv giấy hẹn nhập viện
         {
             int index = e.RowIndex;
             if (index >= 0)
@@ -685,7 +682,7 @@ namespace QuanLyPhongKham.GUI
             }
         }
 
-        private void tb_ThemPhieu_Click(object sender, EventArgs e)
+        private void tb_ThemPhieu_Click(object sender, EventArgs e) // thêm phiếu hẹn nhập viện
         {
 
 
@@ -695,7 +692,7 @@ namespace QuanLyPhongKham.GUI
 
         }
 
-        private void tb_XoaPhieu_Click(object sender, EventArgs e)
+        private void tb_XoaPhieu_Click(object sender, EventArgs e) // xóa phiếu hẹn nhập viện
         {
             ObjGiayHenNhapVienBLL.Instance.Xoa();
             dgvGH.DataSource = ObjGiayHenNhapVienBLL.Instance.GetListGHNV();
@@ -707,10 +704,7 @@ namespace QuanLyPhongKham.GUI
 
         }
 
-        private void tb_pn_id_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+ 
 
         private void bt_ThemDT_Click(object sender, EventArgs e) // thêm đơn thuốc
         {
@@ -762,6 +756,113 @@ namespace QuanLyPhongKham.GUI
             MessageBox.Show("Sửa đơn thuốc thành công");
         }
 
+        private void btInPhieu_Click(object sender, EventArgs e) // in phiếu hẹn nhập viện
+        {
+            var resultDialog = MessageBox.Show("In phiếu hẹn nhập viện?", "Warning", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+
+            if (resultDialog == DialogResult.OK)
+            {
+                bool result = PrintPDFPKB();
+
+                if (result)
+                {
+                    MessageBox.Show("In phiếu hẹn nhập viện thành công");
+                    ObjGiayHenNhapVienBLL.Instance.Add();
+                }
+                else
+                {
+                    MessageBox.Show("In phiếu hẹn nhập viện thất bại");
+                }
+            }
+        }
+
+       private bool PrintPHNV() // hiển thị print dialog phiếu hẹn nhập viện
+        {
+            printDocument3.DefaultPageSettings.Landscape = true;
+            printDocument3.DefaultPageSettings.PaperSize.RawKind = (int)PaperKind.A3;
+
+            var resultDialog = printDialog1.ShowDialog();
+
+            if (resultDialog == DialogResult.OK)
+            {
+                try
+                {
+                    printDocument3.Print();
+                    return true;
+                }
+                catch (Exception e)
+                {
+                    return false;
+                }
+            }
+
+            return false;
+        }
+
+        private void printDocument3_PrintPage(object sender, PrintPageEventArgs e) // in phiếu hẹn nhập viện
+        {
+            e.Graphics.ScaleTransform(0.6f, 0.6f);
+
+            Font font = new Font("Courier New", 12);
+            Brush brush = new SolidBrush(Color.Black);
+
+            float fontHeight = font.GetHeight();
+
+            int startX = 10, startY = 10, offset = 100;
+
+            //get max string length
+            int maxLen = 0;
+            foreach (string[] item in listPHNV.Values.ToList())
+            {
+                int maxLenStr = item.Max(str => str.Length);
+                if (maxLenStr > maxLen)
+                {
+                    maxLen = maxLenStr;
+                }
+            }
+
+            //info phieu nhap
+            string id = String.Format("Mã phiếu hẹn nhập viện: {0}", tbMPH.Text);
+            string date = String.Format("Ngày lập phiếu hẹn: {0}", DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss tt"));
+            string sophong = String.Format("Mã phiếu hẹn nhập viện: {0}", cbSoPhong.Text);
+            string ghichu = String.Format("Mã phiếu hẹn nhập viện: {0}", tbGhiChu.Text);
+
+            string listHeader = String.Empty;
+            listHeader += String.Format("{0,-15}", "Mã phiếu hẹn");
+            listHeader += String.Format("{0,-15}", "Ngày lập phiếu hẹn");
+            listHeader += String.Format("{0,-15}", "Số phòng");
+            listHeader += String.Format("{0,-15}", "Ghi chú");
+       
+
+            Graphics graphic = e.Graphics;
+            graphic.DrawString(" Phiếu hẹn nhập viện", new Font("Courier New", 18, FontStyle.Bold), new SolidBrush(Color.Red), startX, 0);
+            graphic.DrawString(id, font, brush, startX, startY + 20);
+            graphic.DrawString(date, font, brush, startX, startY + 40);
+            graphic.DrawString(sophong, font, brush, startX, startY + 40);
+            graphic.DrawString(ghichu, font, brush, startX, startY + 40);
+
+            graphic.DrawString("--------------------------------", font, brush, startX, startY + 60);
+
+            graphic.DrawString(listHeader, font, brush, startX, startY + 80);
+
+            string format = "{0,-" + maxLen + "}\t";
+            foreach (string[] items in listPHNV.Values.ToList())
+            {
+                string itemStr = String.Empty;
+
+                for (int itemInd = 0; itemInd < items.Length; ++itemInd)
+                {
+                    itemStr += String.Format(format, items[itemInd]);
+                }
+
+                graphic.DrawString(itemStr, font, new SolidBrush(Color.Gray), startX, startY + offset);
+
+                offset += (int)fontHeight + 5;
+            }
+
+            graphic.DrawImage(Properties.Resources.pill, startX, startY + offset);
+        }
+        
         int CheckTabPage()
         {
 
@@ -769,7 +870,7 @@ namespace QuanLyPhongKham.GUI
         }
 
 
-        public void frmMain_Load(object sender, EventArgs e)
+        public void frmMain_Load(object sender, EventArgs e) // form main load dữ liệu
         {
             Phanquyen();
             dgvHoSo.DataSource = ObjBenhNhanBLL.Instance.GetData();
