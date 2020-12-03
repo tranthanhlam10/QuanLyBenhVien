@@ -509,49 +509,6 @@ namespace QuanLyPhongKham.GUI
             dgv_hoadon.DataSource= ObjHoaDonBLL.Instance.Show();
         }
 
-        private void bttn_addDT_Click(object sender, EventArgs e)
-        {
-            DataTable dt = ObjThuocBLL.Instance.GetInfoByName(tb_tenThuoc.Text);
-            if (dt.Rows.Count > 0)
-            {
-                listDT.Add(tb_tenThuoc.Text, new string[] {
-                    tb_tenThuoc.Text,
-                    tb_slThuoc.Text
-                });
-
-                dgvDT.Rows.Add(listDT.Values.Last());
-
-                //clear textboxes
-                tb_tenThuoc.Text = tb_slThuoc.Text = String.Empty;
-            }
-            else
-            {
-                MessageBox.Show("Tên thuốc không tồn tại");
-            }
-        }
-
-        private void bttn_delDT_Click(object sender, EventArgs e)
-        {
-            if (dgvDT.Rows.Count == 0)
-            {
-                return;
-            }
-
-            listDT.Remove(dgvDT.CurrentRow.Cells["TenThuocDT"].Value.ToString());
-            dgvDT.Rows.RemoveAt(dgvDT.CurrentRow.Index);
-        }
-
-        private void bttn_updateDT_Click(object sender, EventArgs e)
-        {
-            if (dgvDT.Rows.Count == 0)
-            {
-                return;
-            }
-
-            listDT[dgvDT.CurrentRow.Cells["TenThuocDT"].Value.ToString()][1] = tb_slThuoc.Text;
-
-            dgvDT.CurrentRow.Cells["SoLuongDT"].Value = tb_slThuoc.Text;
-        }
 
         private void dgvDT_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -753,6 +710,56 @@ namespace QuanLyPhongKham.GUI
         private void tb_pn_id_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void bt_ThemDT_Click(object sender, EventArgs e) // thêm đơn thuốc
+        {
+            DataTable dt = ObjThuocBLL.Instance.GetInfoByName(tb_tenThuoc.Text);
+            if (dt.Rows.Count > 0)
+            {
+                listDT.Add(tb_tenThuoc.Text, new string[] {
+                    tb_tenThuoc.Text,
+                    tb_slThuoc.Text
+                });
+
+                dgvDT.Rows.Add(listDT.Values.Last());
+
+                //clear textboxes
+                tb_tenThuoc.Text = tb_slThuoc.Text = String.Empty;
+
+                MessageBox.Show("Thêm đơn thuốc thành công");
+            }
+            else
+            {
+                MessageBox.Show("Tên thuốc không tồn tại");
+            }
+        }
+
+        private void bt_XoaDT_Click(object sender, EventArgs e) // xóa đơn thuốc
+        {
+            if (dgvDT.Rows.Count == 0)
+            {
+                return;
+            }
+
+            listDT.Remove(dgvDT.CurrentRow.Cells["TenThuocDT"].Value.ToString());
+            dgvDT.Rows.RemoveAt(dgvDT.CurrentRow.Index);
+
+            MessageBox.Show("Xóa đơn thuốc thành công");
+        }
+
+        private void bt_SuaDT_Click(object sender, EventArgs e) // sửa đơn thuốc
+        {
+            if (dgvDT.Rows.Count == 0)
+            {
+                return;
+            }
+
+            listDT[dgvDT.CurrentRow.Cells["TenThuocDT"].Value.ToString()][1] = tb_slThuoc.Text;
+
+            dgvDT.CurrentRow.Cells["SoLuongDT"].Value = tb_slThuoc.Text;
+
+            MessageBox.Show("Sửa đơn thuốc thành công");
         }
 
         int CheckTabPage()
