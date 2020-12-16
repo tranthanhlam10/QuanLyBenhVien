@@ -647,7 +647,7 @@ namespace QuanLyPhongKham.GUI
                 cbLXN.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["LoaiXetNghiem"].Value.ToString();
                 dtimeNXN.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["NgXetNghiem"].Value.ToString();
                 tbMBS.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["MaNV"].Value.ToString();
-               // tbMXN.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["MaPKB"].Value.ToString();
+                MaPXN.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["MaPKB"].Value.ToString();
                 tbKLB.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["Ketqua"].Value.ToString();
                 tbTBN.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["TenBN"].Value.ToString();
             }
