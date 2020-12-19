@@ -209,6 +209,23 @@ namespace QuanLyPhongKham.DAL
     
         }
 
+        public int GetNextID()
+        {
+            int nextID = 1;
+
+            string Query = String.Empty;
+            Query += "SELECT TOP 1 MaBN FROM BenhNhan ";
+            Query += "ORDER BY MaBn DESC";
+
+            DataTable dt = DataProvider.Instance.ExecuteQuery(Query, null);
+            if (dt.Rows.Count > 0)
+            {
+                Int32.TryParse(dt.Rows[0]["MaBN"].ToString(), out nextID);
+                ++nextID;
+            }
+            return nextID;
+        }
+
 
 
     }

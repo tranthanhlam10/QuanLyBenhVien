@@ -58,7 +58,10 @@ namespace QuanLyPhongKham.BLL
         {
             return ObjBenhNhanDAL.Instance.FindBN();
         }
-
+        public int GetNextID()
+        {
+            return ObjBenhNhanDAL.Instance.GetNextID();
+        }
 
     }
 }

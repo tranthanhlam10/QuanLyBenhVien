@@ -86,6 +86,7 @@ namespace QuanLyPhongKham.GUI
             int check = CheckTabPage();
             if (check == 0)
             {
+               
                 ObjBenhNhanBLL.Instance.Add();
 
             }
@@ -522,6 +523,7 @@ namespace QuanLyPhongKham.GUI
 
         private void btt_hsbn_them_Click(object sender, EventArgs e) // thên hồ sơ bệnh nhân
         {
+            tb_bn_id.Text = ObjBenhNhanBLL.Instance.GetNextID().ToString();
             ObjBenhNhanBLL.Instance.Add();
         }
 
@@ -862,7 +864,9 @@ namespace QuanLyPhongKham.GUI
 
             graphic.DrawImage(Properties.Resources.pill, startX, startY + offset);
         }
-        
+
+       
+
         int CheckTabPage()
         {
 

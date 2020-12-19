@@ -442,7 +442,7 @@
             this.dt_DT.Enabled = false;
             this.dt_DT.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dt_DT.Location = new System.Drawing.Point(508, 100);
-            this.dt_DT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dt_DT.Margin = new System.Windows.Forms.Padding(4);
             this.dt_DT.Name = "dt_DT";
             this.dt_DT.Size = new System.Drawing.Size(132, 22);
             this.dt_DT.TabIndex = 14;
@@ -454,7 +454,7 @@
             this.TenThuocDT,
             this.SoLuongDT});
             this.dgvDT.Location = new System.Drawing.Point(4, 161);
-            this.dgvDT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvDT.Margin = new System.Windows.Forms.Padding(4);
             this.dgvDT.Name = "dgvDT";
             this.dgvDT.ReadOnly = true;
             this.dgvDT.Size = new System.Drawing.Size(1208, 460);
@@ -476,7 +476,7 @@
             // tb_maBNThuoc
             // 
             this.tb_maBNThuoc.Location = new System.Drawing.Point(268, 100);
-            this.tb_maBNThuoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_maBNThuoc.Margin = new System.Windows.Forms.Padding(4);
             this.tb_maBNThuoc.Name = "tb_maBNThuoc";
             this.tb_maBNThuoc.Size = new System.Drawing.Size(132, 22);
             this.tb_maBNThuoc.TabIndex = 12;
@@ -484,7 +484,7 @@
             // tb_maNV
             // 
             this.tb_maNV.Location = new System.Drawing.Point(25, 100);
-            this.tb_maNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_maNV.Margin = new System.Windows.Forms.Padding(4);
             this.tb_maNV.Name = "tb_maNV";
             this.tb_maNV.Size = new System.Drawing.Size(132, 22);
             this.tb_maNV.TabIndex = 11;
@@ -492,7 +492,7 @@
             // tb_slThuoc
             // 
             this.tb_slThuoc.Location = new System.Drawing.Point(508, 36);
-            this.tb_slThuoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_slThuoc.Margin = new System.Windows.Forms.Padding(4);
             this.tb_slThuoc.Name = "tb_slThuoc";
             this.tb_slThuoc.Size = new System.Drawing.Size(132, 22);
             this.tb_slThuoc.TabIndex = 10;
@@ -500,7 +500,7 @@
             // tb_tenThuoc
             // 
             this.tb_tenThuoc.Location = new System.Drawing.Point(268, 36);
-            this.tb_tenThuoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_tenThuoc.Margin = new System.Windows.Forms.Padding(4);
             this.tb_tenThuoc.Name = "tb_tenThuoc";
             this.tb_tenThuoc.Size = new System.Drawing.Size(132, 22);
             this.tb_tenThuoc.TabIndex = 9;
@@ -510,7 +510,7 @@
             this.tb_maDT.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.tb_maDT.Enabled = false;
             this.tb_maDT.Location = new System.Drawing.Point(25, 36);
-            this.tb_maDT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_maDT.Margin = new System.Windows.Forms.Padding(4);
             this.tb_maDT.Name = "tb_maDT";
             this.tb_maDT.Size = new System.Drawing.Size(132, 22);
             this.tb_maDT.TabIndex = 8;
@@ -655,7 +655,7 @@
             this.tb_pkb_findbn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_pkb_findbn.ForeColor = System.Drawing.Color.Black;
             this.tb_pkb_findbn.Location = new System.Drawing.Point(868, 16);
-            this.tb_pkb_findbn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_pkb_findbn.Margin = new System.Windows.Forms.Padding(4);
             this.tb_pkb_findbn.Name = "tb_pkb_findbn";
             this.tb_pkb_findbn.Size = new System.Drawing.Size(168, 34);
             this.tb_pkb_findbn.TabIndex = 27;
@@ -668,7 +668,7 @@
             this.tb_pkb_findnv.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_pkb_findnv.ForeColor = System.Drawing.Color.Black;
             this.tb_pkb_findnv.Location = new System.Drawing.Point(156, 16);
-            this.tb_pkb_findnv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_pkb_findnv.Margin = new System.Windows.Forms.Padding(4);
             this.tb_pkb_findnv.Name = "tb_pkb_findnv";
             this.tb_pkb_findnv.Size = new System.Drawing.Size(168, 34);
             this.tb_pkb_findnv.TabIndex = 26;
@@ -685,7 +685,7 @@
             this.PKB_TenNV});
             this.dgv_pkb_nv.EnableHeadersVisualStyles = false;
             this.dgv_pkb_nv.Location = new System.Drawing.Point(7, 57);
-            this.dgv_pkb_nv.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_pkb_nv.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_pkb_nv.Name = "dgv_pkb_nv";
             this.dgv_pkb_nv.ReadOnly = true;
             this.dgv_pkb_nv.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
@@ -718,7 +718,7 @@
             this.PKB_TrieuChung});
             this.dgv_pkb_bn.EnableHeadersVisualStyles = false;
             this.dgv_pkb_bn.Location = new System.Drawing.Point(652, 57);
-            this.dgv_pkb_bn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_pkb_bn.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_pkb_bn.Name = "dgv_pkb_bn";
             this.dgv_pkb_bn.ReadOnly = true;
             this.dgv_pkb_bn.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -774,7 +774,7 @@
             this.dateTimePicker1.Enabled = false;
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(732, 484);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(264, 22);
             this.dateTimePicker1.TabIndex = 8;
@@ -782,7 +782,7 @@
             // tb_maBNPKB
             // 
             this.tb_maBNPKB.Location = new System.Drawing.Point(497, 484);
-            this.tb_maBNPKB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_maBNPKB.Margin = new System.Windows.Forms.Padding(4);
             this.tb_maBNPKB.Name = "tb_maBNPKB";
             this.tb_maBNPKB.Size = new System.Drawing.Size(132, 22);
             this.tb_maBNPKB.TabIndex = 7;
@@ -801,7 +801,7 @@
             // tb_maNVPKB
             // 
             this.tb_maNVPKB.Location = new System.Drawing.Point(292, 484);
-            this.tb_maNVPKB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_maNVPKB.Margin = new System.Windows.Forms.Padding(4);
             this.tb_maNVPKB.Name = "tb_maNVPKB";
             this.tb_maNVPKB.Size = new System.Drawing.Size(132, 22);
             this.tb_maNVPKB.TabIndex = 5;
@@ -856,6 +856,7 @@
             // tabcontrolmain
             // 
             this.tabcontrolmain.Controls.Add(this.tabp_hsbn);
+            this.tabcontrolmain.Controls.Add(this.tabp_hoadon);
             this.tabcontrolmain.Controls.Add(this.tabp_kho);
             this.tabcontrolmain.Controls.Add(this.xetnghiem);
             this.tabcontrolmain.Controls.Add(this.tabp_dth);
@@ -863,12 +864,11 @@
             this.tabcontrolmain.Controls.Add(this.tabp_pnh);
             this.tabcontrolmain.Controls.Add(this.tabp_donthuoc);
             this.tabcontrolmain.Controls.Add(this.tabp_pkb);
-            this.tabcontrolmain.Controls.Add(this.tabp_hoadon);
             this.tabcontrolmain.CustomBackground = true;
             this.tabcontrolmain.Location = new System.Drawing.Point(0, 39);
             this.tabcontrolmain.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.tabcontrolmain.Name = "tabcontrolmain";
-            this.tabcontrolmain.SelectedIndex = 8;
+            this.tabcontrolmain.SelectedIndex = 0;
             this.tabcontrolmain.Size = new System.Drawing.Size(1240, 826);
             this.tabcontrolmain.TabIndex = 4;
             // 
@@ -1057,7 +1057,7 @@
             "Nam",
             "Nữ"});
             this.cb_bn_sex.Location = new System.Drawing.Point(652, 47);
-            this.cb_bn_sex.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cb_bn_sex.Margin = new System.Windows.Forms.Padding(4);
             this.cb_bn_sex.Name = "cb_bn_sex";
             this.cb_bn_sex.Size = new System.Drawing.Size(132, 24);
             this.cb_bn_sex.TabIndex = 24;
@@ -1077,7 +1077,7 @@
             this.KetLuanBenh,
             this.BaoHiem});
             this.dgvHoSo.Location = new System.Drawing.Point(4, 352);
-            this.dgvHoSo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvHoSo.Margin = new System.Windows.Forms.Padding(4);
             this.dgvHoSo.Name = "dgvHoSo";
             this.dgvHoSo.ReadOnly = true;
             this.dgvHoSo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -1165,7 +1165,7 @@
             this.ngaySinhPicker.CustomFormat = "dd/MM/yyyy";
             this.ngaySinhPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.ngaySinhPicker.Location = new System.Drawing.Point(1024, 52);
-            this.ngaySinhPicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ngaySinhPicker.Margin = new System.Windows.Forms.Padding(4);
             this.ngaySinhPicker.Name = "ngaySinhPicker";
             this.ngaySinhPicker.Size = new System.Drawing.Size(164, 22);
             this.ngaySinhPicker.TabIndex = 21;
@@ -1173,7 +1173,7 @@
             // tb_bn_baohiem
             // 
             this.tb_bn_baohiem.Location = new System.Drawing.Point(652, 140);
-            this.tb_bn_baohiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_bn_baohiem.Margin = new System.Windows.Forms.Padding(4);
             this.tb_bn_baohiem.Name = "tb_bn_baohiem";
             this.tb_bn_baohiem.Size = new System.Drawing.Size(132, 22);
             this.tb_bn_baohiem.TabIndex = 20;
@@ -1181,7 +1181,7 @@
             // tb_bn_klb
             // 
             this.tb_bn_klb.Location = new System.Drawing.Point(212, 140);
-            this.tb_bn_klb.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_bn_klb.Margin = new System.Windows.Forms.Padding(4);
             this.tb_bn_klb.Multiline = true;
             this.tb_bn_klb.Name = "tb_bn_klb";
             this.tb_bn_klb.Size = new System.Drawing.Size(432, 149);
@@ -1190,7 +1190,7 @@
             // tb_bn_trieuchung
             // 
             this.tb_bn_trieuchung.Location = new System.Drawing.Point(36, 140);
-            this.tb_bn_trieuchung.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_bn_trieuchung.Margin = new System.Windows.Forms.Padding(4);
             this.tb_bn_trieuchung.Name = "tb_bn_trieuchung";
             this.tb_bn_trieuchung.Size = new System.Drawing.Size(132, 22);
             this.tb_bn_trieuchung.TabIndex = 18;
@@ -1198,7 +1198,7 @@
             // tb_bn_add
             // 
             this.tb_bn_add.Location = new System.Drawing.Point(844, 49);
-            this.tb_bn_add.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_bn_add.Margin = new System.Windows.Forms.Padding(4);
             this.tb_bn_add.Name = "tb_bn_add";
             this.tb_bn_add.Size = new System.Drawing.Size(132, 22);
             this.tb_bn_add.TabIndex = 16;
@@ -1206,7 +1206,7 @@
             // tb_bn_sdt
             // 
             this.tb_bn_sdt.Location = new System.Drawing.Point(444, 52);
-            this.tb_bn_sdt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_bn_sdt.Margin = new System.Windows.Forms.Padding(4);
             this.tb_bn_sdt.Name = "tb_bn_sdt";
             this.tb_bn_sdt.Size = new System.Drawing.Size(132, 22);
             this.tb_bn_sdt.TabIndex = 14;
@@ -1214,17 +1214,18 @@
             // tb_bn_ten
             // 
             this.tb_bn_ten.Location = new System.Drawing.Point(238, 52);
-            this.tb_bn_ten.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_bn_ten.Margin = new System.Windows.Forms.Padding(4);
             this.tb_bn_ten.Name = "tb_bn_ten";
             this.tb_bn_ten.Size = new System.Drawing.Size(132, 22);
             this.tb_bn_ten.TabIndex = 13;
+         
             // 
             // tb_bn_id
             // 
             this.tb_bn_id.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.tb_bn_id.Enabled = false;
             this.tb_bn_id.Location = new System.Drawing.Point(36, 52);
-            this.tb_bn_id.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_bn_id.Margin = new System.Windows.Forms.Padding(4);
             this.tb_bn_id.Name = "tb_bn_id";
             this.tb_bn_id.Size = new System.Drawing.Size(132, 22);
             this.tb_bn_id.TabIndex = 12;
@@ -1400,7 +1401,7 @@
             this.NCC,
             this.Gia});
             this.dgvKhoThuoc.Location = new System.Drawing.Point(4, 156);
-            this.dgvKhoThuoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvKhoThuoc.Margin = new System.Windows.Forms.Padding(4);
             this.dgvKhoThuoc.Name = "dgvKhoThuoc";
             this.dgvKhoThuoc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvKhoThuoc.Size = new System.Drawing.Size(1228, 446);
@@ -1455,7 +1456,7 @@
             this.hanSDPicker.CustomFormat = "dd/MM/yyyy";
             this.hanSDPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.hanSDPicker.Location = new System.Drawing.Point(212, 124);
-            this.hanSDPicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.hanSDPicker.Margin = new System.Windows.Forms.Padding(4);
             this.hanSDPicker.Name = "hanSDPicker";
             this.hanSDPicker.Size = new System.Drawing.Size(132, 22);
             this.hanSDPicker.TabIndex = 17;
@@ -1465,7 +1466,7 @@
             this.ngaySanXuatPicker.CustomFormat = "dd/MM/yyyy";
             this.ngaySanXuatPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.ngaySanXuatPicker.Location = new System.Drawing.Point(47, 124);
-            this.ngaySanXuatPicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ngaySanXuatPicker.Margin = new System.Windows.Forms.Padding(4);
             this.ngaySanXuatPicker.Name = "ngaySanXuatPicker";
             this.ngaySanXuatPicker.Size = new System.Drawing.Size(132, 22);
             this.ngaySanXuatPicker.TabIndex = 16;
@@ -1484,7 +1485,7 @@
             // tb_giaThuoc
             // 
             this.tb_giaThuoc.Location = new System.Drawing.Point(732, 47);
-            this.tb_giaThuoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_giaThuoc.Margin = new System.Windows.Forms.Padding(4);
             this.tb_giaThuoc.Name = "tb_giaThuoc";
             this.tb_giaThuoc.Size = new System.Drawing.Size(132, 22);
             this.tb_giaThuoc.TabIndex = 14;
@@ -1492,7 +1493,7 @@
             // tb_nhaCC
             // 
             this.tb_nhaCC.Location = new System.Drawing.Point(556, 47);
-            this.tb_nhaCC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_nhaCC.Margin = new System.Windows.Forms.Padding(4);
             this.tb_nhaCC.Name = "tb_nhaCC";
             this.tb_nhaCC.Size = new System.Drawing.Size(132, 22);
             this.tb_nhaCC.TabIndex = 13;
@@ -1500,7 +1501,7 @@
             // tb_slThuocKho
             // 
             this.tb_slThuocKho.Location = new System.Drawing.Point(391, 47);
-            this.tb_slThuocKho.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_slThuocKho.Margin = new System.Windows.Forms.Padding(4);
             this.tb_slThuocKho.Name = "tb_slThuocKho";
             this.tb_slThuocKho.Size = new System.Drawing.Size(132, 22);
             this.tb_slThuocKho.TabIndex = 12;
@@ -1508,7 +1509,7 @@
             // tb_tenThuocKho
             // 
             this.tb_tenThuocKho.Location = new System.Drawing.Point(212, 47);
-            this.tb_tenThuocKho.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_tenThuocKho.Margin = new System.Windows.Forms.Padding(4);
             this.tb_tenThuocKho.Name = "tb_tenThuocKho";
             this.tb_tenThuocKho.Size = new System.Drawing.Size(132, 22);
             this.tb_tenThuocKho.TabIndex = 11;
@@ -1516,7 +1517,7 @@
             // tb_maThuoc
             // 
             this.tb_maThuoc.Location = new System.Drawing.Point(47, 47);
-            this.tb_maThuoc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_maThuoc.Margin = new System.Windows.Forms.Padding(4);
             this.tb_maThuoc.Name = "tb_maThuoc";
             this.tb_maThuoc.Size = new System.Drawing.Size(132, 22);
             this.tb_maThuoc.TabIndex = 10;
@@ -1621,7 +1622,7 @@
             this.xetnghiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.xetnghiem.HorizontalScrollbarBarColor = true;
             this.xetnghiem.Location = new System.Drawing.Point(4, 39);
-            this.xetnghiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.xetnghiem.Margin = new System.Windows.Forms.Padding(4);
             this.xetnghiem.Name = "xetnghiem";
             this.xetnghiem.Size = new System.Drawing.Size(1232, 783);
             this.xetnghiem.TabIndex = 9;
@@ -1632,7 +1633,7 @@
             // 
             this.MaPXN.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.MaPXN.Location = new System.Drawing.Point(28, 60);
-            this.MaPXN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaPXN.Margin = new System.Windows.Forms.Padding(4);
             this.MaPXN.Name = "MaPXN";
             this.MaPXN.Size = new System.Drawing.Size(188, 22);
             this.MaPXN.TabIndex = 75;
@@ -1643,7 +1644,7 @@
             // 
             this.dgvXetNghiem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvXetNghiem.Location = new System.Drawing.Point(20, 332);
-            this.dgvXetNghiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvXetNghiem.Margin = new System.Windows.Forms.Padding(4);
             this.dgvXetNghiem.Name = "dgvXetNghiem";
             this.dgvXetNghiem.RowTemplate.Height = 24;
             this.dgvXetNghiem.Size = new System.Drawing.Size(1191, 288);
@@ -1658,7 +1659,7 @@
             this.dgvXN1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvXN1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvXN1.Location = new System.Drawing.Point(20, 351);
-            this.dgvXN1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvXN1.Margin = new System.Windows.Forms.Padding(4);
             this.dgvXN1.Name = "dgvXN1";
             this.dgvXN1.RowTemplate.Height = 24;
             this.dgvXN1.Size = new System.Drawing.Size(0, 0);
@@ -1689,7 +1690,7 @@
             // tbMBS
             // 
             this.tbMBS.Location = new System.Drawing.Point(668, 60);
-            this.tbMBS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbMBS.Margin = new System.Windows.Forms.Padding(4);
             this.tbMBS.Name = "tbMBS";
             this.tbMBS.Size = new System.Drawing.Size(132, 22);
             this.tbMBS.TabIndex = 70;
@@ -1765,7 +1766,7 @@
             "Nội soi",
             "Siêu âm"});
             this.cbLXN.Location = new System.Drawing.Point(1068, 55);
-            this.cbLXN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbLXN.Margin = new System.Windows.Forms.Padding(4);
             this.cbLXN.Name = "cbLXN";
             this.cbLXN.Size = new System.Drawing.Size(132, 24);
             this.cbLXN.TabIndex = 68;
@@ -1775,7 +1776,7 @@
             this.dtimeNXN.CustomFormat = "dd/MM/yyyy";
             this.dtimeNXN.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtimeNXN.Location = new System.Drawing.Point(836, 58);
-            this.dtimeNXN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtimeNXN.Margin = new System.Windows.Forms.Padding(4);
             this.dtimeNXN.Name = "dtimeNXN";
             this.dtimeNXN.Size = new System.Drawing.Size(164, 22);
             this.dtimeNXN.TabIndex = 67;
@@ -1783,7 +1784,7 @@
             // tbKLB
             // 
             this.tbKLB.Location = new System.Drawing.Point(20, 164);
-            this.tbKLB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbKLB.Margin = new System.Windows.Forms.Padding(4);
             this.tbKLB.Multiline = true;
             this.tbKLB.Name = "tbKLB";
             this.tbKLB.Size = new System.Drawing.Size(432, 149);
@@ -1792,7 +1793,7 @@
             // tbTBN
             // 
             this.tbTBN.Location = new System.Drawing.Point(463, 57);
-            this.tbTBN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbTBN.Margin = new System.Windows.Forms.Padding(4);
             this.tbTBN.Name = "tbTBN";
             this.tbTBN.Size = new System.Drawing.Size(132, 22);
             this.tbTBN.TabIndex = 65;
@@ -1800,7 +1801,7 @@
             // tbMBN
             // 
             this.tbMBN.Location = new System.Drawing.Point(263, 57);
-            this.tbMBN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbMBN.Margin = new System.Windows.Forms.Padding(4);
             this.tbMBN.Name = "tbMBN";
             this.tbMBN.Size = new System.Drawing.Size(132, 22);
             this.tbMBN.TabIndex = 64;
@@ -2025,7 +2026,7 @@
             this.NhapVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NhapVien.HorizontalScrollbarBarColor = true;
             this.NhapVien.Location = new System.Drawing.Point(4, 39);
-            this.NhapVien.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.NhapVien.Margin = new System.Windows.Forms.Padding(4);
             this.NhapVien.Name = "NhapVien";
             this.NhapVien.Size = new System.Drawing.Size(1232, 783);
             this.NhapVien.TabIndex = 10;
@@ -2039,7 +2040,7 @@
             this.MaNV,
             this.Mabenhnhan});
             this.dgvGH.Location = new System.Drawing.Point(6, 340);
-            this.dgvGH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvGH.Margin = new System.Windows.Forms.Padding(4);
             this.dgvGH.Name = "dgvGH";
             this.dgvGH.RowTemplate.Height = 24;
             this.dgvGH.Size = new System.Drawing.Size(1218, 280);
@@ -2092,7 +2093,7 @@
             this.dtGHNV.CustomFormat = "dd/MM/yyyy";
             this.dtGHNV.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtGHNV.Location = new System.Drawing.Point(290, 122);
-            this.dtGHNV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtGHNV.Margin = new System.Windows.Forms.Padding(4);
             this.dtGHNV.Name = "dtGHNV";
             this.dtGHNV.Size = new System.Drawing.Size(164, 22);
             this.dtGHNV.TabIndex = 79;
@@ -2102,7 +2103,7 @@
             this.tbMPH.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.tbMPH.Enabled = false;
             this.tbMPH.Location = new System.Drawing.Point(100, 58);
-            this.tbMPH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbMPH.Margin = new System.Windows.Forms.Padding(4);
             this.tbMPH.Name = "tbMPH";
             this.tbMPH.Size = new System.Drawing.Size(132, 22);
             this.tbMPH.TabIndex = 78;
@@ -2179,7 +2180,7 @@
             // tbGhiChu
             // 
             this.tbGhiChu.Location = new System.Drawing.Point(604, 73);
-            this.tbGhiChu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbGhiChu.Margin = new System.Windows.Forms.Padding(4);
             this.tbGhiChu.Name = "tbGhiChu";
             this.tbGhiChu.Size = new System.Drawing.Size(428, 228);
             this.tbGhiChu.TabIndex = 73;
@@ -2210,7 +2211,7 @@
             this.cbSoPhong.Items.AddRange(new object[] {
             "1"});
             this.cbSoPhong.Location = new System.Drawing.Point(100, 196);
-            this.cbSoPhong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbSoPhong.Margin = new System.Windows.Forms.Padding(4);
             this.cbSoPhong.Name = "cbSoPhong";
             this.cbSoPhong.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.cbSoPhong.OnHoverItemForeColor = System.Drawing.Color.White;
@@ -2231,7 +2232,7 @@
             // tbMaBN1
             // 
             this.tbMaBN1.Location = new System.Drawing.Point(102, 122);
-            this.tbMaBN1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbMaBN1.Margin = new System.Windows.Forms.Padding(4);
             this.tbMaBN1.Name = "tbMaBN1";
             this.tbMaBN1.Size = new System.Drawing.Size(132, 22);
             this.tbMaBN1.TabIndex = 69;
@@ -2239,7 +2240,7 @@
             // tbNV1
             // 
             this.tbNV1.Location = new System.Drawing.Point(297, 58);
-            this.tbNV1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbNV1.Margin = new System.Windows.Forms.Padding(4);
             this.tbNV1.Name = "tbNV1";
             this.tbNV1.Size = new System.Drawing.Size(132, 22);
             this.tbNV1.TabIndex = 68;
@@ -2372,7 +2373,7 @@
             this.dgvPNH.AllowUserToAddRows = false;
             this.dgvPNH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPNH.Location = new System.Drawing.Point(4, 145);
-            this.dgvPNH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvPNH.Margin = new System.Windows.Forms.Padding(4);
             this.dgvPNH.Name = "dgvPNH";
             this.dgvPNH.ReadOnly = true;
             this.dgvPNH.Size = new System.Drawing.Size(1212, 393);
@@ -2507,7 +2508,7 @@
             this.dt_hsdPN.CustomFormat = "dd/MM/yyyy";
             this.dt_hsdPN.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dt_hsdPN.Location = new System.Drawing.Point(364, 113);
-            this.dt_hsdPN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dt_hsdPN.Margin = new System.Windows.Forms.Padding(4);
             this.dt_hsdPN.Name = "dt_hsdPN";
             this.dt_hsdPN.Size = new System.Drawing.Size(197, 22);
             this.dt_hsdPN.TabIndex = 9;
@@ -2517,7 +2518,7 @@
             this.dt_nsxPN.CustomFormat = "dd/MM/yyyy";
             this.dt_nsxPN.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dt_nsxPN.Location = new System.Drawing.Point(20, 113);
-            this.dt_nsxPN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dt_nsxPN.Margin = new System.Windows.Forms.Padding(4);
             this.dt_nsxPN.Name = "dt_nsxPN";
             this.dt_nsxPN.Size = new System.Drawing.Size(197, 22);
             this.dt_nsxPN.TabIndex = 8;
@@ -2525,7 +2526,7 @@
             // tb_giaPN
             // 
             this.tb_giaPN.Location = new System.Drawing.Point(1060, 46);
-            this.tb_giaPN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_giaPN.Margin = new System.Windows.Forms.Padding(4);
             this.tb_giaPN.Name = "tb_giaPN";
             this.tb_giaPN.Size = new System.Drawing.Size(132, 22);
             this.tb_giaPN.TabIndex = 7;
@@ -2533,7 +2534,7 @@
             // tb_nccPN
             // 
             this.tb_nccPN.Location = new System.Drawing.Point(860, 46);
-            this.tb_nccPN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_nccPN.Margin = new System.Windows.Forms.Padding(4);
             this.tb_nccPN.Name = "tb_nccPN";
             this.tb_nccPN.Size = new System.Drawing.Size(132, 22);
             this.tb_nccPN.TabIndex = 6;
@@ -2541,7 +2542,7 @@
             // tb_slPN
             // 
             this.tb_slPN.Location = new System.Drawing.Point(644, 46);
-            this.tb_slPN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_slPN.Margin = new System.Windows.Forms.Padding(4);
             this.tb_slPN.Name = "tb_slPN";
             this.tb_slPN.Size = new System.Drawing.Size(132, 22);
             this.tb_slPN.TabIndex = 5;
@@ -2549,7 +2550,7 @@
             // tb_tenThuocPN
             // 
             this.tb_tenThuocPN.Location = new System.Drawing.Point(432, 46);
-            this.tb_tenThuocPN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_tenThuocPN.Margin = new System.Windows.Forms.Padding(4);
             this.tb_tenThuocPN.Name = "tb_tenThuocPN";
             this.tb_tenThuocPN.Size = new System.Drawing.Size(132, 22);
             this.tb_tenThuocPN.TabIndex = 4;
@@ -2557,7 +2558,7 @@
             // tb_maThuocPN
             // 
             this.tb_maThuocPN.Location = new System.Drawing.Point(220, 46);
-            this.tb_maThuocPN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_maThuocPN.Margin = new System.Windows.Forms.Padding(4);
             this.tb_maThuocPN.Name = "tb_maThuocPN";
             this.tb_maThuocPN.Size = new System.Drawing.Size(132, 22);
             this.tb_maThuocPN.TabIndex = 3;
@@ -2567,7 +2568,7 @@
             this.tb_pn_id.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.tb_pn_id.Enabled = false;
             this.tb_pn_id.Location = new System.Drawing.Point(24, 46);
-            this.tb_pn_id.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_pn_id.Margin = new System.Windows.Forms.Padding(4);
             this.tb_pn_id.Name = "tb_pn_id";
             this.tb_pn_id.Size = new System.Drawing.Size(132, 22);
             this.tb_pn_id.TabIndex = 2;
@@ -2656,7 +2657,7 @@
             // tb_hoadon_trigia
             // 
             this.tb_hoadon_trigia.Location = new System.Drawing.Point(84, 79);
-            this.tb_hoadon_trigia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_hoadon_trigia.Margin = new System.Windows.Forms.Padding(4);
             this.tb_hoadon_trigia.Name = "tb_hoadon_trigia";
             this.tb_hoadon_trigia.Size = new System.Drawing.Size(132, 22);
             this.tb_hoadon_trigia.TabIndex = 13;
@@ -2722,7 +2723,7 @@
             // 
             this.dgv_hoadon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_hoadon.Location = new System.Drawing.Point(4, 108);
-            this.dgv_hoadon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgv_hoadon.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_hoadon.Name = "dgv_hoadon";
             this.dgv_hoadon.Size = new System.Drawing.Size(1208, 522);
             this.dgv_hoadon.TabIndex = 11;
@@ -2730,7 +2731,7 @@
             // tb_maDTHoaDon
             // 
             this.tb_maDTHoaDon.Location = new System.Drawing.Point(84, 49);
-            this.tb_maDTHoaDon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_maDTHoaDon.Margin = new System.Windows.Forms.Padding(4);
             this.tb_maDTHoaDon.Name = "tb_maDTHoaDon";
             this.tb_maDTHoaDon.Size = new System.Drawing.Size(132, 22);
             this.tb_maDTHoaDon.TabIndex = 7;
