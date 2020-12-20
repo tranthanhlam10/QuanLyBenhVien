@@ -60,7 +60,7 @@ namespace QuanLyPhongKham.DAL
             DataTable dt = new DataTable();
 
 
-            string LoadQuery = "select MaPKB , GiayXetNghiem.MaBN  ,TenBN ,GiayXetNghiem.MaNV,NgXetNghiem,LoaiXetNghiem,KetQua from GiayXetNghiem, BenhNhan, NhanVien"
+            string LoadQuery = "select MaPKB as 'Mã phiếu' , GiayXetNghiem.MaBN as 'Mã bệnh nhân'  ,TenBN as 'Tên bệnh nhân',GiayXetNghiem.MaNV as 'Mã nhân viên',NgXetNghiem as 'Ngày xét nghiệm',LoaiXetNghiem as 'Loại xét nghiệm',KetQua as 'Kết quả' from GiayXetNghiem, BenhNhan, NhanVien"
                               + " where GiayXetNghiem.MaBN = BenhNhan.MaBN and GiayXetNghiem.MaNV = NhanVien.MaNV";
 
             // string LoadQuery = " select * from GiayXetNghiem";

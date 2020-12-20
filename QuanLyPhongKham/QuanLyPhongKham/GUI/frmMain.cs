@@ -60,24 +60,24 @@ namespace QuanLyPhongKham.GUI
             {
                 tabcontrolmain.Controls.Remove(tabp_hoadon);
                 tabcontrolmain.Controls.Remove(tabp_pnh);
-
                 tabcontrolmain.Controls.Remove(tabp_kho);
                 tabcontrolmain.Controls.Remove(tabp_dth);
-                tabcontrolmain.Controls.Remove(xetnghiem);
+           
             }
             else if (this.chucvi.CompareTo("3") == 0)//Y ta
             {
-                tabcontrolmain.Controls.Remove(tabp_pnh);
-                tabcontrolmain.Controls.Remove(NhapVien);
+                tabcontrolmain.Controls.Remove(tabp_pnh);    
                 tabcontrolmain.Controls.Remove(tabp_kho);
                 tabcontrolmain.Controls.Remove(tabp_dth);
             }
-            else if (this.chucvi.CompareTo("4") == 0)// thu kh
+            else if (this.chucvi.CompareTo("4") == 0)// thu kho
             {
                 tabcontrolmain.Controls.Remove(tabp_dth);
                 tabcontrolmain.Controls.Remove(tabp_hsbn);
                 tabcontrolmain.Controls.Remove(tabp_hoadon);
                 tabcontrolmain.Controls.Remove(tabp_pkb);
+                tabcontrolmain.Controls.Remove(xetnghiem);
+                tabcontrolmain.Controls.Remove(NhapVien);
             }
         }
 
@@ -883,6 +883,8 @@ namespace QuanLyPhongKham.GUI
             dgvXetNghiem.DataSource = ObjXetNghiemBLL.Instance.GetListPXN();
 
             dgvGH.DataSource = ObjGiayHenNhapVienBLL.Instance.GetListGHNV();
+
+            dgv_CTDT.DataSource = ObjDonThuocBLL.Instance.GetlistCTDT();
 
             int check = CheckTabPage();
             if (check == 0)

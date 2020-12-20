@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using QuanLyPhongKham.DAL;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace QuanLyPhongKham.BLL
 {
@@ -22,5 +25,7 @@ namespace QuanLyPhongKham.BLL
         {
             ObjCTDTDAL.Add(ctdt);
         }
+
+    
     }
 }

@@ -37,7 +37,7 @@ namespace QuanLyPhongKham.DAL
         public DataTable GetInfo()
         {
             DataTable dt = new DataTable();
-            string LoadQuery = "SELECT * FROM HoaDon";
+            string LoadQuery = "SELECT MaHD as 'Mã hóa đơn', MaDT as 'Mã đơn thuốc' , NgHD as 'Ngày hóa đơn', TriGia as 'Trị giá' FROM HoaDon";
             dt = DataProvider.Instance.ExecuteQuery(LoadQuery, null);
             return dt;
         }

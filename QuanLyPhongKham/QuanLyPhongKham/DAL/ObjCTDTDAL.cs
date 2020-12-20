@@ -4,11 +4,17 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using QuanLyPhongKham.DAL;
+using System.Data.SqlClient;
+using System.Windows.Forms;
+using QuanLyPhongKham.GUI;
 
 namespace QuanLyPhongKham.DAL
 {
     class ObjCTDTDAL
     {
+
+
         private int maDT, sl;
         private string maThuoc;
 
@@ -56,5 +62,7 @@ namespace QuanLyPhongKham.DAL
                 Console.WriteLine("Thêm CTDT thành công");
             }
         }
+
+       
     }
 }

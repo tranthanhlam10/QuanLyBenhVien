@@ -146,5 +146,21 @@ namespace QuanLyPhongKham.DAL
             dt = DataProvider.Instance.ExecuteQuery(FindQuery, param);
             return dt;
         }
+
+
+        public DataTable LoadListCTDT()
+        {
+            Form main = Application.OpenForms["frmMain"];
+
+            Dictionary<string, string> param = new Dictionary<string, string>();
+
+            DataTable dt = new DataTable();
+
+
+            string LoadQuery = "select DonThuoc.MaDT as 'Mã Đơn thuốc', NgDT as 'Ngày đơn thuốc' , MaNV as 'Mã nhân viên', MaBN as 'Mã bệnh nhân', MaThuoc as 'Mã thuốc', SoLuong as 'Số lượng' from DonThuoc, CTDT " + " where DonThuoc.MaDT = CTDT.MaDT ";
+
+            dt = DataProvider.Instance.ExecuteQuery(LoadQuery, param);
+            return dt;
+        }
     }
 }

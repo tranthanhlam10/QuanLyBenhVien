@@ -34,6 +34,7 @@
             this.thôngTinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabp_donthuoc = new MetroFramework.Controls.MetroTabPage();
+            this.dgv_CTDT = new System.Windows.Forms.DataGridView();
             this.bt_XoaDT = new Guna.UI.WinForms.GunaButton();
             this.bt_SuaDT = new Guna.UI.WinForms.GunaButton();
             this.bt_ThemDT = new Guna.UI.WinForms.GunaButton();
@@ -75,12 +76,7 @@
             this.btt_in = new Guna.UI.WinForms.GunaAdvenceButton();
             this.tabcontrolmain = new MetroFramework.Controls.MetroTabControl();
             this.tabp_hsbn = new MetroFramework.Controls.MetroTabPage();
-            this.btt_hsbn_tim = new Guna.UI.WinForms.GunaButton();
-            this.btt_hsbn_xoa = new Guna.UI.WinForms.GunaButton();
-            this.btt_hsbn_sua = new Guna.UI.WinForms.GunaButton();
-            this.btt_hsbn_them = new Guna.UI.WinForms.GunaButton();
-            this.btt_hsbn_Reload = new Guna.UI.WinForms.GunaButton();
-            this.cb_bn_sex = new System.Windows.Forms.ComboBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvHoSo = new System.Windows.Forms.DataGridView();
             this.MaBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -91,6 +87,12 @@
             this.TrieuChung = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.KetLuanBenh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.BaoHiem = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btt_hsbn_tim = new Guna.UI.WinForms.GunaButton();
+            this.btt_hsbn_xoa = new Guna.UI.WinForms.GunaButton();
+            this.btt_hsbn_sua = new Guna.UI.WinForms.GunaButton();
+            this.btt_hsbn_them = new Guna.UI.WinForms.GunaButton();
+            this.btt_hsbn_Reload = new Guna.UI.WinForms.GunaButton();
+            this.cb_bn_sex = new System.Windows.Forms.ComboBox();
             this.ngaySinhPicker = new System.Windows.Forms.DateTimePicker();
             this.tb_bn_baohiem = new System.Windows.Forms.TextBox();
             this.tb_bn_klb = new System.Windows.Forms.TextBox();
@@ -108,8 +110,39 @@
             this.lb_bn_sdt = new System.Windows.Forms.Label();
             this.lb_bn_name = new System.Windows.Forms.Label();
             this.lb_bn_id = new System.Windows.Forms.Label();
+            this.tabp_pnh = new MetroFramework.Controls.MetroTabPage();
+            this.btt_pnh_xoa = new Guna.UI.WinForms.GunaButton();
+            this.btt_pnh_them = new Guna.UI.WinForms.GunaButton();
+            this.dgvPNH = new System.Windows.Forms.DataGridView();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.bttn_in_phnhap = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.dt_hsdPN = new System.Windows.Forms.DateTimePicker();
+            this.dt_nsxPN = new System.Windows.Forms.DateTimePicker();
+            this.tb_giaPN = new System.Windows.Forms.TextBox();
+            this.tb_nccPN = new System.Windows.Forms.TextBox();
+            this.tb_slPN = new System.Windows.Forms.TextBox();
+            this.tb_tenThuocPN = new System.Windows.Forms.TextBox();
+            this.tb_maThuocPN = new System.Windows.Forms.TextBox();
+            this.tb_pn_id = new System.Windows.Forms.TextBox();
+            this.tabp_hoadon = new MetroFramework.Controls.MetroTabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.dgv_hoadon = new System.Windows.Forms.DataGridView();
+            this.btt_hoadon_tim = new Guna.UI.WinForms.GunaButton();
+            this.btt_hoadon_danhsach = new Guna.UI.WinForms.GunaButton();
+            this.tb_hoadon_trigia = new System.Windows.Forms.TextBox();
+            this.btt_hoadon_luu = new Guna.UI.WinForms.GunaButton();
+            this.btt_hoadon_thanhtien = new Guna.UI.WinForms.GunaButton();
+            this.tb_maDTHoaDon = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.tabp_kho = new MetroFramework.Controls.MetroTabPage();
-            this.btt_khothuoc_Reload = new Guna.UI.WinForms.GunaButton();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dgvKhoThuoc = new System.Windows.Forms.DataGridView();
             this.MaThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenThuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -118,6 +151,7 @@
             this.HSD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NCC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btt_khothuoc_Reload = new Guna.UI.WinForms.GunaButton();
             this.hanSDPicker = new System.Windows.Forms.DateTimePicker();
             this.ngaySanXuatPicker = new System.Windows.Forms.DateTimePicker();
             this.label28 = new System.Windows.Forms.Label();
@@ -134,8 +168,9 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.xetnghiem = new MetroFramework.Controls.MetroTabPage();
-            this.MaPXN = new System.Windows.Forms.TextBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dgvXetNghiem = new System.Windows.Forms.DataGridView();
+            this.MaPXN = new System.Windows.Forms.TextBox();
             this.dgvXN1 = new System.Windows.Forms.DataGridView();
             this.label19 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
@@ -165,6 +200,7 @@
             this.lb_doanhthu_to = new System.Windows.Forms.Label();
             this.lb_doanhthu_from = new System.Windows.Forms.Label();
             this.NhapVien = new MetroFramework.Controls.MetroTabPage();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dgvGH = new System.Windows.Forms.DataGridView();
             this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Mabenhnhan = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -183,36 +219,6 @@
             this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
-            this.tabp_pnh = new MetroFramework.Controls.MetroTabPage();
-            this.btt_pnh_xoa = new Guna.UI.WinForms.GunaButton();
-            this.btt_pnh_them = new Guna.UI.WinForms.GunaButton();
-            this.dgvPNH = new System.Windows.Forms.DataGridView();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.bttn_in_phnhap = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.dt_hsdPN = new System.Windows.Forms.DateTimePicker();
-            this.dt_nsxPN = new System.Windows.Forms.DateTimePicker();
-            this.tb_giaPN = new System.Windows.Forms.TextBox();
-            this.tb_nccPN = new System.Windows.Forms.TextBox();
-            this.tb_slPN = new System.Windows.Forms.TextBox();
-            this.tb_tenThuocPN = new System.Windows.Forms.TextBox();
-            this.tb_maThuocPN = new System.Windows.Forms.TextBox();
-            this.tb_pn_id = new System.Windows.Forms.TextBox();
-            this.tabp_hoadon = new MetroFramework.Controls.MetroTabPage();
-            this.btt_hoadon_tim = new Guna.UI.WinForms.GunaButton();
-            this.btt_hoadon_danhsach = new Guna.UI.WinForms.GunaButton();
-            this.tb_hoadon_trigia = new System.Windows.Forms.TextBox();
-            this.btt_hoadon_luu = new Guna.UI.WinForms.GunaButton();
-            this.btt_hoadon_thanhtien = new Guna.UI.WinForms.GunaButton();
-            this.dgv_hoadon = new System.Windows.Forms.DataGridView();
-            this.tb_maDTHoaDon = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printDocument2 = new System.Drawing.Printing.PrintDocument();
@@ -223,28 +229,35 @@
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.mnstrip_main.SuspendLayout();
             this.tabp_donthuoc.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_CTDT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDT)).BeginInit();
             this.tabp_pkb.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_pkb_nv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_pkb_bn)).BeginInit();
             this.tabcontrolmain.SuspendLayout();
             this.tabp_hsbn.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoSo)).BeginInit();
+            this.tabp_pnh.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPNH)).BeginInit();
+            this.tabp_hoadon.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_hoadon)).BeginInit();
             this.tabp_kho.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhoThuoc)).BeginInit();
             this.xetnghiem.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvXetNghiem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvXN1)).BeginInit();
             this.tabp_dth.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_doanhthu)).BeginInit();
             this.NhapVien.SuspendLayout();
+            this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGH)).BeginInit();
-            this.tabp_pnh.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPNH)).BeginInit();
-            this.tabp_hoadon.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_hoadon)).BeginInit();
             this.SuspendLayout();
             // 
             // mnstrip_main
@@ -285,6 +298,7 @@
             // tabp_donthuoc
             // 
             this.tabp_donthuoc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabp_donthuoc.Controls.Add(this.dgv_CTDT);
             this.tabp_donthuoc.Controls.Add(this.bt_XoaDT);
             this.tabp_donthuoc.Controls.Add(this.bt_SuaDT);
             this.tabp_donthuoc.Controls.Add(this.bt_ThemDT);
@@ -312,6 +326,15 @@
             this.tabp_donthuoc.Text = "Đơn thuốc";
             this.tabp_donthuoc.VerticalScrollbarBarColor = true;
             this.tabp_donthuoc.VerticalScrollbarSize = 12;
+            // 
+            // dgv_CTDT
+            // 
+            this.dgv_CTDT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_CTDT.Location = new System.Drawing.Point(601, 161);
+            this.dgv_CTDT.Name = "dgv_CTDT";
+            this.dgv_CTDT.RowTemplate.Height = 24;
+            this.dgv_CTDT.Size = new System.Drawing.Size(621, 460);
+            this.dgv_CTDT.TabIndex = 26;
             // 
             // bt_XoaDT
             // 
@@ -457,7 +480,7 @@
             this.dgvDT.Margin = new System.Windows.Forms.Padding(4);
             this.dgvDT.Name = "dgvDT";
             this.dgvDT.ReadOnly = true;
-            this.dgvDT.Size = new System.Drawing.Size(1208, 460);
+            this.dgvDT.Size = new System.Drawing.Size(597, 460);
             this.dgvDT.TabIndex = 13;
             this.dgvDT.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDT_CellClick);
             // 
@@ -856,19 +879,19 @@
             // tabcontrolmain
             // 
             this.tabcontrolmain.Controls.Add(this.tabp_hsbn);
-            this.tabcontrolmain.Controls.Add(this.tabp_hoadon);
-            this.tabcontrolmain.Controls.Add(this.tabp_kho);
             this.tabcontrolmain.Controls.Add(this.xetnghiem);
-            this.tabcontrolmain.Controls.Add(this.tabp_dth);
-            this.tabcontrolmain.Controls.Add(this.NhapVien);
             this.tabcontrolmain.Controls.Add(this.tabp_pnh);
             this.tabcontrolmain.Controls.Add(this.tabp_donthuoc);
+            this.tabcontrolmain.Controls.Add(this.tabp_hoadon);
+            this.tabcontrolmain.Controls.Add(this.tabp_kho);
+            this.tabcontrolmain.Controls.Add(this.tabp_dth);
+            this.tabcontrolmain.Controls.Add(this.NhapVien);
             this.tabcontrolmain.Controls.Add(this.tabp_pkb);
             this.tabcontrolmain.CustomBackground = true;
             this.tabcontrolmain.Location = new System.Drawing.Point(0, 39);
             this.tabcontrolmain.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.tabcontrolmain.Name = "tabcontrolmain";
-            this.tabcontrolmain.SelectedIndex = 0;
+            this.tabcontrolmain.SelectedIndex = 7;
             this.tabcontrolmain.Size = new System.Drawing.Size(1240, 826);
             this.tabcontrolmain.TabIndex = 4;
             // 
@@ -876,13 +899,13 @@
             // 
             this.tabp_hsbn.BackColor = System.Drawing.SystemColors.Control;
             this.tabp_hsbn.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabp_hsbn.Controls.Add(this.groupBox1);
             this.tabp_hsbn.Controls.Add(this.btt_hsbn_tim);
             this.tabp_hsbn.Controls.Add(this.btt_hsbn_xoa);
             this.tabp_hsbn.Controls.Add(this.btt_hsbn_sua);
             this.tabp_hsbn.Controls.Add(this.btt_hsbn_them);
             this.tabp_hsbn.Controls.Add(this.btt_hsbn_Reload);
             this.tabp_hsbn.Controls.Add(this.cb_bn_sex);
-            this.tabp_hsbn.Controls.Add(this.dgvHoSo);
             this.tabp_hsbn.Controls.Add(this.ngaySinhPicker);
             this.tabp_hsbn.Controls.Add(this.tb_bn_baohiem);
             this.tabp_hsbn.Controls.Add(this.tb_bn_klb);
@@ -911,156 +934,15 @@
             this.tabp_hsbn.VerticalScrollbarBarColor = true;
             this.tabp_hsbn.VerticalScrollbarSize = 12;
             // 
-            // btt_hsbn_tim
+            // groupBox1
             // 
-            this.btt_hsbn_tim.AnimationHoverSpeed = 0.07F;
-            this.btt_hsbn_tim.AnimationSpeed = 0.03F;
-            this.btt_hsbn_tim.BaseColor = System.Drawing.Color.Ivory;
-            this.btt_hsbn_tim.BorderColor = System.Drawing.Color.Black;
-            this.btt_hsbn_tim.BorderSize = 2;
-            this.btt_hsbn_tim.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btt_hsbn_tim.FocusedColor = System.Drawing.Color.Empty;
-            this.btt_hsbn_tim.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btt_hsbn_tim.ForeColor = System.Drawing.Color.Black;
-            this.btt_hsbn_tim.Image = ((System.Drawing.Image)(resources.GetObject("btt_hsbn_tim.Image")));
-            this.btt_hsbn_tim.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btt_hsbn_tim.ImageSize = new System.Drawing.Size(30, 30);
-            this.btt_hsbn_tim.Location = new System.Drawing.Point(948, 295);
-            this.btt_hsbn_tim.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btt_hsbn_tim.Name = "btt_hsbn_tim";
-            this.btt_hsbn_tim.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btt_hsbn_tim.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btt_hsbn_tim.OnHoverForeColor = System.Drawing.Color.White;
-            this.btt_hsbn_tim.OnHoverImage = null;
-            this.btt_hsbn_tim.OnPressedColor = System.Drawing.Color.Black;
-            this.btt_hsbn_tim.Size = new System.Drawing.Size(124, 42);
-            this.btt_hsbn_tim.TabIndex = 6;
-            this.btt_hsbn_tim.Text = "Tìm";
-            this.btt_hsbn_tim.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btt_hsbn_tim.Click += new System.EventHandler(this.btt_hsbn_tim_Click);
-            // 
-            // btt_hsbn_xoa
-            // 
-            this.btt_hsbn_xoa.AnimationHoverSpeed = 0.07F;
-            this.btt_hsbn_xoa.AnimationSpeed = 0.03F;
-            this.btt_hsbn_xoa.BaseColor = System.Drawing.Color.Ivory;
-            this.btt_hsbn_xoa.BorderColor = System.Drawing.Color.Black;
-            this.btt_hsbn_xoa.BorderSize = 2;
-            this.btt_hsbn_xoa.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btt_hsbn_xoa.Enabled = false;
-            this.btt_hsbn_xoa.FocusedColor = System.Drawing.Color.Empty;
-            this.btt_hsbn_xoa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btt_hsbn_xoa.ForeColor = System.Drawing.Color.Black;
-            this.btt_hsbn_xoa.Image = ((System.Drawing.Image)(resources.GetObject("btt_hsbn_xoa.Image")));
-            this.btt_hsbn_xoa.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btt_hsbn_xoa.ImageSize = new System.Drawing.Size(30, 30);
-            this.btt_hsbn_xoa.Location = new System.Drawing.Point(1096, 238);
-            this.btt_hsbn_xoa.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btt_hsbn_xoa.Name = "btt_hsbn_xoa";
-            this.btt_hsbn_xoa.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btt_hsbn_xoa.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btt_hsbn_xoa.OnHoverForeColor = System.Drawing.Color.White;
-            this.btt_hsbn_xoa.OnHoverImage = null;
-            this.btt_hsbn_xoa.OnPressedColor = System.Drawing.Color.Black;
-            this.btt_hsbn_xoa.Size = new System.Drawing.Size(124, 42);
-            this.btt_hsbn_xoa.TabIndex = 6;
-            this.btt_hsbn_xoa.Text = "Xóa";
-            this.btt_hsbn_xoa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btt_hsbn_xoa.Click += new System.EventHandler(this.btt_hsbn_xoa_Click);
-            // 
-            // btt_hsbn_sua
-            // 
-            this.btt_hsbn_sua.AnimationHoverSpeed = 0.07F;
-            this.btt_hsbn_sua.AnimationSpeed = 0.03F;
-            this.btt_hsbn_sua.BaseColor = System.Drawing.Color.Ivory;
-            this.btt_hsbn_sua.BorderColor = System.Drawing.Color.Black;
-            this.btt_hsbn_sua.BorderSize = 2;
-            this.btt_hsbn_sua.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btt_hsbn_sua.FocusedColor = System.Drawing.Color.Empty;
-            this.btt_hsbn_sua.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btt_hsbn_sua.ForeColor = System.Drawing.Color.Black;
-            this.btt_hsbn_sua.Image = ((System.Drawing.Image)(resources.GetObject("btt_hsbn_sua.Image")));
-            this.btt_hsbn_sua.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btt_hsbn_sua.ImageSize = new System.Drawing.Size(30, 30);
-            this.btt_hsbn_sua.Location = new System.Drawing.Point(948, 238);
-            this.btt_hsbn_sua.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btt_hsbn_sua.Name = "btt_hsbn_sua";
-            this.btt_hsbn_sua.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btt_hsbn_sua.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btt_hsbn_sua.OnHoverForeColor = System.Drawing.Color.White;
-            this.btt_hsbn_sua.OnHoverImage = null;
-            this.btt_hsbn_sua.OnPressedColor = System.Drawing.Color.Black;
-            this.btt_hsbn_sua.Size = new System.Drawing.Size(124, 42);
-            this.btt_hsbn_sua.TabIndex = 6;
-            this.btt_hsbn_sua.Text = "Sửa";
-            this.btt_hsbn_sua.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btt_hsbn_sua.Click += new System.EventHandler(this.btt_hsbn_sua_Click);
-            // 
-            // btt_hsbn_them
-            // 
-            this.btt_hsbn_them.AnimationHoverSpeed = 0.07F;
-            this.btt_hsbn_them.AnimationSpeed = 0.03F;
-            this.btt_hsbn_them.BaseColor = System.Drawing.Color.Ivory;
-            this.btt_hsbn_them.BorderColor = System.Drawing.Color.Black;
-            this.btt_hsbn_them.BorderSize = 2;
-            this.btt_hsbn_them.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btt_hsbn_them.FocusedColor = System.Drawing.Color.Empty;
-            this.btt_hsbn_them.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btt_hsbn_them.ForeColor = System.Drawing.Color.Black;
-            this.btt_hsbn_them.Image = ((System.Drawing.Image)(resources.GetObject("btt_hsbn_them.Image")));
-            this.btt_hsbn_them.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btt_hsbn_them.ImageSize = new System.Drawing.Size(30, 30);
-            this.btt_hsbn_them.Location = new System.Drawing.Point(801, 238);
-            this.btt_hsbn_them.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btt_hsbn_them.Name = "btt_hsbn_them";
-            this.btt_hsbn_them.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btt_hsbn_them.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btt_hsbn_them.OnHoverForeColor = System.Drawing.Color.White;
-            this.btt_hsbn_them.OnHoverImage = null;
-            this.btt_hsbn_them.OnPressedColor = System.Drawing.Color.Black;
-            this.btt_hsbn_them.Size = new System.Drawing.Size(124, 42);
-            this.btt_hsbn_them.TabIndex = 6;
-            this.btt_hsbn_them.Text = "Thêm";
-            this.btt_hsbn_them.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btt_hsbn_them.Click += new System.EventHandler(this.btt_hsbn_them_Click);
-            // 
-            // btt_hsbn_Reload
-            // 
-            this.btt_hsbn_Reload.AnimationHoverSpeed = 0.07F;
-            this.btt_hsbn_Reload.AnimationSpeed = 0.03F;
-            this.btt_hsbn_Reload.BaseColor = System.Drawing.Color.White;
-            this.btt_hsbn_Reload.BorderColor = System.Drawing.Color.Black;
-            this.btt_hsbn_Reload.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btt_hsbn_Reload.FocusedColor = System.Drawing.Color.Empty;
-            this.btt_hsbn_Reload.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btt_hsbn_Reload.ForeColor = System.Drawing.Color.White;
-            this.btt_hsbn_Reload.Image = ((System.Drawing.Image)(resources.GetObject("btt_hsbn_Reload.Image")));
-            this.btt_hsbn_Reload.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btt_hsbn_Reload.ImageSize = new System.Drawing.Size(30, 30);
-            this.btt_hsbn_Reload.Location = new System.Drawing.Point(1156, 295);
-            this.btt_hsbn_Reload.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btt_hsbn_Reload.Name = "btt_hsbn_Reload";
-            this.btt_hsbn_Reload.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btt_hsbn_Reload.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btt_hsbn_Reload.OnHoverForeColor = System.Drawing.Color.White;
-            this.btt_hsbn_Reload.OnHoverImage = null;
-            this.btt_hsbn_Reload.OnPressedColor = System.Drawing.Color.Black;
-            this.btt_hsbn_Reload.Size = new System.Drawing.Size(52, 50);
-            this.btt_hsbn_Reload.TabIndex = 25;
-            this.btt_hsbn_Reload.Click += new System.EventHandler(this.btt_hsbn_Reload_Click);
-            // 
-            // cb_bn_sex
-            // 
-            this.cb_bn_sex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_bn_sex.FormattingEnabled = true;
-            this.cb_bn_sex.Items.AddRange(new object[] {
-            "Nam",
-            "Nữ"});
-            this.cb_bn_sex.Location = new System.Drawing.Point(652, 47);
-            this.cb_bn_sex.Margin = new System.Windows.Forms.Padding(4);
-            this.cb_bn_sex.Name = "cb_bn_sex";
-            this.cb_bn_sex.Size = new System.Drawing.Size(132, 24);
-            this.cb_bn_sex.TabIndex = 24;
+            this.groupBox1.Controls.Add(this.dgvHoSo);
+            this.groupBox1.Location = new System.Drawing.Point(6, 314);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(1221, 318);
+            this.groupBox1.TabIndex = 26;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Danh sách bệnh nhân";
             // 
             // dgvHoSo
             // 
@@ -1076,12 +958,12 @@
             this.TrieuChung,
             this.KetLuanBenh,
             this.BaoHiem});
-            this.dgvHoSo.Location = new System.Drawing.Point(4, 352);
+            this.dgvHoSo.Location = new System.Drawing.Point(12, 22);
             this.dgvHoSo.Margin = new System.Windows.Forms.Padding(4);
             this.dgvHoSo.Name = "dgvHoSo";
             this.dgvHoSo.ReadOnly = true;
             this.dgvHoSo.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvHoSo.Size = new System.Drawing.Size(1212, 273);
+            this.dgvHoSo.Size = new System.Drawing.Size(1212, 296);
             this.dgvHoSo.TabIndex = 23;
             this.dgvHoSo.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHoSo_CellClick);
             this.dgvHoSo.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHoSo_CellContentClick);
@@ -1160,6 +1042,157 @@
             this.BaoHiem.ReadOnly = true;
             this.BaoHiem.Width = 133;
             // 
+            // btt_hsbn_tim
+            // 
+            this.btt_hsbn_tim.AnimationHoverSpeed = 0.07F;
+            this.btt_hsbn_tim.AnimationSpeed = 0.03F;
+            this.btt_hsbn_tim.BaseColor = System.Drawing.Color.Ivory;
+            this.btt_hsbn_tim.BorderColor = System.Drawing.Color.Black;
+            this.btt_hsbn_tim.BorderSize = 2;
+            this.btt_hsbn_tim.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btt_hsbn_tim.FocusedColor = System.Drawing.Color.Empty;
+            this.btt_hsbn_tim.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btt_hsbn_tim.ForeColor = System.Drawing.Color.Black;
+            this.btt_hsbn_tim.Image = ((System.Drawing.Image)(resources.GetObject("btt_hsbn_tim.Image")));
+            this.btt_hsbn_tim.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btt_hsbn_tim.ImageSize = new System.Drawing.Size(30, 30);
+            this.btt_hsbn_tim.Location = new System.Drawing.Point(953, 267);
+            this.btt_hsbn_tim.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.btt_hsbn_tim.Name = "btt_hsbn_tim";
+            this.btt_hsbn_tim.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btt_hsbn_tim.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btt_hsbn_tim.OnHoverForeColor = System.Drawing.Color.White;
+            this.btt_hsbn_tim.OnHoverImage = null;
+            this.btt_hsbn_tim.OnPressedColor = System.Drawing.Color.Black;
+            this.btt_hsbn_tim.Size = new System.Drawing.Size(124, 42);
+            this.btt_hsbn_tim.TabIndex = 6;
+            this.btt_hsbn_tim.Text = "Tìm";
+            this.btt_hsbn_tim.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btt_hsbn_tim.Click += new System.EventHandler(this.btt_hsbn_tim_Click);
+            // 
+            // btt_hsbn_xoa
+            // 
+            this.btt_hsbn_xoa.AnimationHoverSpeed = 0.07F;
+            this.btt_hsbn_xoa.AnimationSpeed = 0.03F;
+            this.btt_hsbn_xoa.BaseColor = System.Drawing.Color.Ivory;
+            this.btt_hsbn_xoa.BorderColor = System.Drawing.Color.Black;
+            this.btt_hsbn_xoa.BorderSize = 2;
+            this.btt_hsbn_xoa.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btt_hsbn_xoa.Enabled = false;
+            this.btt_hsbn_xoa.FocusedColor = System.Drawing.Color.Empty;
+            this.btt_hsbn_xoa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btt_hsbn_xoa.ForeColor = System.Drawing.Color.Black;
+            this.btt_hsbn_xoa.Image = ((System.Drawing.Image)(resources.GetObject("btt_hsbn_xoa.Image")));
+            this.btt_hsbn_xoa.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btt_hsbn_xoa.ImageSize = new System.Drawing.Size(30, 30);
+            this.btt_hsbn_xoa.Location = new System.Drawing.Point(1101, 210);
+            this.btt_hsbn_xoa.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.btt_hsbn_xoa.Name = "btt_hsbn_xoa";
+            this.btt_hsbn_xoa.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btt_hsbn_xoa.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btt_hsbn_xoa.OnHoverForeColor = System.Drawing.Color.White;
+            this.btt_hsbn_xoa.OnHoverImage = null;
+            this.btt_hsbn_xoa.OnPressedColor = System.Drawing.Color.Black;
+            this.btt_hsbn_xoa.Size = new System.Drawing.Size(124, 42);
+            this.btt_hsbn_xoa.TabIndex = 6;
+            this.btt_hsbn_xoa.Text = "Xóa";
+            this.btt_hsbn_xoa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btt_hsbn_xoa.Click += new System.EventHandler(this.btt_hsbn_xoa_Click);
+            // 
+            // btt_hsbn_sua
+            // 
+            this.btt_hsbn_sua.AnimationHoverSpeed = 0.07F;
+            this.btt_hsbn_sua.AnimationSpeed = 0.03F;
+            this.btt_hsbn_sua.BaseColor = System.Drawing.Color.Ivory;
+            this.btt_hsbn_sua.BorderColor = System.Drawing.Color.Black;
+            this.btt_hsbn_sua.BorderSize = 2;
+            this.btt_hsbn_sua.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btt_hsbn_sua.FocusedColor = System.Drawing.Color.Empty;
+            this.btt_hsbn_sua.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btt_hsbn_sua.ForeColor = System.Drawing.Color.Black;
+            this.btt_hsbn_sua.Image = ((System.Drawing.Image)(resources.GetObject("btt_hsbn_sua.Image")));
+            this.btt_hsbn_sua.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btt_hsbn_sua.ImageSize = new System.Drawing.Size(30, 30);
+            this.btt_hsbn_sua.Location = new System.Drawing.Point(953, 210);
+            this.btt_hsbn_sua.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.btt_hsbn_sua.Name = "btt_hsbn_sua";
+            this.btt_hsbn_sua.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btt_hsbn_sua.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btt_hsbn_sua.OnHoverForeColor = System.Drawing.Color.White;
+            this.btt_hsbn_sua.OnHoverImage = null;
+            this.btt_hsbn_sua.OnPressedColor = System.Drawing.Color.Black;
+            this.btt_hsbn_sua.Size = new System.Drawing.Size(124, 42);
+            this.btt_hsbn_sua.TabIndex = 6;
+            this.btt_hsbn_sua.Text = "Sửa";
+            this.btt_hsbn_sua.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btt_hsbn_sua.Click += new System.EventHandler(this.btt_hsbn_sua_Click);
+            // 
+            // btt_hsbn_them
+            // 
+            this.btt_hsbn_them.AnimationHoverSpeed = 0.07F;
+            this.btt_hsbn_them.AnimationSpeed = 0.03F;
+            this.btt_hsbn_them.BaseColor = System.Drawing.Color.Ivory;
+            this.btt_hsbn_them.BorderColor = System.Drawing.Color.Black;
+            this.btt_hsbn_them.BorderSize = 2;
+            this.btt_hsbn_them.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btt_hsbn_them.FocusedColor = System.Drawing.Color.Empty;
+            this.btt_hsbn_them.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btt_hsbn_them.ForeColor = System.Drawing.Color.Black;
+            this.btt_hsbn_them.Image = ((System.Drawing.Image)(resources.GetObject("btt_hsbn_them.Image")));
+            this.btt_hsbn_them.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btt_hsbn_them.ImageSize = new System.Drawing.Size(30, 30);
+            this.btt_hsbn_them.Location = new System.Drawing.Point(806, 210);
+            this.btt_hsbn_them.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.btt_hsbn_them.Name = "btt_hsbn_them";
+            this.btt_hsbn_them.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btt_hsbn_them.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btt_hsbn_them.OnHoverForeColor = System.Drawing.Color.White;
+            this.btt_hsbn_them.OnHoverImage = null;
+            this.btt_hsbn_them.OnPressedColor = System.Drawing.Color.Black;
+            this.btt_hsbn_them.Size = new System.Drawing.Size(124, 42);
+            this.btt_hsbn_them.TabIndex = 6;
+            this.btt_hsbn_them.Text = "Thêm";
+            this.btt_hsbn_them.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btt_hsbn_them.Click += new System.EventHandler(this.btt_hsbn_them_Click);
+            // 
+            // btt_hsbn_Reload
+            // 
+            this.btt_hsbn_Reload.AnimationHoverSpeed = 0.07F;
+            this.btt_hsbn_Reload.AnimationSpeed = 0.03F;
+            this.btt_hsbn_Reload.BaseColor = System.Drawing.Color.White;
+            this.btt_hsbn_Reload.BorderColor = System.Drawing.Color.Black;
+            this.btt_hsbn_Reload.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btt_hsbn_Reload.FocusedColor = System.Drawing.Color.Empty;
+            this.btt_hsbn_Reload.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btt_hsbn_Reload.ForeColor = System.Drawing.Color.White;
+            this.btt_hsbn_Reload.Image = ((System.Drawing.Image)(resources.GetObject("btt_hsbn_Reload.Image")));
+            this.btt_hsbn_Reload.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btt_hsbn_Reload.ImageSize = new System.Drawing.Size(30, 30);
+            this.btt_hsbn_Reload.Location = new System.Drawing.Point(1161, 267);
+            this.btt_hsbn_Reload.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.btt_hsbn_Reload.Name = "btt_hsbn_Reload";
+            this.btt_hsbn_Reload.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btt_hsbn_Reload.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btt_hsbn_Reload.OnHoverForeColor = System.Drawing.Color.White;
+            this.btt_hsbn_Reload.OnHoverImage = null;
+            this.btt_hsbn_Reload.OnPressedColor = System.Drawing.Color.Black;
+            this.btt_hsbn_Reload.Size = new System.Drawing.Size(52, 50);
+            this.btt_hsbn_Reload.TabIndex = 25;
+            this.btt_hsbn_Reload.Click += new System.EventHandler(this.btt_hsbn_Reload_Click);
+            // 
+            // cb_bn_sex
+            // 
+            this.cb_bn_sex.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_bn_sex.FormattingEnabled = true;
+            this.cb_bn_sex.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ"});
+            this.cb_bn_sex.Location = new System.Drawing.Point(652, 47);
+            this.cb_bn_sex.Margin = new System.Windows.Forms.Padding(4);
+            this.cb_bn_sex.Name = "cb_bn_sex";
+            this.cb_bn_sex.Size = new System.Drawing.Size(132, 24);
+            this.cb_bn_sex.TabIndex = 24;
+            // 
             // ngaySinhPicker
             // 
             this.ngaySinhPicker.CustomFormat = "dd/MM/yyyy";
@@ -1218,7 +1251,6 @@
             this.tb_bn_ten.Name = "tb_bn_ten";
             this.tb_bn_ten.Size = new System.Drawing.Size(132, 22);
             this.tb_bn_ten.TabIndex = 13;
-         
             // 
             // tb_bn_id
             // 
@@ -1330,953 +1362,6 @@
             this.lb_bn_id.Size = new System.Drawing.Size(150, 25);
             this.lb_bn_id.TabIndex = 2;
             this.lb_bn_id.Text = "Mã bệnh nhân";
-            // 
-            // tabp_kho
-            // 
-            this.tabp_kho.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tabp_kho.Controls.Add(this.btt_khothuoc_Reload);
-            this.tabp_kho.Controls.Add(this.dgvKhoThuoc);
-            this.tabp_kho.Controls.Add(this.hanSDPicker);
-            this.tabp_kho.Controls.Add(this.ngaySanXuatPicker);
-            this.tabp_kho.Controls.Add(this.label28);
-            this.tabp_kho.Controls.Add(this.tb_giaThuoc);
-            this.tabp_kho.Controls.Add(this.tb_nhaCC);
-            this.tabp_kho.Controls.Add(this.tb_slThuocKho);
-            this.tabp_kho.Controls.Add(this.tb_tenThuocKho);
-            this.tabp_kho.Controls.Add(this.tb_maThuoc);
-            this.tabp_kho.Controls.Add(this.label27);
-            this.tabp_kho.Controls.Add(this.label26);
-            this.tabp_kho.Controls.Add(this.label25);
-            this.tabp_kho.Controls.Add(this.label24);
-            this.tabp_kho.Controls.Add(this.label23);
-            this.tabp_kho.Controls.Add(this.label22);
-            this.tabp_kho.Controls.Add(this.label21);
-            this.tabp_kho.Cursor = System.Windows.Forms.Cursors.Default;
-            this.tabp_kho.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabp_kho.HorizontalScrollbarBarColor = true;
-            this.tabp_kho.Location = new System.Drawing.Point(4, 39);
-            this.tabp_kho.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.tabp_kho.Name = "tabp_kho";
-            this.tabp_kho.Size = new System.Drawing.Size(1232, 783);
-            this.tabp_kho.TabIndex = 5;
-            this.tabp_kho.Text = "Kho thuốc";
-            this.tabp_kho.VerticalScrollbarBarColor = true;
-            this.tabp_kho.VerticalScrollbarSize = 12;
-            // 
-            // btt_khothuoc_Reload
-            // 
-            this.btt_khothuoc_Reload.AnimationHoverSpeed = 0.07F;
-            this.btt_khothuoc_Reload.AnimationSpeed = 0.03F;
-            this.btt_khothuoc_Reload.BaseColor = System.Drawing.Color.White;
-            this.btt_khothuoc_Reload.BorderColor = System.Drawing.Color.Black;
-            this.btt_khothuoc_Reload.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btt_khothuoc_Reload.FocusedColor = System.Drawing.Color.Empty;
-            this.btt_khothuoc_Reload.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btt_khothuoc_Reload.ForeColor = System.Drawing.Color.White;
-            this.btt_khothuoc_Reload.Image = ((System.Drawing.Image)(resources.GetObject("btt_khothuoc_Reload.Image")));
-            this.btt_khothuoc_Reload.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btt_khothuoc_Reload.ImageSize = new System.Drawing.Size(30, 30);
-            this.btt_khothuoc_Reload.Location = new System.Drawing.Point(1161, 103);
-            this.btt_khothuoc_Reload.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btt_khothuoc_Reload.Name = "btt_khothuoc_Reload";
-            this.btt_khothuoc_Reload.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btt_khothuoc_Reload.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btt_khothuoc_Reload.OnHoverForeColor = System.Drawing.Color.White;
-            this.btt_khothuoc_Reload.OnHoverImage = null;
-            this.btt_khothuoc_Reload.OnPressedColor = System.Drawing.Color.Black;
-            this.btt_khothuoc_Reload.Size = new System.Drawing.Size(52, 50);
-            this.btt_khothuoc_Reload.TabIndex = 26;
-            this.btt_khothuoc_Reload.Click += new System.EventHandler(this.btt_khothuoc_Reload_Click);
-            // 
-            // dgvKhoThuoc
-            // 
-            this.dgvKhoThuoc.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dgvKhoThuoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvKhoThuoc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaThuoc,
-            this.TenThuoc,
-            this.SoLuong,
-            this.NSX,
-            this.HSD,
-            this.NCC,
-            this.Gia});
-            this.dgvKhoThuoc.Location = new System.Drawing.Point(4, 156);
-            this.dgvKhoThuoc.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvKhoThuoc.Name = "dgvKhoThuoc";
-            this.dgvKhoThuoc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvKhoThuoc.Size = new System.Drawing.Size(1228, 446);
-            this.dgvKhoThuoc.TabIndex = 18;
-            this.dgvKhoThuoc.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKhoThuoc_CellClick);
-            this.dgvKhoThuoc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKhoThuoc_CellContentClick);
-            // 
-            // MaThuoc
-            // 
-            this.MaThuoc.DataPropertyName = "MaThuoc";
-            this.MaThuoc.HeaderText = "Mã Thuốc";
-            this.MaThuoc.Name = "MaThuoc";
-            // 
-            // TenThuoc
-            // 
-            this.TenThuoc.DataPropertyName = "TenThuoc";
-            this.TenThuoc.HeaderText = "Tên Thuốc";
-            this.TenThuoc.Name = "TenThuoc";
-            // 
-            // SoLuong
-            // 
-            this.SoLuong.DataPropertyName = "SoLuong";
-            this.SoLuong.HeaderText = "Số Lượng";
-            this.SoLuong.Name = "SoLuong";
-            // 
-            // NSX
-            // 
-            this.NSX.DataPropertyName = "NSX";
-            this.NSX.HeaderText = "NSX";
-            this.NSX.Name = "NSX";
-            // 
-            // HSD
-            // 
-            this.HSD.DataPropertyName = "HSD";
-            this.HSD.HeaderText = "HSD";
-            this.HSD.Name = "HSD";
-            // 
-            // NCC
-            // 
-            this.NCC.DataPropertyName = "NCC";
-            this.NCC.HeaderText = "Nhà cung cấp";
-            this.NCC.Name = "NCC";
-            // 
-            // Gia
-            // 
-            this.Gia.DataPropertyName = "Gia";
-            this.Gia.HeaderText = "Giá thành";
-            this.Gia.Name = "Gia";
-            // 
-            // hanSDPicker
-            // 
-            this.hanSDPicker.CustomFormat = "dd/MM/yyyy";
-            this.hanSDPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.hanSDPicker.Location = new System.Drawing.Point(212, 124);
-            this.hanSDPicker.Margin = new System.Windows.Forms.Padding(4);
-            this.hanSDPicker.Name = "hanSDPicker";
-            this.hanSDPicker.Size = new System.Drawing.Size(132, 22);
-            this.hanSDPicker.TabIndex = 17;
-            // 
-            // ngaySanXuatPicker
-            // 
-            this.ngaySanXuatPicker.CustomFormat = "dd/MM/yyyy";
-            this.ngaySanXuatPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.ngaySanXuatPicker.Location = new System.Drawing.Point(47, 124);
-            this.ngaySanXuatPicker.Margin = new System.Windows.Forms.Padding(4);
-            this.ngaySanXuatPicker.Name = "ngaySanXuatPicker";
-            this.ngaySanXuatPicker.Size = new System.Drawing.Size(132, 22);
-            this.ngaySanXuatPicker.TabIndex = 16;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(876, 50);
-            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(57, 25);
-            this.label28.TabIndex = 15;
-            this.label28.Text = "VNĐ";
-            // 
-            // tb_giaThuoc
-            // 
-            this.tb_giaThuoc.Location = new System.Drawing.Point(732, 47);
-            this.tb_giaThuoc.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_giaThuoc.Name = "tb_giaThuoc";
-            this.tb_giaThuoc.Size = new System.Drawing.Size(132, 22);
-            this.tb_giaThuoc.TabIndex = 14;
-            // 
-            // tb_nhaCC
-            // 
-            this.tb_nhaCC.Location = new System.Drawing.Point(556, 47);
-            this.tb_nhaCC.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_nhaCC.Name = "tb_nhaCC";
-            this.tb_nhaCC.Size = new System.Drawing.Size(132, 22);
-            this.tb_nhaCC.TabIndex = 13;
-            // 
-            // tb_slThuocKho
-            // 
-            this.tb_slThuocKho.Location = new System.Drawing.Point(391, 47);
-            this.tb_slThuocKho.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_slThuocKho.Name = "tb_slThuocKho";
-            this.tb_slThuocKho.Size = new System.Drawing.Size(132, 22);
-            this.tb_slThuocKho.TabIndex = 12;
-            // 
-            // tb_tenThuocKho
-            // 
-            this.tb_tenThuocKho.Location = new System.Drawing.Point(212, 47);
-            this.tb_tenThuocKho.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_tenThuocKho.Name = "tb_tenThuocKho";
-            this.tb_tenThuocKho.Size = new System.Drawing.Size(132, 22);
-            this.tb_tenThuocKho.TabIndex = 11;
-            // 
-            // tb_maThuoc
-            // 
-            this.tb_maThuoc.Location = new System.Drawing.Point(47, 47);
-            this.tb_maThuoc.Margin = new System.Windows.Forms.Padding(4);
-            this.tb_maThuoc.Name = "tb_maThuoc";
-            this.tb_maThuoc.Size = new System.Drawing.Size(132, 22);
-            this.tb_maThuoc.TabIndex = 10;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(207, 94);
-            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(134, 25);
-            this.label27.TabIndex = 9;
-            this.label27.Text = "Hạn sử dụng";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(42, 94);
-            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(150, 25);
-            this.label26.TabIndex = 8;
-            this.label26.Text = "Ngày sản xuất";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(728, 18);
-            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(45, 25);
-            this.label25.TabIndex = 7;
-            this.label25.Text = "Giá";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(551, 18);
-            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(145, 25);
-            this.label24.TabIndex = 6;
-            this.label24.Text = "Nhà cung cấp";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(386, 18);
-            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(98, 25);
-            this.label23.TabIndex = 5;
-            this.label23.Text = "Số lượng";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(207, 18);
-            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(109, 25);
-            this.label22.TabIndex = 4;
-            this.label22.Text = "Tên thuốc";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(42, 18);
-            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(101, 25);
-            this.label21.TabIndex = 3;
-            this.label21.Text = "Mã thuốc";
-            // 
-            // xetnghiem
-            // 
-            this.xetnghiem.Controls.Add(this.MaPXN);
-            this.xetnghiem.Controls.Add(this.dgvXetNghiem);
-            this.xetnghiem.Controls.Add(this.dgvXN1);
-            this.xetnghiem.Controls.Add(this.label19);
-            this.xetnghiem.Controls.Add(this.label16);
-            this.xetnghiem.Controls.Add(this.tbMBS);
-            this.xetnghiem.Controls.Add(this.btXoaXN);
-            this.xetnghiem.Controls.Add(this.btThemXN);
-            this.xetnghiem.Controls.Add(this.cbLXN);
-            this.xetnghiem.Controls.Add(this.dtimeNXN);
-            this.xetnghiem.Controls.Add(this.tbKLB);
-            this.xetnghiem.Controls.Add(this.tbTBN);
-            this.xetnghiem.Controls.Add(this.tbMBN);
-            this.xetnghiem.Controls.Add(this.label18);
-            this.xetnghiem.Controls.Add(this.label20);
-            this.xetnghiem.Controls.Add(this.label33);
-            this.xetnghiem.Controls.Add(this.label35);
-            this.xetnghiem.Controls.Add(this.label36);
-            this.xetnghiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xetnghiem.HorizontalScrollbarBarColor = true;
-            this.xetnghiem.Location = new System.Drawing.Point(4, 39);
-            this.xetnghiem.Margin = new System.Windows.Forms.Padding(4);
-            this.xetnghiem.Name = "xetnghiem";
-            this.xetnghiem.Size = new System.Drawing.Size(1232, 783);
-            this.xetnghiem.TabIndex = 9;
-            this.xetnghiem.Text = "Xét nghiệm";
-            this.xetnghiem.VerticalScrollbarBarColor = true;
-            // 
-            // MaPXN
-            // 
-            this.MaPXN.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.MaPXN.Location = new System.Drawing.Point(28, 60);
-            this.MaPXN.Margin = new System.Windows.Forms.Padding(4);
-            this.MaPXN.Name = "MaPXN";
-            this.MaPXN.Size = new System.Drawing.Size(188, 22);
-            this.MaPXN.TabIndex = 75;
-            this.MaPXN.Text = "<Auto>";
-            this.MaPXN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // dgvXetNghiem
-            // 
-            this.dgvXetNghiem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvXetNghiem.Location = new System.Drawing.Point(20, 332);
-            this.dgvXetNghiem.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvXetNghiem.Name = "dgvXetNghiem";
-            this.dgvXetNghiem.RowTemplate.Height = 24;
-            this.dgvXetNghiem.Size = new System.Drawing.Size(1191, 288);
-            this.dgvXetNghiem.TabIndex = 74;
-            this.dgvXetNghiem.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvXetNghiem_CellContentClick);
-            // 
-            // dgvXN1
-            // 
-            this.dgvXN1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvXN1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.dgvXN1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvXN1.Location = new System.Drawing.Point(20, 351);
-            this.dgvXN1.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvXN1.Name = "dgvXN1";
-            this.dgvXN1.RowTemplate.Height = 24;
-            this.dgvXN1.Size = new System.Drawing.Size(0, 0);
-            this.dgvXN1.TabIndex = 73;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(22, 31);
-            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(213, 25);
-            this.label19.TabIndex = 72;
-            this.label19.Text = "Mã phiếu khám bệnh";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(662, 31);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(105, 25);
-            this.label16.TabIndex = 71;
-            this.label16.Text = "Mã bác sĩ";
-            // 
-            // tbMBS
-            // 
-            this.tbMBS.Location = new System.Drawing.Point(668, 60);
-            this.tbMBS.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMBS.Name = "tbMBS";
-            this.tbMBS.Size = new System.Drawing.Size(132, 22);
-            this.tbMBS.TabIndex = 70;
-            // 
-            // btXoaXN
-            // 
-            this.btXoaXN.AnimationHoverSpeed = 0.07F;
-            this.btXoaXN.AnimationSpeed = 0.03F;
-            this.btXoaXN.BaseColor = System.Drawing.Color.Ivory;
-            this.btXoaXN.BorderColor = System.Drawing.Color.Black;
-            this.btXoaXN.BorderSize = 2;
-            this.btXoaXN.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btXoaXN.FocusedColor = System.Drawing.Color.Empty;
-            this.btXoaXN.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btXoaXN.ForeColor = System.Drawing.Color.Black;
-            this.btXoaXN.Image = ((System.Drawing.Image)(resources.GetObject("btXoaXN.Image")));
-            this.btXoaXN.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btXoaXN.ImageSize = new System.Drawing.Size(30, 30);
-            this.btXoaXN.Location = new System.Drawing.Point(1087, 271);
-            this.btXoaXN.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btXoaXN.Name = "btXoaXN";
-            this.btXoaXN.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btXoaXN.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btXoaXN.OnHoverForeColor = System.Drawing.Color.White;
-            this.btXoaXN.OnHoverImage = null;
-            this.btXoaXN.OnPressedColor = System.Drawing.Color.Black;
-            this.btXoaXN.Size = new System.Drawing.Size(124, 42);
-            this.btXoaXN.TabIndex = 60;
-            this.btXoaXN.Text = "Xóa";
-            this.btXoaXN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btXoaXN.Click += new System.EventHandler(this.btXoaXN_Click);
-            // 
-            // btThemXN
-            // 
-            this.btThemXN.AnimationHoverSpeed = 0.07F;
-            this.btThemXN.AnimationSpeed = 0.03F;
-            this.btThemXN.BaseColor = System.Drawing.Color.Ivory;
-            this.btThemXN.BorderColor = System.Drawing.Color.Black;
-            this.btThemXN.BorderSize = 2;
-            this.btThemXN.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btThemXN.FocusedColor = System.Drawing.Color.Empty;
-            this.btThemXN.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btThemXN.ForeColor = System.Drawing.Color.Black;
-            this.btThemXN.Image = ((System.Drawing.Image)(resources.GetObject("btThemXN.Image")));
-            this.btThemXN.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btThemXN.ImageSize = new System.Drawing.Size(30, 30);
-            this.btThemXN.Location = new System.Drawing.Point(956, 271);
-            this.btThemXN.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btThemXN.Name = "btThemXN";
-            this.btThemXN.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btThemXN.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btThemXN.OnHoverForeColor = System.Drawing.Color.White;
-            this.btThemXN.OnHoverImage = null;
-            this.btThemXN.OnPressedColor = System.Drawing.Color.Black;
-            this.btThemXN.Size = new System.Drawing.Size(124, 42);
-            this.btThemXN.TabIndex = 61;
-            this.btThemXN.Text = "Thêm";
-            this.btThemXN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btThemXN.Click += new System.EventHandler(this.btThemXN_Click);
-            // 
-            // cbLXN
-            // 
-            this.cbLXN.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbLXN.FormattingEnabled = true;
-            this.cbLXN.Items.AddRange(new object[] {
-            "X-Quang",
-            "MRI",
-            "Kháng sinh đồ",
-            "Công thức máu",
-            "Ion đồ",
-            "CT scan",
-            "Xét nghiệm dịch não tủy",
-            "Nội soi",
-            "Siêu âm"});
-            this.cbLXN.Location = new System.Drawing.Point(1068, 55);
-            this.cbLXN.Margin = new System.Windows.Forms.Padding(4);
-            this.cbLXN.Name = "cbLXN";
-            this.cbLXN.Size = new System.Drawing.Size(132, 24);
-            this.cbLXN.TabIndex = 68;
-            // 
-            // dtimeNXN
-            // 
-            this.dtimeNXN.CustomFormat = "dd/MM/yyyy";
-            this.dtimeNXN.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtimeNXN.Location = new System.Drawing.Point(836, 58);
-            this.dtimeNXN.Margin = new System.Windows.Forms.Padding(4);
-            this.dtimeNXN.Name = "dtimeNXN";
-            this.dtimeNXN.Size = new System.Drawing.Size(164, 22);
-            this.dtimeNXN.TabIndex = 67;
-            // 
-            // tbKLB
-            // 
-            this.tbKLB.Location = new System.Drawing.Point(20, 164);
-            this.tbKLB.Margin = new System.Windows.Forms.Padding(4);
-            this.tbKLB.Multiline = true;
-            this.tbKLB.Name = "tbKLB";
-            this.tbKLB.Size = new System.Drawing.Size(432, 149);
-            this.tbKLB.TabIndex = 66;
-            // 
-            // tbTBN
-            // 
-            this.tbTBN.Location = new System.Drawing.Point(463, 57);
-            this.tbTBN.Margin = new System.Windows.Forms.Padding(4);
-            this.tbTBN.Name = "tbTBN";
-            this.tbTBN.Size = new System.Drawing.Size(132, 22);
-            this.tbTBN.TabIndex = 65;
-            // 
-            // tbMBN
-            // 
-            this.tbMBN.Location = new System.Drawing.Point(263, 57);
-            this.tbMBN.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMBN.Name = "tbMBN";
-            this.tbMBN.Size = new System.Drawing.Size(132, 22);
-            this.tbMBN.TabIndex = 64;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(22, 124);
-            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(146, 25);
-            this.label18.TabIndex = 63;
-            this.label18.Text = "Kết luận bệnh";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(831, 31);
-            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(173, 25);
-            this.label20.TabIndex = 62;
-            this.label20.Text = "Ngày xét nghiệm";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(1064, 31);
-            this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(164, 25);
-            this.label33.TabIndex = 59;
-            this.label33.Text = "Loại xét nghiệm";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(460, 31);
-            this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(158, 25);
-            this.label35.TabIndex = 58;
-            this.label35.Text = "Tên bệnh nhân";
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(260, 31);
-            this.label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(150, 25);
-            this.label36.TabIndex = 57;
-            this.label36.Text = "Mã bệnh nhân";
-            // 
-            // tabp_dth
-            // 
-            this.tabp_dth.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tabp_dth.Controls.Add(this.lb_doanhthu_dt);
-            this.tabp_dth.Controls.Add(this.lb_doanhthu_tongbn);
-            this.tabp_dth.Controls.Add(this.dgv_doanhthu);
-            this.tabp_dth.Controls.Add(this.btt_doanhthu_find);
-            this.tabp_dth.Controls.Add(this.dtp_doanhthu_to);
-            this.tabp_dth.Controls.Add(this.dtp_doanhthu_from);
-            this.tabp_dth.Controls.Add(this.lb_doanhthu_to);
-            this.tabp_dth.Controls.Add(this.lb_doanhthu_from);
-            this.tabp_dth.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabp_dth.HorizontalScrollbarBarColor = true;
-            this.tabp_dth.Location = new System.Drawing.Point(4, 39);
-            this.tabp_dth.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.tabp_dth.Name = "tabp_dth";
-            this.tabp_dth.Size = new System.Drawing.Size(1232, 783);
-            this.tabp_dth.TabIndex = 8;
-            this.tabp_dth.Text = "Doanh thu";
-            this.tabp_dth.VerticalScrollbarBarColor = true;
-            this.tabp_dth.VerticalScrollbarSize = 12;
-            // 
-            // lb_doanhthu_dt
-            // 
-            this.lb_doanhthu_dt.AutoSize = true;
-            this.lb_doanhthu_dt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_doanhthu_dt.Location = new System.Drawing.Point(780, 522);
-            this.lb_doanhthu_dt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lb_doanhthu_dt.Name = "lb_doanhthu_dt";
-            this.lb_doanhthu_dt.Size = new System.Drawing.Size(118, 25);
-            this.lb_doanhthu_dt.TabIndex = 33;
-            this.lb_doanhthu_dt.Text = "Doanh thu:";
-            // 
-            // lb_doanhthu_tongbn
-            // 
-            this.lb_doanhthu_tongbn.AutoSize = true;
-            this.lb_doanhthu_tongbn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_doanhthu_tongbn.Location = new System.Drawing.Point(360, 522);
-            this.lb_doanhthu_tongbn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lb_doanhthu_tongbn.Name = "lb_doanhthu_tongbn";
-            this.lb_doanhthu_tongbn.Size = new System.Drawing.Size(177, 25);
-            this.lb_doanhthu_tongbn.TabIndex = 32;
-            this.lb_doanhthu_tongbn.Text = "Tổng bệnh nhân:";
-            // 
-            // dgv_doanhthu
-            // 
-            this.dgv_doanhthu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_doanhthu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Ngay,
-            this.SoBenhNhan,
-            this.DoanhThu});
-            this.dgv_doanhthu.Location = new System.Drawing.Point(164, 94);
-            this.dgv_doanhthu.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.dgv_doanhthu.Name = "dgv_doanhthu";
-            this.dgv_doanhthu.ReadOnly = true;
-            this.dgv_doanhthu.RowTemplate.Height = 24;
-            this.dgv_doanhthu.Size = new System.Drawing.Size(919, 398);
-            this.dgv_doanhthu.TabIndex = 31;
-            // 
-            // Ngay
-            // 
-            this.Ngay.DataPropertyName = "Ngay";
-            this.Ngay.HeaderText = "Ngày";
-            this.Ngay.Name = "Ngay";
-            this.Ngay.ReadOnly = true;
-            // 
-            // SoBenhNhan
-            // 
-            this.SoBenhNhan.DataPropertyName = "SoBenhNhan";
-            this.SoBenhNhan.HeaderText = "Số Bệnh Nhân";
-            this.SoBenhNhan.Name = "SoBenhNhan";
-            this.SoBenhNhan.ReadOnly = true;
-            // 
-            // DoanhThu
-            // 
-            this.DoanhThu.DataPropertyName = "DoanhThu";
-            this.DoanhThu.HeaderText = "Doanh Thu";
-            this.DoanhThu.Name = "DoanhThu";
-            this.DoanhThu.ReadOnly = true;
-            this.DoanhThu.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // btt_doanhthu_find
-            // 
-            this.btt_doanhthu_find.AnimationHoverSpeed = 0.07F;
-            this.btt_doanhthu_find.AnimationSpeed = 0.03F;
-            this.btt_doanhthu_find.BaseColor = System.Drawing.Color.White;
-            this.btt_doanhthu_find.BorderColor = System.Drawing.Color.Black;
-            this.btt_doanhthu_find.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btt_doanhthu_find.FocusedColor = System.Drawing.Color.Empty;
-            this.btt_doanhthu_find.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btt_doanhthu_find.ForeColor = System.Drawing.Color.White;
-            this.btt_doanhthu_find.Image = ((System.Drawing.Image)(resources.GetObject("btt_doanhthu_find.Image")));
-            this.btt_doanhthu_find.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btt_doanhthu_find.ImageSize = new System.Drawing.Size(20, 20);
-            this.btt_doanhthu_find.Location = new System.Drawing.Point(900, 38);
-            this.btt_doanhthu_find.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btt_doanhthu_find.Name = "btt_doanhthu_find";
-            this.btt_doanhthu_find.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btt_doanhthu_find.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btt_doanhthu_find.OnHoverForeColor = System.Drawing.Color.White;
-            this.btt_doanhthu_find.OnHoverImage = null;
-            this.btt_doanhthu_find.OnPressedColor = System.Drawing.Color.Black;
-            this.btt_doanhthu_find.Size = new System.Drawing.Size(49, 44);
-            this.btt_doanhthu_find.TabIndex = 30;
-            this.btt_doanhthu_find.Click += new System.EventHandler(this.btt_doanhthu_find_Click);
-            // 
-            // dtp_doanhthu_to
-            // 
-            this.dtp_doanhthu_to.Location = new System.Drawing.Point(680, 38);
-            this.dtp_doanhthu_to.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.dtp_doanhthu_to.Name = "dtp_doanhthu_to";
-            this.dtp_doanhthu_to.Size = new System.Drawing.Size(200, 22);
-            this.dtp_doanhthu_to.TabIndex = 5;
-            // 
-            // dtp_doanhthu_from
-            // 
-            this.dtp_doanhthu_from.Location = new System.Drawing.Point(382, 38);
-            this.dtp_doanhthu_from.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.dtp_doanhthu_from.Name = "dtp_doanhthu_from";
-            this.dtp_doanhthu_from.Size = new System.Drawing.Size(200, 22);
-            this.dtp_doanhthu_from.TabIndex = 4;
-            // 
-            // lb_doanhthu_to
-            // 
-            this.lb_doanhthu_to.AutoSize = true;
-            this.lb_doanhthu_to.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_doanhthu_to.Location = new System.Drawing.Point(616, 38);
-            this.lb_doanhthu_to.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lb_doanhthu_to.Name = "lb_doanhthu_to";
-            this.lb_doanhthu_to.Size = new System.Drawing.Size(58, 25);
-            this.lb_doanhthu_to.TabIndex = 3;
-            this.lb_doanhthu_to.Text = "Đến:";
-            // 
-            // lb_doanhthu_from
-            // 
-            this.lb_doanhthu_from.AutoSize = true;
-            this.lb_doanhthu_from.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_doanhthu_from.Location = new System.Drawing.Point(332, 38);
-            this.lb_doanhthu_from.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lb_doanhthu_from.Name = "lb_doanhthu_from";
-            this.lb_doanhthu_from.Size = new System.Drawing.Size(45, 25);
-            this.lb_doanhthu_from.TabIndex = 2;
-            this.lb_doanhthu_from.Text = "Từ:";
-            // 
-            // NhapVien
-            // 
-            this.NhapVien.Controls.Add(this.dgvGH);
-            this.NhapVien.Controls.Add(this.tb_XoaPhieu);
-            this.NhapVien.Controls.Add(this.dtGHNV);
-            this.NhapVien.Controls.Add(this.tbMPH);
-            this.NhapVien.Controls.Add(this.tb_ThemPhieu);
-            this.NhapVien.Controls.Add(this.btInPhieu);
-            this.NhapVien.Controls.Add(this.label43);
-            this.NhapVien.Controls.Add(this.tbGhiChu);
-            this.NhapVien.Controls.Add(this.label37);
-            this.NhapVien.Controls.Add(this.cbSoPhong);
-            this.NhapVien.Controls.Add(this.label39);
-            this.NhapVien.Controls.Add(this.tbMaBN1);
-            this.NhapVien.Controls.Add(this.tbNV1);
-            this.NhapVien.Controls.Add(this.label40);
-            this.NhapVien.Controls.Add(this.label41);
-            this.NhapVien.Controls.Add(this.label42);
-            this.NhapVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NhapVien.HorizontalScrollbarBarColor = true;
-            this.NhapVien.Location = new System.Drawing.Point(4, 39);
-            this.NhapVien.Margin = new System.Windows.Forms.Padding(4);
-            this.NhapVien.Name = "NhapVien";
-            this.NhapVien.Size = new System.Drawing.Size(1232, 783);
-            this.NhapVien.TabIndex = 10;
-            this.NhapVien.Text = "Nhập viện";
-            this.NhapVien.VerticalScrollbarBarColor = true;
-            // 
-            // dgvGH
-            // 
-            this.dgvGH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvGH.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaNV,
-            this.Mabenhnhan});
-            this.dgvGH.Location = new System.Drawing.Point(6, 340);
-            this.dgvGH.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvGH.Name = "dgvGH";
-            this.dgvGH.RowTemplate.Height = 24;
-            this.dgvGH.Size = new System.Drawing.Size(1218, 280);
-            this.dgvGH.TabIndex = 81;
-            this.dgvGH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGH_CellClick);
-            this.dgvGH.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGH_CellContentClick);
-            // 
-            // MaNV
-            // 
-            this.MaNV.DataPropertyName = "MaNV";
-            this.MaNV.HeaderText = "Mã nhân viên";
-            this.MaNV.Name = "MaNV";
-            // 
-            // Mabenhnhan
-            // 
-            this.Mabenhnhan.DataPropertyName = "MaBN";
-            this.Mabenhnhan.HeaderText = "Mã bệnh nhân";
-            this.Mabenhnhan.Name = "Mabenhnhan";
-            // 
-            // tb_XoaPhieu
-            // 
-            this.tb_XoaPhieu.AnimationHoverSpeed = 0.07F;
-            this.tb_XoaPhieu.AnimationSpeed = 0.03F;
-            this.tb_XoaPhieu.BaseColor = System.Drawing.Color.Ivory;
-            this.tb_XoaPhieu.BorderColor = System.Drawing.Color.Black;
-            this.tb_XoaPhieu.BorderSize = 2;
-            this.tb_XoaPhieu.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.tb_XoaPhieu.FocusedColor = System.Drawing.Color.Empty;
-            this.tb_XoaPhieu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_XoaPhieu.ForeColor = System.Drawing.Color.Black;
-            this.tb_XoaPhieu.Image = ((System.Drawing.Image)(resources.GetObject("tb_XoaPhieu.Image")));
-            this.tb_XoaPhieu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tb_XoaPhieu.ImageSize = new System.Drawing.Size(30, 30);
-            this.tb_XoaPhieu.Location = new System.Drawing.Point(450, 260);
-            this.tb_XoaPhieu.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.tb_XoaPhieu.Name = "tb_XoaPhieu";
-            this.tb_XoaPhieu.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.tb_XoaPhieu.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.tb_XoaPhieu.OnHoverForeColor = System.Drawing.Color.White;
-            this.tb_XoaPhieu.OnHoverImage = null;
-            this.tb_XoaPhieu.OnPressedColor = System.Drawing.Color.Black;
-            this.tb_XoaPhieu.Size = new System.Drawing.Size(124, 42);
-            this.tb_XoaPhieu.TabIndex = 80;
-            this.tb_XoaPhieu.Text = "Xóa";
-            this.tb_XoaPhieu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tb_XoaPhieu.Click += new System.EventHandler(this.tb_XoaPhieu_Click);
-            // 
-            // dtGHNV
-            // 
-            this.dtGHNV.CustomFormat = "dd/MM/yyyy";
-            this.dtGHNV.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtGHNV.Location = new System.Drawing.Point(290, 122);
-            this.dtGHNV.Margin = new System.Windows.Forms.Padding(4);
-            this.dtGHNV.Name = "dtGHNV";
-            this.dtGHNV.Size = new System.Drawing.Size(164, 22);
-            this.dtGHNV.TabIndex = 79;
-            // 
-            // tbMPH
-            // 
-            this.tbMPH.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.tbMPH.Enabled = false;
-            this.tbMPH.Location = new System.Drawing.Point(100, 58);
-            this.tbMPH.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMPH.Name = "tbMPH";
-            this.tbMPH.Size = new System.Drawing.Size(132, 22);
-            this.tbMPH.TabIndex = 78;
-            this.tbMPH.Text = "<Auto>";
-            this.tbMPH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // tb_ThemPhieu
-            // 
-            this.tb_ThemPhieu.AnimationHoverSpeed = 0.07F;
-            this.tb_ThemPhieu.AnimationSpeed = 0.03F;
-            this.tb_ThemPhieu.BaseColor = System.Drawing.Color.Ivory;
-            this.tb_ThemPhieu.BorderColor = System.Drawing.Color.Black;
-            this.tb_ThemPhieu.BorderSize = 2;
-            this.tb_ThemPhieu.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.tb_ThemPhieu.FocusedColor = System.Drawing.Color.Empty;
-            this.tb_ThemPhieu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_ThemPhieu.ForeColor = System.Drawing.Color.Black;
-            this.tb_ThemPhieu.Image = ((System.Drawing.Image)(resources.GetObject("tb_ThemPhieu.Image")));
-            this.tb_ThemPhieu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tb_ThemPhieu.ImageSize = new System.Drawing.Size(30, 30);
-            this.tb_ThemPhieu.Location = new System.Drawing.Point(304, 260);
-            this.tb_ThemPhieu.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.tb_ThemPhieu.Name = "tb_ThemPhieu";
-            this.tb_ThemPhieu.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.tb_ThemPhieu.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.tb_ThemPhieu.OnHoverForeColor = System.Drawing.Color.White;
-            this.tb_ThemPhieu.OnHoverImage = null;
-            this.tb_ThemPhieu.OnPressedColor = System.Drawing.Color.Black;
-            this.tb_ThemPhieu.Size = new System.Drawing.Size(124, 42);
-            this.tb_ThemPhieu.TabIndex = 77;
-            this.tb_ThemPhieu.Text = "Thêm";
-            this.tb_ThemPhieu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tb_ThemPhieu.Click += new System.EventHandler(this.tb_ThemPhieu_Click);
-            // 
-            // btInPhieu
-            // 
-            this.btInPhieu.AnimationHoverSpeed = 0.07F;
-            this.btInPhieu.AnimationSpeed = 0.03F;
-            this.btInPhieu.BaseColor = System.Drawing.Color.Ivory;
-            this.btInPhieu.BorderColor = System.Drawing.Color.Black;
-            this.btInPhieu.BorderSize = 2;
-            this.btInPhieu.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btInPhieu.FocusedColor = System.Drawing.Color.Empty;
-            this.btInPhieu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btInPhieu.ForeColor = System.Drawing.Color.Black;
-            this.btInPhieu.Image = ((System.Drawing.Image)(resources.GetObject("btInPhieu.Image")));
-            this.btInPhieu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btInPhieu.ImageSize = new System.Drawing.Size(30, 30);
-            this.btInPhieu.Location = new System.Drawing.Point(6, 260);
-            this.btInPhieu.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btInPhieu.Name = "btInPhieu";
-            this.btInPhieu.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btInPhieu.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btInPhieu.OnHoverForeColor = System.Drawing.Color.White;
-            this.btInPhieu.OnHoverImage = null;
-            this.btInPhieu.OnPressedColor = System.Drawing.Color.Black;
-            this.btInPhieu.Size = new System.Drawing.Size(287, 42);
-            this.btInPhieu.TabIndex = 75;
-            this.btInPhieu.Text = "In phiếu hẹn nhập viện";
-            this.btInPhieu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btInPhieu.Click += new System.EventHandler(this.btInPhieu_Click);
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(600, 36);
-            this.label43.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(86, 25);
-            this.label43.TabIndex = 74;
-            this.label43.Text = "Ghi chú";
-            // 
-            // tbGhiChu
-            // 
-            this.tbGhiChu.Location = new System.Drawing.Point(604, 73);
-            this.tbGhiChu.Margin = new System.Windows.Forms.Padding(4);
-            this.tbGhiChu.Name = "tbGhiChu";
-            this.tbGhiChu.Size = new System.Drawing.Size(428, 228);
-            this.tbGhiChu.TabIndex = 73;
-            this.tbGhiChu.Text = "Nhập ghi chú";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(97, 164);
-            this.label37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(105, 25);
-            this.label37.TabIndex = 72;
-            this.label37.Text = "Số phòng";
-            // 
-            // cbSoPhong
-            // 
-            this.cbSoPhong.BackColor = System.Drawing.Color.Transparent;
-            this.cbSoPhong.BaseColor = System.Drawing.Color.White;
-            this.cbSoPhong.BorderColor = System.Drawing.Color.Silver;
-            this.cbSoPhong.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbSoPhong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbSoPhong.FocusedColor = System.Drawing.Color.Empty;
-            this.cbSoPhong.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbSoPhong.ForeColor = System.Drawing.Color.Black;
-            this.cbSoPhong.FormattingEnabled = true;
-            this.cbSoPhong.Items.AddRange(new object[] {
-            "1"});
-            this.cbSoPhong.Location = new System.Drawing.Point(100, 196);
-            this.cbSoPhong.Margin = new System.Windows.Forms.Padding(4);
-            this.cbSoPhong.Name = "cbSoPhong";
-            this.cbSoPhong.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.cbSoPhong.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cbSoPhong.Size = new System.Drawing.Size(330, 31);
-            this.cbSoPhong.TabIndex = 71;
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(292, 92);
-            this.label39.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(162, 25);
-            this.label39.TabIndex = 70;
-            this.label39.Text = "Ngày nhập viện";
-            // 
-            // tbMaBN1
-            // 
-            this.tbMaBN1.Location = new System.Drawing.Point(102, 122);
-            this.tbMaBN1.Margin = new System.Windows.Forms.Padding(4);
-            this.tbMaBN1.Name = "tbMaBN1";
-            this.tbMaBN1.Size = new System.Drawing.Size(132, 22);
-            this.tbMaBN1.TabIndex = 69;
-            // 
-            // tbNV1
-            // 
-            this.tbNV1.Location = new System.Drawing.Point(297, 58);
-            this.tbNV1.Margin = new System.Windows.Forms.Padding(4);
-            this.tbNV1.Name = "tbNV1";
-            this.tbNV1.Size = new System.Drawing.Size(132, 22);
-            this.tbNV1.TabIndex = 68;
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(95, 92);
-            this.label40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(150, 25);
-            this.label40.TabIndex = 67;
-            this.label40.Text = "Mã bệnh nhân";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(30, 28);
-            this.label41.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(243, 25);
-            this.label41.TabIndex = 66;
-            this.label41.Text = "Mã phiếu hẹn nhập viện";
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(292, 28);
-            this.label42.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(179, 25);
-            this.label42.TabIndex = 65;
-            this.label42.Text = "Mã y tá phụ trách";
             // 
             // tabp_pnh
             // 
@@ -2578,12 +1663,12 @@
             // tabp_hoadon
             // 
             this.tabp_hoadon.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabp_hoadon.Controls.Add(this.groupBox2);
             this.tabp_hoadon.Controls.Add(this.btt_hoadon_tim);
             this.tabp_hoadon.Controls.Add(this.btt_hoadon_danhsach);
             this.tabp_hoadon.Controls.Add(this.tb_hoadon_trigia);
             this.tabp_hoadon.Controls.Add(this.btt_hoadon_luu);
             this.tabp_hoadon.Controls.Add(this.btt_hoadon_thanhtien);
-            this.tabp_hoadon.Controls.Add(this.dgv_hoadon);
             this.tabp_hoadon.Controls.Add(this.tb_maDTHoaDon);
             this.tabp_hoadon.Controls.Add(this.label17);
             this.tabp_hoadon.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -2596,6 +1681,25 @@
             this.tabp_hoadon.Text = "Hóa đơn";
             this.tabp_hoadon.VerticalScrollbarBarColor = true;
             this.tabp_hoadon.VerticalScrollbarSize = 12;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.dgv_hoadon);
+            this.groupBox2.Location = new System.Drawing.Point(6, 108);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(1221, 519);
+            this.groupBox2.TabIndex = 16;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Danh sách hóa đơn";
+            // 
+            // dgv_hoadon
+            // 
+            this.dgv_hoadon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_hoadon.Location = new System.Drawing.Point(6, 22);
+            this.dgv_hoadon.Margin = new System.Windows.Forms.Padding(4);
+            this.dgv_hoadon.Name = "dgv_hoadon";
+            this.dgv_hoadon.Size = new System.Drawing.Size(1208, 497);
+            this.dgv_hoadon.TabIndex = 11;
             // 
             // btt_hoadon_tim
             // 
@@ -2719,15 +1823,6 @@
             this.btt_hoadon_thanhtien.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btt_hoadon_thanhtien.Click += new System.EventHandler(this.btt_hoadon_thanhtien_Click);
             // 
-            // dgv_hoadon
-            // 
-            this.dgv_hoadon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_hoadon.Location = new System.Drawing.Point(4, 108);
-            this.dgv_hoadon.Margin = new System.Windows.Forms.Padding(4);
-            this.dgv_hoadon.Name = "dgv_hoadon";
-            this.dgv_hoadon.Size = new System.Drawing.Size(1208, 522);
-            this.dgv_hoadon.TabIndex = 11;
-            // 
             // tb_maDTHoaDon
             // 
             this.tb_maDTHoaDon.Location = new System.Drawing.Point(84, 49);
@@ -2746,6 +1841,995 @@
             this.label17.Size = new System.Drawing.Size(143, 25);
             this.label17.TabIndex = 3;
             this.label17.Text = "Mã đơn thuốc";
+            // 
+            // tabp_kho
+            // 
+            this.tabp_kho.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabp_kho.Controls.Add(this.groupBox3);
+            this.tabp_kho.Controls.Add(this.btt_khothuoc_Reload);
+            this.tabp_kho.Controls.Add(this.hanSDPicker);
+            this.tabp_kho.Controls.Add(this.ngaySanXuatPicker);
+            this.tabp_kho.Controls.Add(this.label28);
+            this.tabp_kho.Controls.Add(this.tb_giaThuoc);
+            this.tabp_kho.Controls.Add(this.tb_nhaCC);
+            this.tabp_kho.Controls.Add(this.tb_slThuocKho);
+            this.tabp_kho.Controls.Add(this.tb_tenThuocKho);
+            this.tabp_kho.Controls.Add(this.tb_maThuoc);
+            this.tabp_kho.Controls.Add(this.label27);
+            this.tabp_kho.Controls.Add(this.label26);
+            this.tabp_kho.Controls.Add(this.label25);
+            this.tabp_kho.Controls.Add(this.label24);
+            this.tabp_kho.Controls.Add(this.label23);
+            this.tabp_kho.Controls.Add(this.label22);
+            this.tabp_kho.Controls.Add(this.label21);
+            this.tabp_kho.Cursor = System.Windows.Forms.Cursors.Default;
+            this.tabp_kho.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabp_kho.HorizontalScrollbarBarColor = true;
+            this.tabp_kho.Location = new System.Drawing.Point(4, 39);
+            this.tabp_kho.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.tabp_kho.Name = "tabp_kho";
+            this.tabp_kho.Size = new System.Drawing.Size(1232, 783);
+            this.tabp_kho.TabIndex = 5;
+            this.tabp_kho.Text = "Kho thuốc";
+            this.tabp_kho.VerticalScrollbarBarColor = true;
+            this.tabp_kho.VerticalScrollbarSize = 12;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.dgvKhoThuoc);
+            this.groupBox3.Location = new System.Drawing.Point(1, 153);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(1233, 475);
+            this.groupBox3.TabIndex = 27;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Danh sách thuốc trong kho";
+            // 
+            // dgvKhoThuoc
+            // 
+            this.dgvKhoThuoc.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.dgvKhoThuoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKhoThuoc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaThuoc,
+            this.TenThuoc,
+            this.SoLuong,
+            this.NSX,
+            this.HSD,
+            this.NCC,
+            this.Gia});
+            this.dgvKhoThuoc.Location = new System.Drawing.Point(0, 29);
+            this.dgvKhoThuoc.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvKhoThuoc.Name = "dgvKhoThuoc";
+            this.dgvKhoThuoc.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvKhoThuoc.Size = new System.Drawing.Size(1228, 446);
+            this.dgvKhoThuoc.TabIndex = 18;
+            this.dgvKhoThuoc.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKhoThuoc_CellClick);
+            this.dgvKhoThuoc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvKhoThuoc_CellContentClick);
+            // 
+            // MaThuoc
+            // 
+            this.MaThuoc.DataPropertyName = "MaThuoc";
+            this.MaThuoc.HeaderText = "Mã Thuốc";
+            this.MaThuoc.Name = "MaThuoc";
+            // 
+            // TenThuoc
+            // 
+            this.TenThuoc.DataPropertyName = "TenThuoc";
+            this.TenThuoc.HeaderText = "Tên Thuốc";
+            this.TenThuoc.Name = "TenThuoc";
+            // 
+            // SoLuong
+            // 
+            this.SoLuong.DataPropertyName = "SoLuong";
+            this.SoLuong.HeaderText = "Số Lượng";
+            this.SoLuong.Name = "SoLuong";
+            // 
+            // NSX
+            // 
+            this.NSX.DataPropertyName = "NSX";
+            this.NSX.HeaderText = "NSX";
+            this.NSX.Name = "NSX";
+            // 
+            // HSD
+            // 
+            this.HSD.DataPropertyName = "HSD";
+            this.HSD.HeaderText = "HSD";
+            this.HSD.Name = "HSD";
+            // 
+            // NCC
+            // 
+            this.NCC.DataPropertyName = "NCC";
+            this.NCC.HeaderText = "Nhà cung cấp";
+            this.NCC.Name = "NCC";
+            // 
+            // Gia
+            // 
+            this.Gia.DataPropertyName = "Gia";
+            this.Gia.HeaderText = "Giá thành";
+            this.Gia.Name = "Gia";
+            // 
+            // btt_khothuoc_Reload
+            // 
+            this.btt_khothuoc_Reload.AnimationHoverSpeed = 0.07F;
+            this.btt_khothuoc_Reload.AnimationSpeed = 0.03F;
+            this.btt_khothuoc_Reload.BaseColor = System.Drawing.Color.White;
+            this.btt_khothuoc_Reload.BorderColor = System.Drawing.Color.Black;
+            this.btt_khothuoc_Reload.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btt_khothuoc_Reload.FocusedColor = System.Drawing.Color.Empty;
+            this.btt_khothuoc_Reload.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btt_khothuoc_Reload.ForeColor = System.Drawing.Color.White;
+            this.btt_khothuoc_Reload.Image = ((System.Drawing.Image)(resources.GetObject("btt_khothuoc_Reload.Image")));
+            this.btt_khothuoc_Reload.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btt_khothuoc_Reload.ImageSize = new System.Drawing.Size(30, 30);
+            this.btt_khothuoc_Reload.Location = new System.Drawing.Point(1161, 103);
+            this.btt_khothuoc_Reload.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.btt_khothuoc_Reload.Name = "btt_khothuoc_Reload";
+            this.btt_khothuoc_Reload.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btt_khothuoc_Reload.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btt_khothuoc_Reload.OnHoverForeColor = System.Drawing.Color.White;
+            this.btt_khothuoc_Reload.OnHoverImage = null;
+            this.btt_khothuoc_Reload.OnPressedColor = System.Drawing.Color.Black;
+            this.btt_khothuoc_Reload.Size = new System.Drawing.Size(52, 50);
+            this.btt_khothuoc_Reload.TabIndex = 26;
+            this.btt_khothuoc_Reload.Click += new System.EventHandler(this.btt_khothuoc_Reload_Click);
+            // 
+            // hanSDPicker
+            // 
+            this.hanSDPicker.CustomFormat = "dd/MM/yyyy";
+            this.hanSDPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.hanSDPicker.Location = new System.Drawing.Point(212, 124);
+            this.hanSDPicker.Margin = new System.Windows.Forms.Padding(4);
+            this.hanSDPicker.Name = "hanSDPicker";
+            this.hanSDPicker.Size = new System.Drawing.Size(132, 22);
+            this.hanSDPicker.TabIndex = 17;
+            // 
+            // ngaySanXuatPicker
+            // 
+            this.ngaySanXuatPicker.CustomFormat = "dd/MM/yyyy";
+            this.ngaySanXuatPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.ngaySanXuatPicker.Location = new System.Drawing.Point(47, 124);
+            this.ngaySanXuatPicker.Margin = new System.Windows.Forms.Padding(4);
+            this.ngaySanXuatPicker.Name = "ngaySanXuatPicker";
+            this.ngaySanXuatPicker.Size = new System.Drawing.Size(132, 22);
+            this.ngaySanXuatPicker.TabIndex = 16;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(876, 50);
+            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(57, 25);
+            this.label28.TabIndex = 15;
+            this.label28.Text = "VNĐ";
+            // 
+            // tb_giaThuoc
+            // 
+            this.tb_giaThuoc.Location = new System.Drawing.Point(732, 47);
+            this.tb_giaThuoc.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_giaThuoc.Name = "tb_giaThuoc";
+            this.tb_giaThuoc.Size = new System.Drawing.Size(132, 22);
+            this.tb_giaThuoc.TabIndex = 14;
+            // 
+            // tb_nhaCC
+            // 
+            this.tb_nhaCC.Location = new System.Drawing.Point(556, 47);
+            this.tb_nhaCC.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_nhaCC.Name = "tb_nhaCC";
+            this.tb_nhaCC.Size = new System.Drawing.Size(132, 22);
+            this.tb_nhaCC.TabIndex = 13;
+            // 
+            // tb_slThuocKho
+            // 
+            this.tb_slThuocKho.Location = new System.Drawing.Point(391, 47);
+            this.tb_slThuocKho.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_slThuocKho.Name = "tb_slThuocKho";
+            this.tb_slThuocKho.Size = new System.Drawing.Size(132, 22);
+            this.tb_slThuocKho.TabIndex = 12;
+            // 
+            // tb_tenThuocKho
+            // 
+            this.tb_tenThuocKho.Location = new System.Drawing.Point(212, 47);
+            this.tb_tenThuocKho.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_tenThuocKho.Name = "tb_tenThuocKho";
+            this.tb_tenThuocKho.Size = new System.Drawing.Size(132, 22);
+            this.tb_tenThuocKho.TabIndex = 11;
+            // 
+            // tb_maThuoc
+            // 
+            this.tb_maThuoc.Location = new System.Drawing.Point(47, 47);
+            this.tb_maThuoc.Margin = new System.Windows.Forms.Padding(4);
+            this.tb_maThuoc.Name = "tb_maThuoc";
+            this.tb_maThuoc.Size = new System.Drawing.Size(132, 22);
+            this.tb_maThuoc.TabIndex = 10;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(207, 94);
+            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(134, 25);
+            this.label27.TabIndex = 9;
+            this.label27.Text = "Hạn sử dụng";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(42, 94);
+            this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(150, 25);
+            this.label26.TabIndex = 8;
+            this.label26.Text = "Ngày sản xuất";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(728, 18);
+            this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(45, 25);
+            this.label25.TabIndex = 7;
+            this.label25.Text = "Giá";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(551, 18);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(145, 25);
+            this.label24.TabIndex = 6;
+            this.label24.Text = "Nhà cung cấp";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(386, 18);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(98, 25);
+            this.label23.TabIndex = 5;
+            this.label23.Text = "Số lượng";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(207, 18);
+            this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(109, 25);
+            this.label22.TabIndex = 4;
+            this.label22.Text = "Tên thuốc";
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Location = new System.Drawing.Point(42, 18);
+            this.label21.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(101, 25);
+            this.label21.TabIndex = 3;
+            this.label21.Text = "Mã thuốc";
+            // 
+            // xetnghiem
+            // 
+            this.xetnghiem.Controls.Add(this.groupBox4);
+            this.xetnghiem.Controls.Add(this.MaPXN);
+            this.xetnghiem.Controls.Add(this.dgvXN1);
+            this.xetnghiem.Controls.Add(this.label19);
+            this.xetnghiem.Controls.Add(this.label16);
+            this.xetnghiem.Controls.Add(this.tbMBS);
+            this.xetnghiem.Controls.Add(this.btXoaXN);
+            this.xetnghiem.Controls.Add(this.btThemXN);
+            this.xetnghiem.Controls.Add(this.cbLXN);
+            this.xetnghiem.Controls.Add(this.dtimeNXN);
+            this.xetnghiem.Controls.Add(this.tbKLB);
+            this.xetnghiem.Controls.Add(this.tbTBN);
+            this.xetnghiem.Controls.Add(this.tbMBN);
+            this.xetnghiem.Controls.Add(this.label18);
+            this.xetnghiem.Controls.Add(this.label20);
+            this.xetnghiem.Controls.Add(this.label33);
+            this.xetnghiem.Controls.Add(this.label35);
+            this.xetnghiem.Controls.Add(this.label36);
+            this.xetnghiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.xetnghiem.HorizontalScrollbarBarColor = true;
+            this.xetnghiem.Location = new System.Drawing.Point(4, 39);
+            this.xetnghiem.Margin = new System.Windows.Forms.Padding(4);
+            this.xetnghiem.Name = "xetnghiem";
+            this.xetnghiem.Size = new System.Drawing.Size(1232, 783);
+            this.xetnghiem.TabIndex = 9;
+            this.xetnghiem.Text = "Xét nghiệm";
+            this.xetnghiem.VerticalScrollbarBarColor = true;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.dgvXetNghiem);
+            this.groupBox4.Location = new System.Drawing.Point(0, 303);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(1232, 330);
+            this.groupBox4.TabIndex = 76;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Danh sách phiếu xét nghiệm";
+            // 
+            // dgvXetNghiem
+            // 
+            this.dgvXetNghiem.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvXetNghiem.Location = new System.Drawing.Point(7, 18);
+            this.dgvXetNghiem.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvXetNghiem.Name = "dgvXetNghiem";
+            this.dgvXetNghiem.RowTemplate.Height = 24;
+            this.dgvXetNghiem.Size = new System.Drawing.Size(1221, 305);
+            this.dgvXetNghiem.TabIndex = 74;
+            this.dgvXetNghiem.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvXetNghiem_CellContentClick);
+            // 
+            // MaPXN
+            // 
+            this.MaPXN.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.MaPXN.Location = new System.Drawing.Point(28, 60);
+            this.MaPXN.Margin = new System.Windows.Forms.Padding(4);
+            this.MaPXN.Name = "MaPXN";
+            this.MaPXN.Size = new System.Drawing.Size(188, 22);
+            this.MaPXN.TabIndex = 75;
+            this.MaPXN.Text = "<Auto>";
+            this.MaPXN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // dgvXN1
+            // 
+            this.dgvXN1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvXN1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.dgvXN1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvXN1.Location = new System.Drawing.Point(20, 351);
+            this.dgvXN1.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvXN1.Name = "dgvXN1";
+            this.dgvXN1.RowTemplate.Height = 24;
+            this.dgvXN1.Size = new System.Drawing.Size(0, 0);
+            this.dgvXN1.TabIndex = 73;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(22, 31);
+            this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(213, 25);
+            this.label19.TabIndex = 72;
+            this.label19.Text = "Mã phiếu khám bệnh";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(662, 31);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(105, 25);
+            this.label16.TabIndex = 71;
+            this.label16.Text = "Mã bác sĩ";
+            // 
+            // tbMBS
+            // 
+            this.tbMBS.Location = new System.Drawing.Point(668, 60);
+            this.tbMBS.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMBS.Name = "tbMBS";
+            this.tbMBS.Size = new System.Drawing.Size(132, 22);
+            this.tbMBS.TabIndex = 70;
+            // 
+            // btXoaXN
+            // 
+            this.btXoaXN.AnimationHoverSpeed = 0.07F;
+            this.btXoaXN.AnimationSpeed = 0.03F;
+            this.btXoaXN.BaseColor = System.Drawing.Color.Ivory;
+            this.btXoaXN.BorderColor = System.Drawing.Color.Black;
+            this.btXoaXN.BorderSize = 2;
+            this.btXoaXN.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btXoaXN.FocusedColor = System.Drawing.Color.Empty;
+            this.btXoaXN.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btXoaXN.ForeColor = System.Drawing.Color.Black;
+            this.btXoaXN.Image = ((System.Drawing.Image)(resources.GetObject("btXoaXN.Image")));
+            this.btXoaXN.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btXoaXN.ImageSize = new System.Drawing.Size(30, 30);
+            this.btXoaXN.Location = new System.Drawing.Point(1087, 256);
+            this.btXoaXN.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.btXoaXN.Name = "btXoaXN";
+            this.btXoaXN.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btXoaXN.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btXoaXN.OnHoverForeColor = System.Drawing.Color.White;
+            this.btXoaXN.OnHoverImage = null;
+            this.btXoaXN.OnPressedColor = System.Drawing.Color.Black;
+            this.btXoaXN.Size = new System.Drawing.Size(124, 42);
+            this.btXoaXN.TabIndex = 60;
+            this.btXoaXN.Text = "Xóa";
+            this.btXoaXN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btXoaXN.Click += new System.EventHandler(this.btXoaXN_Click);
+            // 
+            // btThemXN
+            // 
+            this.btThemXN.AnimationHoverSpeed = 0.07F;
+            this.btThemXN.AnimationSpeed = 0.03F;
+            this.btThemXN.BaseColor = System.Drawing.Color.Ivory;
+            this.btThemXN.BorderColor = System.Drawing.Color.Black;
+            this.btThemXN.BorderSize = 2;
+            this.btThemXN.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btThemXN.FocusedColor = System.Drawing.Color.Empty;
+            this.btThemXN.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btThemXN.ForeColor = System.Drawing.Color.Black;
+            this.btThemXN.Image = ((System.Drawing.Image)(resources.GetObject("btThemXN.Image")));
+            this.btThemXN.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btThemXN.ImageSize = new System.Drawing.Size(30, 30);
+            this.btThemXN.Location = new System.Drawing.Point(956, 256);
+            this.btThemXN.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.btThemXN.Name = "btThemXN";
+            this.btThemXN.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btThemXN.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btThemXN.OnHoverForeColor = System.Drawing.Color.White;
+            this.btThemXN.OnHoverImage = null;
+            this.btThemXN.OnPressedColor = System.Drawing.Color.Black;
+            this.btThemXN.Size = new System.Drawing.Size(124, 42);
+            this.btThemXN.TabIndex = 61;
+            this.btThemXN.Text = "Thêm";
+            this.btThemXN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btThemXN.Click += new System.EventHandler(this.btThemXN_Click);
+            // 
+            // cbLXN
+            // 
+            this.cbLXN.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbLXN.FormattingEnabled = true;
+            this.cbLXN.Items.AddRange(new object[] {
+            "X-Quang",
+            "MRI",
+            "Kháng sinh đồ",
+            "Công thức máu",
+            "Ion đồ",
+            "CT scan",
+            "Xét nghiệm dịch não tủy",
+            "Nội soi",
+            "Siêu âm"});
+            this.cbLXN.Location = new System.Drawing.Point(1068, 55);
+            this.cbLXN.Margin = new System.Windows.Forms.Padding(4);
+            this.cbLXN.Name = "cbLXN";
+            this.cbLXN.Size = new System.Drawing.Size(132, 24);
+            this.cbLXN.TabIndex = 68;
+            // 
+            // dtimeNXN
+            // 
+            this.dtimeNXN.CustomFormat = "dd/MM/yyyy";
+            this.dtimeNXN.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtimeNXN.Location = new System.Drawing.Point(836, 58);
+            this.dtimeNXN.Margin = new System.Windows.Forms.Padding(4);
+            this.dtimeNXN.Name = "dtimeNXN";
+            this.dtimeNXN.Size = new System.Drawing.Size(164, 22);
+            this.dtimeNXN.TabIndex = 67;
+            // 
+            // tbKLB
+            // 
+            this.tbKLB.Location = new System.Drawing.Point(21, 149);
+            this.tbKLB.Margin = new System.Windows.Forms.Padding(4);
+            this.tbKLB.Multiline = true;
+            this.tbKLB.Name = "tbKLB";
+            this.tbKLB.Size = new System.Drawing.Size(432, 149);
+            this.tbKLB.TabIndex = 66;
+            // 
+            // tbTBN
+            // 
+            this.tbTBN.Location = new System.Drawing.Point(463, 57);
+            this.tbTBN.Margin = new System.Windows.Forms.Padding(4);
+            this.tbTBN.Name = "tbTBN";
+            this.tbTBN.Size = new System.Drawing.Size(132, 22);
+            this.tbTBN.TabIndex = 65;
+            // 
+            // tbMBN
+            // 
+            this.tbMBN.Location = new System.Drawing.Point(263, 57);
+            this.tbMBN.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMBN.Name = "tbMBN";
+            this.tbMBN.Size = new System.Drawing.Size(132, 22);
+            this.tbMBN.TabIndex = 64;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(23, 109);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(146, 25);
+            this.label18.TabIndex = 63;
+            this.label18.Text = "Kết luận bệnh";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(831, 31);
+            this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(173, 25);
+            this.label20.TabIndex = 62;
+            this.label20.Text = "Ngày xét nghiệm";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(1064, 31);
+            this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(164, 25);
+            this.label33.TabIndex = 59;
+            this.label33.Text = "Loại xét nghiệm";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(460, 31);
+            this.label35.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(158, 25);
+            this.label35.TabIndex = 58;
+            this.label35.Text = "Tên bệnh nhân";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(260, 31);
+            this.label36.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(150, 25);
+            this.label36.TabIndex = 57;
+            this.label36.Text = "Mã bệnh nhân";
+            // 
+            // tabp_dth
+            // 
+            this.tabp_dth.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabp_dth.Controls.Add(this.lb_doanhthu_dt);
+            this.tabp_dth.Controls.Add(this.lb_doanhthu_tongbn);
+            this.tabp_dth.Controls.Add(this.dgv_doanhthu);
+            this.tabp_dth.Controls.Add(this.btt_doanhthu_find);
+            this.tabp_dth.Controls.Add(this.dtp_doanhthu_to);
+            this.tabp_dth.Controls.Add(this.dtp_doanhthu_from);
+            this.tabp_dth.Controls.Add(this.lb_doanhthu_to);
+            this.tabp_dth.Controls.Add(this.lb_doanhthu_from);
+            this.tabp_dth.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabp_dth.HorizontalScrollbarBarColor = true;
+            this.tabp_dth.Location = new System.Drawing.Point(4, 39);
+            this.tabp_dth.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.tabp_dth.Name = "tabp_dth";
+            this.tabp_dth.Size = new System.Drawing.Size(1232, 783);
+            this.tabp_dth.TabIndex = 8;
+            this.tabp_dth.Text = "Doanh thu";
+            this.tabp_dth.VerticalScrollbarBarColor = true;
+            this.tabp_dth.VerticalScrollbarSize = 12;
+            // 
+            // lb_doanhthu_dt
+            // 
+            this.lb_doanhthu_dt.AutoSize = true;
+            this.lb_doanhthu_dt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_doanhthu_dt.Location = new System.Drawing.Point(780, 522);
+            this.lb_doanhthu_dt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_doanhthu_dt.Name = "lb_doanhthu_dt";
+            this.lb_doanhthu_dt.Size = new System.Drawing.Size(118, 25);
+            this.lb_doanhthu_dt.TabIndex = 33;
+            this.lb_doanhthu_dt.Text = "Doanh thu:";
+            // 
+            // lb_doanhthu_tongbn
+            // 
+            this.lb_doanhthu_tongbn.AutoSize = true;
+            this.lb_doanhthu_tongbn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_doanhthu_tongbn.Location = new System.Drawing.Point(360, 522);
+            this.lb_doanhthu_tongbn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_doanhthu_tongbn.Name = "lb_doanhthu_tongbn";
+            this.lb_doanhthu_tongbn.Size = new System.Drawing.Size(177, 25);
+            this.lb_doanhthu_tongbn.TabIndex = 32;
+            this.lb_doanhthu_tongbn.Text = "Tổng bệnh nhân:";
+            // 
+            // dgv_doanhthu
+            // 
+            this.dgv_doanhthu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_doanhthu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Ngay,
+            this.SoBenhNhan,
+            this.DoanhThu});
+            this.dgv_doanhthu.Location = new System.Drawing.Point(164, 94);
+            this.dgv_doanhthu.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.dgv_doanhthu.Name = "dgv_doanhthu";
+            this.dgv_doanhthu.ReadOnly = true;
+            this.dgv_doanhthu.RowTemplate.Height = 24;
+            this.dgv_doanhthu.Size = new System.Drawing.Size(919, 398);
+            this.dgv_doanhthu.TabIndex = 31;
+            // 
+            // Ngay
+            // 
+            this.Ngay.DataPropertyName = "Ngay";
+            this.Ngay.HeaderText = "Ngày";
+            this.Ngay.Name = "Ngay";
+            this.Ngay.ReadOnly = true;
+            // 
+            // SoBenhNhan
+            // 
+            this.SoBenhNhan.DataPropertyName = "SoBenhNhan";
+            this.SoBenhNhan.HeaderText = "Số Bệnh Nhân";
+            this.SoBenhNhan.Name = "SoBenhNhan";
+            this.SoBenhNhan.ReadOnly = true;
+            // 
+            // DoanhThu
+            // 
+            this.DoanhThu.DataPropertyName = "DoanhThu";
+            this.DoanhThu.HeaderText = "Doanh Thu";
+            this.DoanhThu.Name = "DoanhThu";
+            this.DoanhThu.ReadOnly = true;
+            this.DoanhThu.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // btt_doanhthu_find
+            // 
+            this.btt_doanhthu_find.AnimationHoverSpeed = 0.07F;
+            this.btt_doanhthu_find.AnimationSpeed = 0.03F;
+            this.btt_doanhthu_find.BaseColor = System.Drawing.Color.White;
+            this.btt_doanhthu_find.BorderColor = System.Drawing.Color.Black;
+            this.btt_doanhthu_find.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btt_doanhthu_find.FocusedColor = System.Drawing.Color.Empty;
+            this.btt_doanhthu_find.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btt_doanhthu_find.ForeColor = System.Drawing.Color.White;
+            this.btt_doanhthu_find.Image = ((System.Drawing.Image)(resources.GetObject("btt_doanhthu_find.Image")));
+            this.btt_doanhthu_find.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btt_doanhthu_find.ImageSize = new System.Drawing.Size(20, 20);
+            this.btt_doanhthu_find.Location = new System.Drawing.Point(900, 38);
+            this.btt_doanhthu_find.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.btt_doanhthu_find.Name = "btt_doanhthu_find";
+            this.btt_doanhthu_find.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btt_doanhthu_find.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btt_doanhthu_find.OnHoverForeColor = System.Drawing.Color.White;
+            this.btt_doanhthu_find.OnHoverImage = null;
+            this.btt_doanhthu_find.OnPressedColor = System.Drawing.Color.Black;
+            this.btt_doanhthu_find.Size = new System.Drawing.Size(49, 44);
+            this.btt_doanhthu_find.TabIndex = 30;
+            this.btt_doanhthu_find.Click += new System.EventHandler(this.btt_doanhthu_find_Click);
+            // 
+            // dtp_doanhthu_to
+            // 
+            this.dtp_doanhthu_to.Location = new System.Drawing.Point(680, 38);
+            this.dtp_doanhthu_to.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.dtp_doanhthu_to.Name = "dtp_doanhthu_to";
+            this.dtp_doanhthu_to.Size = new System.Drawing.Size(200, 22);
+            this.dtp_doanhthu_to.TabIndex = 5;
+            // 
+            // dtp_doanhthu_from
+            // 
+            this.dtp_doanhthu_from.Location = new System.Drawing.Point(382, 38);
+            this.dtp_doanhthu_from.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.dtp_doanhthu_from.Name = "dtp_doanhthu_from";
+            this.dtp_doanhthu_from.Size = new System.Drawing.Size(200, 22);
+            this.dtp_doanhthu_from.TabIndex = 4;
+            // 
+            // lb_doanhthu_to
+            // 
+            this.lb_doanhthu_to.AutoSize = true;
+            this.lb_doanhthu_to.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_doanhthu_to.Location = new System.Drawing.Point(616, 38);
+            this.lb_doanhthu_to.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_doanhthu_to.Name = "lb_doanhthu_to";
+            this.lb_doanhthu_to.Size = new System.Drawing.Size(58, 25);
+            this.lb_doanhthu_to.TabIndex = 3;
+            this.lb_doanhthu_to.Text = "Đến:";
+            // 
+            // lb_doanhthu_from
+            // 
+            this.lb_doanhthu_from.AutoSize = true;
+            this.lb_doanhthu_from.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_doanhthu_from.Location = new System.Drawing.Point(332, 38);
+            this.lb_doanhthu_from.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_doanhthu_from.Name = "lb_doanhthu_from";
+            this.lb_doanhthu_from.Size = new System.Drawing.Size(45, 25);
+            this.lb_doanhthu_from.TabIndex = 2;
+            this.lb_doanhthu_from.Text = "Từ:";
+            // 
+            // NhapVien
+            // 
+            this.NhapVien.Controls.Add(this.groupBox5);
+            this.NhapVien.Controls.Add(this.tb_XoaPhieu);
+            this.NhapVien.Controls.Add(this.dtGHNV);
+            this.NhapVien.Controls.Add(this.tbMPH);
+            this.NhapVien.Controls.Add(this.tb_ThemPhieu);
+            this.NhapVien.Controls.Add(this.btInPhieu);
+            this.NhapVien.Controls.Add(this.label43);
+            this.NhapVien.Controls.Add(this.tbGhiChu);
+            this.NhapVien.Controls.Add(this.label37);
+            this.NhapVien.Controls.Add(this.cbSoPhong);
+            this.NhapVien.Controls.Add(this.label39);
+            this.NhapVien.Controls.Add(this.tbMaBN1);
+            this.NhapVien.Controls.Add(this.tbNV1);
+            this.NhapVien.Controls.Add(this.label40);
+            this.NhapVien.Controls.Add(this.label41);
+            this.NhapVien.Controls.Add(this.label42);
+            this.NhapVien.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NhapVien.HorizontalScrollbarBarColor = true;
+            this.NhapVien.Location = new System.Drawing.Point(4, 39);
+            this.NhapVien.Margin = new System.Windows.Forms.Padding(4);
+            this.NhapVien.Name = "NhapVien";
+            this.NhapVien.Size = new System.Drawing.Size(1232, 783);
+            this.NhapVien.TabIndex = 10;
+            this.NhapVien.Text = "Nhập viện";
+            this.NhapVien.VerticalScrollbarBarColor = true;
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.dgvGH);
+            this.groupBox5.Location = new System.Drawing.Point(-4, 308);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(1240, 323);
+            this.groupBox5.TabIndex = 82;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Danh sách phiếu hẹn nhập viện";
+            // 
+            // dgvGH
+            // 
+            this.dgvGH.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGH.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaNV,
+            this.Mabenhnhan});
+            this.dgvGH.Location = new System.Drawing.Point(10, 22);
+            this.dgvGH.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvGH.Name = "dgvGH";
+            this.dgvGH.RowTemplate.Height = 24;
+            this.dgvGH.Size = new System.Drawing.Size(1226, 301);
+            this.dgvGH.TabIndex = 81;
+            this.dgvGH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGH_CellClick);
+            this.dgvGH.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGH_CellContentClick);
+            // 
+            // MaNV
+            // 
+            this.MaNV.DataPropertyName = "MaNV";
+            this.MaNV.HeaderText = "Mã nhân viên";
+            this.MaNV.Name = "MaNV";
+            // 
+            // Mabenhnhan
+            // 
+            this.Mabenhnhan.DataPropertyName = "MaBN";
+            this.Mabenhnhan.HeaderText = "Mã bệnh nhân";
+            this.Mabenhnhan.Name = "Mabenhnhan";
+            // 
+            // tb_XoaPhieu
+            // 
+            this.tb_XoaPhieu.AnimationHoverSpeed = 0.07F;
+            this.tb_XoaPhieu.AnimationSpeed = 0.03F;
+            this.tb_XoaPhieu.BaseColor = System.Drawing.Color.Ivory;
+            this.tb_XoaPhieu.BorderColor = System.Drawing.Color.Black;
+            this.tb_XoaPhieu.BorderSize = 2;
+            this.tb_XoaPhieu.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.tb_XoaPhieu.FocusedColor = System.Drawing.Color.Empty;
+            this.tb_XoaPhieu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_XoaPhieu.ForeColor = System.Drawing.Color.Black;
+            this.tb_XoaPhieu.Image = ((System.Drawing.Image)(resources.GetObject("tb_XoaPhieu.Image")));
+            this.tb_XoaPhieu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb_XoaPhieu.ImageSize = new System.Drawing.Size(30, 30);
+            this.tb_XoaPhieu.Location = new System.Drawing.Point(450, 260);
+            this.tb_XoaPhieu.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.tb_XoaPhieu.Name = "tb_XoaPhieu";
+            this.tb_XoaPhieu.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.tb_XoaPhieu.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.tb_XoaPhieu.OnHoverForeColor = System.Drawing.Color.White;
+            this.tb_XoaPhieu.OnHoverImage = null;
+            this.tb_XoaPhieu.OnPressedColor = System.Drawing.Color.Black;
+            this.tb_XoaPhieu.Size = new System.Drawing.Size(124, 42);
+            this.tb_XoaPhieu.TabIndex = 80;
+            this.tb_XoaPhieu.Text = "Xóa";
+            this.tb_XoaPhieu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb_XoaPhieu.Click += new System.EventHandler(this.tb_XoaPhieu_Click);
+            // 
+            // dtGHNV
+            // 
+            this.dtGHNV.CustomFormat = "dd/MM/yyyy";
+            this.dtGHNV.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtGHNV.Location = new System.Drawing.Point(290, 122);
+            this.dtGHNV.Margin = new System.Windows.Forms.Padding(4);
+            this.dtGHNV.Name = "dtGHNV";
+            this.dtGHNV.Size = new System.Drawing.Size(164, 22);
+            this.dtGHNV.TabIndex = 79;
+            // 
+            // tbMPH
+            // 
+            this.tbMPH.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.tbMPH.Enabled = false;
+            this.tbMPH.Location = new System.Drawing.Point(100, 58);
+            this.tbMPH.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMPH.Name = "tbMPH";
+            this.tbMPH.Size = new System.Drawing.Size(132, 22);
+            this.tbMPH.TabIndex = 78;
+            this.tbMPH.Text = "<Auto>";
+            this.tbMPH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tb_ThemPhieu
+            // 
+            this.tb_ThemPhieu.AnimationHoverSpeed = 0.07F;
+            this.tb_ThemPhieu.AnimationSpeed = 0.03F;
+            this.tb_ThemPhieu.BaseColor = System.Drawing.Color.Ivory;
+            this.tb_ThemPhieu.BorderColor = System.Drawing.Color.Black;
+            this.tb_ThemPhieu.BorderSize = 2;
+            this.tb_ThemPhieu.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.tb_ThemPhieu.FocusedColor = System.Drawing.Color.Empty;
+            this.tb_ThemPhieu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_ThemPhieu.ForeColor = System.Drawing.Color.Black;
+            this.tb_ThemPhieu.Image = ((System.Drawing.Image)(resources.GetObject("tb_ThemPhieu.Image")));
+            this.tb_ThemPhieu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb_ThemPhieu.ImageSize = new System.Drawing.Size(30, 30);
+            this.tb_ThemPhieu.Location = new System.Drawing.Point(304, 260);
+            this.tb_ThemPhieu.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.tb_ThemPhieu.Name = "tb_ThemPhieu";
+            this.tb_ThemPhieu.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.tb_ThemPhieu.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.tb_ThemPhieu.OnHoverForeColor = System.Drawing.Color.White;
+            this.tb_ThemPhieu.OnHoverImage = null;
+            this.tb_ThemPhieu.OnPressedColor = System.Drawing.Color.Black;
+            this.tb_ThemPhieu.Size = new System.Drawing.Size(124, 42);
+            this.tb_ThemPhieu.TabIndex = 77;
+            this.tb_ThemPhieu.Text = "Thêm";
+            this.tb_ThemPhieu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb_ThemPhieu.Click += new System.EventHandler(this.tb_ThemPhieu_Click);
+            // 
+            // btInPhieu
+            // 
+            this.btInPhieu.AnimationHoverSpeed = 0.07F;
+            this.btInPhieu.AnimationSpeed = 0.03F;
+            this.btInPhieu.BaseColor = System.Drawing.Color.Ivory;
+            this.btInPhieu.BorderColor = System.Drawing.Color.Black;
+            this.btInPhieu.BorderSize = 2;
+            this.btInPhieu.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btInPhieu.FocusedColor = System.Drawing.Color.Empty;
+            this.btInPhieu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btInPhieu.ForeColor = System.Drawing.Color.Black;
+            this.btInPhieu.Image = ((System.Drawing.Image)(resources.GetObject("btInPhieu.Image")));
+            this.btInPhieu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btInPhieu.ImageSize = new System.Drawing.Size(30, 30);
+            this.btInPhieu.Location = new System.Drawing.Point(6, 260);
+            this.btInPhieu.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.btInPhieu.Name = "btInPhieu";
+            this.btInPhieu.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btInPhieu.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btInPhieu.OnHoverForeColor = System.Drawing.Color.White;
+            this.btInPhieu.OnHoverImage = null;
+            this.btInPhieu.OnPressedColor = System.Drawing.Color.Black;
+            this.btInPhieu.Size = new System.Drawing.Size(287, 42);
+            this.btInPhieu.TabIndex = 75;
+            this.btInPhieu.Text = "In phiếu hẹn nhập viện";
+            this.btInPhieu.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btInPhieu.Click += new System.EventHandler(this.btInPhieu_Click);
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(600, 36);
+            this.label43.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(86, 25);
+            this.label43.TabIndex = 74;
+            this.label43.Text = "Ghi chú";
+            // 
+            // tbGhiChu
+            // 
+            this.tbGhiChu.Location = new System.Drawing.Point(604, 73);
+            this.tbGhiChu.Margin = new System.Windows.Forms.Padding(4);
+            this.tbGhiChu.Name = "tbGhiChu";
+            this.tbGhiChu.Size = new System.Drawing.Size(428, 228);
+            this.tbGhiChu.TabIndex = 73;
+            this.tbGhiChu.Text = "Nhập ghi chú";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(97, 164);
+            this.label37.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(105, 25);
+            this.label37.TabIndex = 72;
+            this.label37.Text = "Số phòng";
+            // 
+            // cbSoPhong
+            // 
+            this.cbSoPhong.BackColor = System.Drawing.Color.Transparent;
+            this.cbSoPhong.BaseColor = System.Drawing.Color.White;
+            this.cbSoPhong.BorderColor = System.Drawing.Color.Silver;
+            this.cbSoPhong.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbSoPhong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbSoPhong.FocusedColor = System.Drawing.Color.Empty;
+            this.cbSoPhong.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbSoPhong.ForeColor = System.Drawing.Color.Black;
+            this.cbSoPhong.FormattingEnabled = true;
+            this.cbSoPhong.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13"});
+            this.cbSoPhong.Location = new System.Drawing.Point(100, 196);
+            this.cbSoPhong.Margin = new System.Windows.Forms.Padding(4);
+            this.cbSoPhong.Name = "cbSoPhong";
+            this.cbSoPhong.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.cbSoPhong.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cbSoPhong.Size = new System.Drawing.Size(330, 31);
+            this.cbSoPhong.TabIndex = 71;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.Location = new System.Drawing.Point(292, 92);
+            this.label39.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(162, 25);
+            this.label39.TabIndex = 70;
+            this.label39.Text = "Ngày nhập viện";
+            // 
+            // tbMaBN1
+            // 
+            this.tbMaBN1.Location = new System.Drawing.Point(102, 122);
+            this.tbMaBN1.Margin = new System.Windows.Forms.Padding(4);
+            this.tbMaBN1.Name = "tbMaBN1";
+            this.tbMaBN1.Size = new System.Drawing.Size(132, 22);
+            this.tbMaBN1.TabIndex = 69;
+            // 
+            // tbNV1
+            // 
+            this.tbNV1.Location = new System.Drawing.Point(297, 58);
+            this.tbNV1.Margin = new System.Windows.Forms.Padding(4);
+            this.tbNV1.Name = "tbNV1";
+            this.tbNV1.Size = new System.Drawing.Size(132, 22);
+            this.tbNV1.TabIndex = 68;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.Location = new System.Drawing.Point(95, 92);
+            this.label40.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(150, 25);
+            this.label40.TabIndex = 67;
+            this.label40.Text = "Mã bệnh nhân";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(30, 28);
+            this.label41.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(243, 25);
+            this.label41.TabIndex = 66;
+            this.label41.Text = "Mã phiếu hẹn nhập viện";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(292, 28);
+            this.label42.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(238, 25);
+            this.label42.TabIndex = 65;
+            this.label42.Text = "Mã nhân viên phụ trách";
             // 
             // printDocument1
             // 
@@ -2827,6 +2911,7 @@
             this.mnstrip_main.PerformLayout();
             this.tabp_donthuoc.ResumeLayout(false);
             this.tabp_donthuoc.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_CTDT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDT)).EndInit();
             this.tabp_pkb.ResumeLayout(false);
             this.tabp_pkb.PerformLayout();
@@ -2835,12 +2920,22 @@
             this.tabcontrolmain.ResumeLayout(false);
             this.tabp_hsbn.ResumeLayout(false);
             this.tabp_hsbn.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoSo)).EndInit();
+            this.tabp_pnh.ResumeLayout(false);
+            this.tabp_pnh.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPNH)).EndInit();
+            this.tabp_hoadon.ResumeLayout(false);
+            this.tabp_hoadon.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_hoadon)).EndInit();
             this.tabp_kho.ResumeLayout(false);
             this.tabp_kho.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhoThuoc)).EndInit();
             this.xetnghiem.ResumeLayout(false);
             this.xetnghiem.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvXetNghiem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvXN1)).EndInit();
             this.tabp_dth.ResumeLayout(false);
@@ -2848,13 +2943,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgv_doanhthu)).EndInit();
             this.NhapVien.ResumeLayout(false);
             this.NhapVien.PerformLayout();
+            this.groupBox5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGH)).EndInit();
-            this.tabp_pnh.ResumeLayout(false);
-            this.tabp_pnh.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPNH)).EndInit();
-            this.tabp_hoadon.ResumeLayout(false);
-            this.tabp_hoadon.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_hoadon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3058,5 +3148,12 @@
         private Guna.UI.WinForms.GunaButton bt_SuaDT;
         private Guna.UI.WinForms.GunaButton bt_ThemDT;
         public System.Windows.Forms.TextBox MaPXN;
+        private System.Windows.Forms.DataGridView dgv_CTDT;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox groupBox5;
     }
 }

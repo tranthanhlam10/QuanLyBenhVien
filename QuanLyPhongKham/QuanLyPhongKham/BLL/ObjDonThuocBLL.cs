@@ -57,5 +57,10 @@ namespace QuanLyPhongKham.BLL
         {
             return ObjDonThuocDAL.Instance.Find();
         }
+
+        public DataTable GetlistCTDT()
+        {
+            return ObjDonThuocDAL.Instance.LoadListCTDT();
+        }
     }
 }

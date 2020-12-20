@@ -320,3 +320,5 @@ Delete from BenhNhan where MaBN = 'BN001'
 
 
 
+select DonThuoc.MaDT, NgDT , MaNV, MaBN,MaThuoc, SoLuong from DonThuoc, CTDT
+where DonThuoc.MaDT = CTDT.MaDT
