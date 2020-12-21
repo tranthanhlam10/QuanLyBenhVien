@@ -645,13 +645,16 @@ namespace QuanLyPhongKham.GUI
             if (index >= 0)
             {
 
-                tbMBN.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["MaBN"].Value.ToString();
+                tbMBN.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["MaBN1"].Value.ToString();
                 cbLXN.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["LoaiXetNghiem"].Value.ToString();
                 dtimeNXN.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["NgXetNghiem"].Value.ToString();
-                tbMBS.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["MaNV"].Value.ToString();
+                tbMBS.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["MaNV1"].Value.ToString();
                 MaPXN.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["MaPKB"].Value.ToString();
                 tbKLB.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["Ketqua"].Value.ToString();
-                tbTBN.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["TenBN"].Value.ToString();
+                tbTBN.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["TenBN1"].Value.ToString();
+
+
+               
             }
         }
 
@@ -675,12 +678,12 @@ namespace QuanLyPhongKham.GUI
             if (index >= 0)
             {
 
-                tbMPH.Text = dgvGH.Rows[e.RowIndex].Cells["MaGH"].Value.ToString();
+                tbMPH.Text = dgvGH.Rows[e.RowIndex].Cells["MaGH2"].Value.ToString();
                 tbNV1.Text = dgvGH.Rows[e.RowIndex].Cells["MaNV"].Value.ToString();
                 tbMaBN1.Text = dgvGH.Rows[e.RowIndex].Cells["Mabenhnhan"].Value.ToString();
-                dtGHNV.Text = dgvGH.Rows[e.RowIndex].Cells["NgNhapVen"].Value.ToString();
-                cbSoPhong.Text = dgvGH.Rows[e.RowIndex].Cells["SoPhong"].Value.ToString();
-                tbGhiChu.Text = dgvGH.Rows[e.RowIndex].Cells["GhiChu"].Value.ToString();
+                dtGHNV.Text = dgvGH.Rows[e.RowIndex].Cells["NgNhapVien"].Value.ToString();
+                cbSoPhong.Text = dgvGH.Rows[e.RowIndex].Cells["SoPhong2"].Value.ToString();
+                tbGhiChu.Text = dgvGH.Rows[e.RowIndex].Cells["GhiChu2"].Value.ToString();
             }
         }
 
@@ -703,7 +706,17 @@ namespace QuanLyPhongKham.GUI
 
         private void dgvGH_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            int index = e.RowIndex;
+            if (index >= 0)
+            {
 
+                tbMPH.Text = dgvGH.Rows[e.RowIndex].Cells["MaGH2"].Value.ToString();
+                tbNV1.Text = dgvGH.Rows[e.RowIndex].Cells["MaNV"].Value.ToString();
+                tbMaBN1.Text = dgvGH.Rows[e.RowIndex].Cells["Mabenhnhan"].Value.ToString();
+                dtGHNV.Text = dgvGH.Rows[e.RowIndex].Cells["NgNhapVien"].Value.ToString();
+                cbSoPhong.Text = dgvGH.Rows[e.RowIndex].Cells["SoPhong2"].Value.ToString();
+                tbGhiChu.Text = dgvGH.Rows[e.RowIndex].Cells["GhiChu2"].Value.ToString();
+            }
         }
 
  
@@ -865,7 +878,24 @@ namespace QuanLyPhongKham.GUI
             graphic.DrawImage(Properties.Resources.pill, startX, startY + offset);
         }
 
-       
+        private void dgvXetNghiem_CellClick(object sender, DataGridViewCellEventArgs e) // sự kiện
+        {
+            int index = e.RowIndex;
+            if (index >= 0)
+            {
+
+                tbMBN.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["MaBN1"].Value.ToString();
+                cbLXN.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["LoaiXetNghiem"].Value.ToString();
+                dtimeNXN.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["NgXetNghiem"].Value.ToString();
+                tbMBS.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["MaNV1"].Value.ToString();
+                MaPXN.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["MaPKB"].Value.ToString();
+                tbKLB.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["Ketqua"].Value.ToString();
+                tbTBN.Text = dgvXetNghiem.Rows[e.RowIndex].Cells["TenBN1"].Value.ToString();
+
+
+
+            }
+        }
 
         int CheckTabPage()
         {
