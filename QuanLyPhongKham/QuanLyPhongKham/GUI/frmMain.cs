@@ -176,34 +176,34 @@ namespace QuanLyPhongKham.GUI
 
         private void dgvKhoThuoc_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-          /*  int index = e.RowIndex;
+            int index = e.RowIndex;
             if (index >= 0)
             {
-                tb_maThuoc.Text = dgvDT.Rows[e.RowIndex].Cells["MaThuoc"].Value.ToString();
-                tb_tenThuoc.Text = dgvDT.Rows[e.RowIndex].Cells["TenThuoc"].Value.ToString();
-                tb_slThuoc.Text = dgvDT.Rows[e.RowIndex].Cells["SoLuong"].Value.ToString();
-                tb_nhaCC.Text = dgvDT.Rows[e.RowIndex].Cells["NCC"].Value.ToString();
-                ngaySanXuatPicker.Text = dgvDT.Rows[e.RowIndex].Cells["NSX"].Value.ToString();
-                hanSDPicker.Text = dgvDT.Rows[e.RowIndex].Cells["HSD"].Value.ToString();
-                tb_giaThuoc.Text = dgvDT.Rows[e.RowIndex].Cells["Gia"].Value.ToString();
+                tb_maThuoc.Text = dgvKhoThuoc.Rows[e.RowIndex].Cells["MaThuoc"].Value.ToString();
+                tb_tenThuocKho.Text = dgvKhoThuoc.Rows[e.RowIndex].Cells["TenThuoc"].Value.ToString();
+                tb_slThuocKho.Text = dgvKhoThuoc.Rows[e.RowIndex].Cells["SoLuong"].Value.ToString();
+                tb_nhaCC.Text = dgvKhoThuoc.Rows[e.RowIndex].Cells["NCC"].Value.ToString();
+                ngaySanXuatPicker.Text = dgvKhoThuoc.Rows[e.RowIndex].Cells["NSX"].Value.ToString();
+                hanSDPicker.Text = dgvKhoThuoc.Rows[e.RowIndex].Cells["HSD"].Value.ToString();
+                tb_giaThuoc.Text = dgvKhoThuoc.Rows[e.RowIndex].Cells["Gia"].Value.ToString();
 
-            }*/
+            }
         }
 
         private void dgvKhoThuoc_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-         /*   int index = e.RowIndex;
+           int index = e.RowIndex;
             if (index >= 0)
             {
-                tb_maThuoc.Text = dgvDT.Rows[e.RowIndex].Cells["MaThuoc"].Value.ToString();
-                tb_tenThuoc.Text = dgvDT.Rows[e.RowIndex].Cells["TenThuoc"].Value.ToString();
-                tb_slThuoc.Text = dgvDT.Rows[e.RowIndex].Cells["SoLuong"].Value.ToString();
-                tb_nhaCC.Text = dgvDT.Rows[e.RowIndex].Cells["NCC"].Value.ToString();
-                ngaySanXuatPicker.Text = dgvDT.Rows[e.RowIndex].Cells["NSX"].Value.ToString();
-                hanSDPicker.Text = dgvDT.Rows[e.RowIndex].Cells["HSD"].Value.ToString();
-                tb_giaThuoc.Text = dgvDT.Rows[e.RowIndex].Cells["Gia"].Value.ToString();
+                tb_maThuoc.Text = dgvKhoThuoc.Rows[e.RowIndex].Cells["MaThuoc"].Value.ToString();
+                tb_tenThuocKho.Text = dgvKhoThuoc.Rows[e.RowIndex].Cells["TenThuoc"].Value.ToString();
+                tb_slThuocKho.Text = dgvKhoThuoc.Rows[e.RowIndex].Cells["SoLuong"].Value.ToString();
+                tb_nhaCC.Text = dgvKhoThuoc.Rows[e.RowIndex].Cells["NCC"].Value.ToString();
+                ngaySanXuatPicker.Text = dgvKhoThuoc.Rows[e.RowIndex].Cells["NSX"].Value.ToString();
+                hanSDPicker.Text = dgvKhoThuoc.Rows[e.RowIndex].Cells["HSD"].Value.ToString();
+                tb_giaThuoc.Text = dgvKhoThuoc.Rows[e.RowIndex].Cells["Gia"].Value.ToString();
 
-            }*/
+            }
         }
 
         private void btt_in_Click(object sender, EventArgs e) // in phiếu khám bệnh

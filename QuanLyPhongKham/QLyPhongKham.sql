@@ -20,7 +20,7 @@ create table BenhNhan
  NgSinh datetime,
  TrieuChung varchar(100),
  KetLuanBenh varchar(100),
- BaoHiem varchar(45)
+ BaoHiem varchar(45)	
 )
 
  create table LoaiNhanVien
@@ -317,7 +317,7 @@ Delete from PKB Where MaBN = 'BN001'
 Delete from GiayXetNghiem where MaBN = 'BN001'
 Delete from BenhNhan where MaBN = 'BN001'
 
-
+Delete from BenhNhan where MaBN = '<Auto>'
 
 
 select DonThuoc.MaDT, NgDT , MaNV, MaBN,MaThuoc, SoLuong from DonThuoc, CTDT

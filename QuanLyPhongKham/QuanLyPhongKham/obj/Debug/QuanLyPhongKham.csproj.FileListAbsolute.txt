@@ -71,7 +71,6 @@ C:\Users\COMPUTER\Desktop\QuanLyBenhVien\QuanLyPhongKham\QuanLyPhongKham\bin\Deb
 C:\Users\COMPUTER\Desktop\QuanLyBenhVien\QuanLyPhongKham\QuanLyPhongKham\bin\Debug\QuanLyPhongKham.pdb
 C:\Users\COMPUTER\Desktop\QuanLyBenhVien\QuanLyPhongKham\QuanLyPhongKham\bin\Debug\MetroFramework.dll
 C:\Users\COMPUTER\Desktop\QuanLyBenhVien\QuanLyPhongKham\QuanLyPhongKham\bin\Debug\MetroFramework.Fonts.dll
-C:\Users\COMPUTER\Desktop\QuanLyBenhVien\QuanLyPhongKham\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.csprojAssemblyReference.cache
 C:\Users\COMPUTER\Desktop\QuanLyBenhVien\QuanLyPhongKham\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.frmLogin.resources
 C:\Users\COMPUTER\Desktop\QuanLyBenhVien\QuanLyPhongKham\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.GUI.frmMain.resources
 C:\Users\COMPUTER\Desktop\QuanLyBenhVien\QuanLyPhongKham\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.Properties.Resources.resources

@@ -57,7 +57,7 @@ namespace QuanLyPhongKham.DAL
             Dictionary<string, string> param = new Dictionary<string, string>();
 
             DataTable dt = new DataTable();
-            string LoadQuery = "select MaGH , GiayHenNhapVien.MaBN, GiayHenNhapVien.MaNV, NgNhapVen , SoPhong, GhiChu  from GiayHenNhapVien, BenhNhan, NhanVien "
+            string LoadQuery = "select MaGH , GiayHenNhapVien.MaBN, TenBN, GiayHenNhapVien.MaNV, NgNhapVen , SoPhong, GhiChu  from GiayHenNhapVien, BenhNhan, NhanVien "
                  + "where GiayHenNhapVien.MaBN = BenhNhan.MaBN and GiayHenNhapVien.MaNV = NhanVien.MaNV";
             dt = DataProvider.Instance.ExecuteQuery(LoadQuery, param);
             return dt;
