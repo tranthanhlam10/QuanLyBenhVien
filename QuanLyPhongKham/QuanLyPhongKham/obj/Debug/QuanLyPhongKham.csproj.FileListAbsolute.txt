@@ -79,3 +79,4 @@ C:\Users\COMPUTER\Desktop\QuanLyBenhVien\QuanLyPhongKham\QuanLyPhongKham\obj\Deb
 C:\Users\COMPUTER\Desktop\QuanLyBenhVien\QuanLyPhongKham\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.csproj.CopyComplete
 C:\Users\COMPUTER\Desktop\QuanLyBenhVien\QuanLyPhongKham\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.exe
 C:\Users\COMPUTER\Desktop\QuanLyBenhVien\QuanLyPhongKham\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.pdb
+C:\Users\COMPUTER\Desktop\QuanLyBenhVien\QuanLyPhongKham\QuanLyPhongKham\obj\Debug\QuanLyPhongKham.csprojAssemblyReference.cache
