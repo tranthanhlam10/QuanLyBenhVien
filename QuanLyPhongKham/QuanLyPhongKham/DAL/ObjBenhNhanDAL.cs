@@ -64,6 +64,8 @@ namespace QuanLyPhongKham.DAL
 
         public void AddBN()
         {
+            
+
             System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["frmMain"];
             string id = ((frmMain)f).tb_bn_id.Text;
             string ten = ((frmMain)f).tb_bn_ten.Text;
@@ -80,7 +82,7 @@ namespace QuanLyPhongKham.DAL
             AddQuery += "VALUES (@MaBN, @TenBN, @SoDT, @GioiTinh, @DiaChi, CONVERT(datetime, @NgSinh, 103), @TrCh, @KLB, @BH)";
 
             Dictionary<string, string> param = new Dictionary<string, string>();
-            param.Add("@MaBN", id);
+            param.Add("@MaBN", "BN"+ id);
             param.Add("@TenBN", ten);
             param.Add("@SoDT", sdt);
             param.Add("@GioiTinh", gtinh);
@@ -119,7 +121,7 @@ namespace QuanLyPhongKham.DAL
             string sdt = ((frmMain)f).tb_bn_sdt.Text;
             string gtinh = ((frmMain)f).cb_bn_sex.Text;
             string dchi = ((frmMain)f).tb_bn_add.Text;
-            string ngsinh = ((frmMain)f).ngaySinhPicker.Text;
+            string ngsinh = ((frmMain)f).ngaySinhPicker.Value.ToString();
             string trieuchung = ((frmMain)f).tb_bn_trieuchung.Text;
             string klb = ((frmMain)f).tb_bn_klb.Text;
             string baohiem = ((frmMain)f).tb_bn_baohiem.Text;
@@ -215,7 +217,7 @@ namespace QuanLyPhongKham.DAL
 
             string Query = String.Empty;
             Query += "SELECT TOP 1 MaBN FROM BenhNhan ";
-            Query += "ORDER BY MaBn DESC";
+            Query += "ORDER BY MaBN DESC"; // loi
 
             DataTable dt = DataProvider.Instance.ExecuteQuery(Query, null);
             if (dt.Rows.Count > 0)

@@ -110,9 +110,28 @@
             this.lb_bn_sdt = new System.Windows.Forms.Label();
             this.lb_bn_name = new System.Windows.Forms.Label();
             this.lb_bn_id = new System.Windows.Forms.Label();
+            this.tabp_dth = new MetroFramework.Controls.MetroTabPage();
+            this.lb_doanhthu_dt = new System.Windows.Forms.Label();
+            this.lb_doanhthu_tongbn = new System.Windows.Forms.Label();
+            this.dgv_doanhthu = new System.Windows.Forms.DataGridView();
+            this.Ngay = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoBenhNhan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DoanhThu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btt_doanhthu_find = new Guna.UI.WinForms.GunaButton();
+            this.dtp_doanhthu_to = new System.Windows.Forms.DateTimePicker();
+            this.dtp_doanhthu_from = new System.Windows.Forms.DateTimePicker();
+            this.lb_doanhthu_to = new System.Windows.Forms.Label();
+            this.lb_doanhthu_from = new System.Windows.Forms.Label();
             this.NhapVien = new MetroFramework.Controls.MetroTabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dgvGH = new System.Windows.Forms.DataGridView();
+            this.MaGH2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Mabenhnhan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenBN2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgNhapVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoPhong2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GhiChu2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tb_XoaPhieu = new Guna.UI.WinForms.GunaButton();
             this.dtGHNV = new System.Windows.Forms.DateTimePicker();
             this.tbMPH = new System.Windows.Forms.TextBox();
@@ -212,18 +231,6 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.tabp_dth = new MetroFramework.Controls.MetroTabPage();
-            this.lb_doanhthu_dt = new System.Windows.Forms.Label();
-            this.lb_doanhthu_tongbn = new System.Windows.Forms.Label();
-            this.dgv_doanhthu = new System.Windows.Forms.DataGridView();
-            this.Ngay = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoBenhNhan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DoanhThu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btt_doanhthu_find = new Guna.UI.WinForms.GunaButton();
-            this.dtp_doanhthu_to = new System.Windows.Forms.DateTimePicker();
-            this.dtp_doanhthu_from = new System.Windows.Forms.DateTimePicker();
-            this.lb_doanhthu_to = new System.Windows.Forms.Label();
-            this.lb_doanhthu_from = new System.Windows.Forms.Label();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printDialog1 = new System.Windows.Forms.PrintDialog();
             this.printDocument2 = new System.Drawing.Printing.PrintDocument();
@@ -235,13 +242,6 @@
             this.SoPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.MaGH2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Mabenhnhan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenBN2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgNhapVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoPhong2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GhiChu2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.mnstrip_main.SuspendLayout();
             this.tabp_donthuoc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_CTDT)).BeginInit();
@@ -253,6 +253,8 @@
             this.tabp_hsbn.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoSo)).BeginInit();
+            this.tabp_dth.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_doanhthu)).BeginInit();
             this.NhapVien.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGH)).BeginInit();
@@ -268,8 +270,6 @@
             this.tabp_kho.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhoThuoc)).BeginInit();
-            this.tabp_dth.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_doanhthu)).BeginInit();
             this.SuspendLayout();
             // 
             // mnstrip_main
@@ -903,7 +903,7 @@
             this.tabcontrolmain.Location = new System.Drawing.Point(0, 39);
             this.tabcontrolmain.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.tabcontrolmain.Name = "tabcontrolmain";
-            this.tabcontrolmain.SelectedIndex = 1;
+            this.tabcontrolmain.SelectedIndex = 0;
             this.tabcontrolmain.Size = new System.Drawing.Size(1240, 826);
             this.tabcontrolmain.TabIndex = 4;
             // 
@@ -1375,6 +1375,150 @@
             this.lb_bn_id.TabIndex = 2;
             this.lb_bn_id.Text = "Mã bệnh nhân";
             // 
+            // tabp_dth
+            // 
+            this.tabp_dth.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabp_dth.Controls.Add(this.lb_doanhthu_dt);
+            this.tabp_dth.Controls.Add(this.lb_doanhthu_tongbn);
+            this.tabp_dth.Controls.Add(this.dgv_doanhthu);
+            this.tabp_dth.Controls.Add(this.btt_doanhthu_find);
+            this.tabp_dth.Controls.Add(this.dtp_doanhthu_to);
+            this.tabp_dth.Controls.Add(this.dtp_doanhthu_from);
+            this.tabp_dth.Controls.Add(this.lb_doanhthu_to);
+            this.tabp_dth.Controls.Add(this.lb_doanhthu_from);
+            this.tabp_dth.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabp_dth.HorizontalScrollbarBarColor = true;
+            this.tabp_dth.Location = new System.Drawing.Point(4, 39);
+            this.tabp_dth.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.tabp_dth.Name = "tabp_dth";
+            this.tabp_dth.Size = new System.Drawing.Size(1232, 783);
+            this.tabp_dth.TabIndex = 8;
+            this.tabp_dth.Text = "Doanh thu";
+            this.tabp_dth.VerticalScrollbarBarColor = true;
+            this.tabp_dth.VerticalScrollbarSize = 12;
+            // 
+            // lb_doanhthu_dt
+            // 
+            this.lb_doanhthu_dt.AutoSize = true;
+            this.lb_doanhthu_dt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_doanhthu_dt.Location = new System.Drawing.Point(780, 522);
+            this.lb_doanhthu_dt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_doanhthu_dt.Name = "lb_doanhthu_dt";
+            this.lb_doanhthu_dt.Size = new System.Drawing.Size(118, 25);
+            this.lb_doanhthu_dt.TabIndex = 33;
+            this.lb_doanhthu_dt.Text = "Doanh thu:";
+            // 
+            // lb_doanhthu_tongbn
+            // 
+            this.lb_doanhthu_tongbn.AutoSize = true;
+            this.lb_doanhthu_tongbn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_doanhthu_tongbn.Location = new System.Drawing.Point(360, 522);
+            this.lb_doanhthu_tongbn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_doanhthu_tongbn.Name = "lb_doanhthu_tongbn";
+            this.lb_doanhthu_tongbn.Size = new System.Drawing.Size(177, 25);
+            this.lb_doanhthu_tongbn.TabIndex = 32;
+            this.lb_doanhthu_tongbn.Text = "Tổng bệnh nhân:";
+            // 
+            // dgv_doanhthu
+            // 
+            this.dgv_doanhthu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_doanhthu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Ngay,
+            this.SoBenhNhan,
+            this.DoanhThu});
+            this.dgv_doanhthu.Location = new System.Drawing.Point(164, 94);
+            this.dgv_doanhthu.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.dgv_doanhthu.Name = "dgv_doanhthu";
+            this.dgv_doanhthu.ReadOnly = true;
+            this.dgv_doanhthu.RowTemplate.Height = 24;
+            this.dgv_doanhthu.Size = new System.Drawing.Size(919, 398);
+            this.dgv_doanhthu.TabIndex = 31;
+            // 
+            // Ngay
+            // 
+            this.Ngay.DataPropertyName = "Ngay";
+            this.Ngay.HeaderText = "Ngày";
+            this.Ngay.Name = "Ngay";
+            this.Ngay.ReadOnly = true;
+            // 
+            // SoBenhNhan
+            // 
+            this.SoBenhNhan.DataPropertyName = "SoBenhNhan";
+            this.SoBenhNhan.HeaderText = "Số Bệnh Nhân";
+            this.SoBenhNhan.Name = "SoBenhNhan";
+            this.SoBenhNhan.ReadOnly = true;
+            // 
+            // DoanhThu
+            // 
+            this.DoanhThu.DataPropertyName = "DoanhThu";
+            this.DoanhThu.HeaderText = "Doanh Thu";
+            this.DoanhThu.Name = "DoanhThu";
+            this.DoanhThu.ReadOnly = true;
+            this.DoanhThu.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // btt_doanhthu_find
+            // 
+            this.btt_doanhthu_find.AnimationHoverSpeed = 0.07F;
+            this.btt_doanhthu_find.AnimationSpeed = 0.03F;
+            this.btt_doanhthu_find.BaseColor = System.Drawing.Color.White;
+            this.btt_doanhthu_find.BorderColor = System.Drawing.Color.Black;
+            this.btt_doanhthu_find.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btt_doanhthu_find.FocusedColor = System.Drawing.Color.Empty;
+            this.btt_doanhthu_find.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btt_doanhthu_find.ForeColor = System.Drawing.Color.White;
+            this.btt_doanhthu_find.Image = ((System.Drawing.Image)(resources.GetObject("btt_doanhthu_find.Image")));
+            this.btt_doanhthu_find.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btt_doanhthu_find.ImageSize = new System.Drawing.Size(20, 20);
+            this.btt_doanhthu_find.Location = new System.Drawing.Point(900, 38);
+            this.btt_doanhthu_find.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.btt_doanhthu_find.Name = "btt_doanhthu_find";
+            this.btt_doanhthu_find.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.btt_doanhthu_find.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btt_doanhthu_find.OnHoverForeColor = System.Drawing.Color.White;
+            this.btt_doanhthu_find.OnHoverImage = null;
+            this.btt_doanhthu_find.OnPressedColor = System.Drawing.Color.Black;
+            this.btt_doanhthu_find.Size = new System.Drawing.Size(49, 44);
+            this.btt_doanhthu_find.TabIndex = 30;
+            this.btt_doanhthu_find.Click += new System.EventHandler(this.btt_doanhthu_find_Click);
+            // 
+            // dtp_doanhthu_to
+            // 
+            this.dtp_doanhthu_to.Location = new System.Drawing.Point(680, 38);
+            this.dtp_doanhthu_to.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.dtp_doanhthu_to.Name = "dtp_doanhthu_to";
+            this.dtp_doanhthu_to.Size = new System.Drawing.Size(200, 22);
+            this.dtp_doanhthu_to.TabIndex = 5;
+            // 
+            // dtp_doanhthu_from
+            // 
+            this.dtp_doanhthu_from.Location = new System.Drawing.Point(382, 38);
+            this.dtp_doanhthu_from.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
+            this.dtp_doanhthu_from.Name = "dtp_doanhthu_from";
+            this.dtp_doanhthu_from.Size = new System.Drawing.Size(200, 22);
+            this.dtp_doanhthu_from.TabIndex = 4;
+            // 
+            // lb_doanhthu_to
+            // 
+            this.lb_doanhthu_to.AutoSize = true;
+            this.lb_doanhthu_to.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_doanhthu_to.Location = new System.Drawing.Point(616, 38);
+            this.lb_doanhthu_to.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_doanhthu_to.Name = "lb_doanhthu_to";
+            this.lb_doanhthu_to.Size = new System.Drawing.Size(58, 25);
+            this.lb_doanhthu_to.TabIndex = 3;
+            this.lb_doanhthu_to.Text = "Đến:";
+            // 
+            // lb_doanhthu_from
+            // 
+            this.lb_doanhthu_from.AutoSize = true;
+            this.lb_doanhthu_from.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_doanhthu_from.Location = new System.Drawing.Point(332, 38);
+            this.lb_doanhthu_from.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_doanhthu_from.Name = "lb_doanhthu_from";
+            this.lb_doanhthu_from.Size = new System.Drawing.Size(45, 25);
+            this.lb_doanhthu_from.TabIndex = 2;
+            this.lb_doanhthu_from.Text = "Từ:";
+            // 
             // NhapVien
             // 
             this.NhapVien.Controls.Add(this.groupBox5);
@@ -1432,6 +1576,48 @@
             this.dgvGH.TabIndex = 81;
             this.dgvGH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGH_CellClick);
             this.dgvGH.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvGH_CellContentClick);
+            // 
+            // MaGH2
+            // 
+            this.MaGH2.DataPropertyName = "MaGH";
+            this.MaGH2.HeaderText = "Mã giấy hẹn";
+            this.MaGH2.Name = "MaGH2";
+            // 
+            // MaNV
+            // 
+            this.MaNV.DataPropertyName = "MaNV";
+            this.MaNV.HeaderText = "Mã nhân viên";
+            this.MaNV.Name = "MaNV";
+            // 
+            // Mabenhnhan
+            // 
+            this.Mabenhnhan.DataPropertyName = "MaBN";
+            this.Mabenhnhan.HeaderText = "Mã bệnh nhân";
+            this.Mabenhnhan.Name = "Mabenhnhan";
+            // 
+            // TenBN2
+            // 
+            this.TenBN2.DataPropertyName = "TenBN";
+            this.TenBN2.HeaderText = "Tên bệnh nhân";
+            this.TenBN2.Name = "TenBN2";
+            // 
+            // NgNhapVien
+            // 
+            this.NgNhapVien.DataPropertyName = "NgNhapVen";
+            this.NgNhapVien.HeaderText = "Ngày nhập viện";
+            this.NgNhapVien.Name = "NgNhapVien";
+            // 
+            // SoPhong2
+            // 
+            this.SoPhong2.DataPropertyName = "SoPhong";
+            this.SoPhong2.HeaderText = "Số phòng";
+            this.SoPhong2.Name = "SoPhong2";
+            // 
+            // GhiChu2
+            // 
+            this.GhiChu2.DataPropertyName = "GhiChu";
+            this.GhiChu2.HeaderText = "Ghi chú";
+            this.GhiChu2.Name = "GhiChu2";
             // 
             // tb_XoaPhieu
             // 
@@ -2746,150 +2932,6 @@
             this.label21.TabIndex = 3;
             this.label21.Text = "Mã thuốc";
             // 
-            // tabp_dth
-            // 
-            this.tabp_dth.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tabp_dth.Controls.Add(this.lb_doanhthu_dt);
-            this.tabp_dth.Controls.Add(this.lb_doanhthu_tongbn);
-            this.tabp_dth.Controls.Add(this.dgv_doanhthu);
-            this.tabp_dth.Controls.Add(this.btt_doanhthu_find);
-            this.tabp_dth.Controls.Add(this.dtp_doanhthu_to);
-            this.tabp_dth.Controls.Add(this.dtp_doanhthu_from);
-            this.tabp_dth.Controls.Add(this.lb_doanhthu_to);
-            this.tabp_dth.Controls.Add(this.lb_doanhthu_from);
-            this.tabp_dth.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabp_dth.HorizontalScrollbarBarColor = true;
-            this.tabp_dth.Location = new System.Drawing.Point(4, 39);
-            this.tabp_dth.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.tabp_dth.Name = "tabp_dth";
-            this.tabp_dth.Size = new System.Drawing.Size(1232, 783);
-            this.tabp_dth.TabIndex = 8;
-            this.tabp_dth.Text = "Doanh thu";
-            this.tabp_dth.VerticalScrollbarBarColor = true;
-            this.tabp_dth.VerticalScrollbarSize = 12;
-            // 
-            // lb_doanhthu_dt
-            // 
-            this.lb_doanhthu_dt.AutoSize = true;
-            this.lb_doanhthu_dt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_doanhthu_dt.Location = new System.Drawing.Point(780, 522);
-            this.lb_doanhthu_dt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lb_doanhthu_dt.Name = "lb_doanhthu_dt";
-            this.lb_doanhthu_dt.Size = new System.Drawing.Size(118, 25);
-            this.lb_doanhthu_dt.TabIndex = 33;
-            this.lb_doanhthu_dt.Text = "Doanh thu:";
-            // 
-            // lb_doanhthu_tongbn
-            // 
-            this.lb_doanhthu_tongbn.AutoSize = true;
-            this.lb_doanhthu_tongbn.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_doanhthu_tongbn.Location = new System.Drawing.Point(360, 522);
-            this.lb_doanhthu_tongbn.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lb_doanhthu_tongbn.Name = "lb_doanhthu_tongbn";
-            this.lb_doanhthu_tongbn.Size = new System.Drawing.Size(177, 25);
-            this.lb_doanhthu_tongbn.TabIndex = 32;
-            this.lb_doanhthu_tongbn.Text = "Tổng bệnh nhân:";
-            // 
-            // dgv_doanhthu
-            // 
-            this.dgv_doanhthu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_doanhthu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Ngay,
-            this.SoBenhNhan,
-            this.DoanhThu});
-            this.dgv_doanhthu.Location = new System.Drawing.Point(164, 94);
-            this.dgv_doanhthu.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.dgv_doanhthu.Name = "dgv_doanhthu";
-            this.dgv_doanhthu.ReadOnly = true;
-            this.dgv_doanhthu.RowTemplate.Height = 24;
-            this.dgv_doanhthu.Size = new System.Drawing.Size(919, 398);
-            this.dgv_doanhthu.TabIndex = 31;
-            // 
-            // Ngay
-            // 
-            this.Ngay.DataPropertyName = "Ngay";
-            this.Ngay.HeaderText = "Ngày";
-            this.Ngay.Name = "Ngay";
-            this.Ngay.ReadOnly = true;
-            // 
-            // SoBenhNhan
-            // 
-            this.SoBenhNhan.DataPropertyName = "SoBenhNhan";
-            this.SoBenhNhan.HeaderText = "Số Bệnh Nhân";
-            this.SoBenhNhan.Name = "SoBenhNhan";
-            this.SoBenhNhan.ReadOnly = true;
-            // 
-            // DoanhThu
-            // 
-            this.DoanhThu.DataPropertyName = "DoanhThu";
-            this.DoanhThu.HeaderText = "Doanh Thu";
-            this.DoanhThu.Name = "DoanhThu";
-            this.DoanhThu.ReadOnly = true;
-            this.DoanhThu.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // btt_doanhthu_find
-            // 
-            this.btt_doanhthu_find.AnimationHoverSpeed = 0.07F;
-            this.btt_doanhthu_find.AnimationSpeed = 0.03F;
-            this.btt_doanhthu_find.BaseColor = System.Drawing.Color.White;
-            this.btt_doanhthu_find.BorderColor = System.Drawing.Color.Black;
-            this.btt_doanhthu_find.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btt_doanhthu_find.FocusedColor = System.Drawing.Color.Empty;
-            this.btt_doanhthu_find.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btt_doanhthu_find.ForeColor = System.Drawing.Color.White;
-            this.btt_doanhthu_find.Image = ((System.Drawing.Image)(resources.GetObject("btt_doanhthu_find.Image")));
-            this.btt_doanhthu_find.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btt_doanhthu_find.ImageSize = new System.Drawing.Size(20, 20);
-            this.btt_doanhthu_find.Location = new System.Drawing.Point(900, 38);
-            this.btt_doanhthu_find.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.btt_doanhthu_find.Name = "btt_doanhthu_find";
-            this.btt_doanhthu_find.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.btt_doanhthu_find.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btt_doanhthu_find.OnHoverForeColor = System.Drawing.Color.White;
-            this.btt_doanhthu_find.OnHoverImage = null;
-            this.btt_doanhthu_find.OnPressedColor = System.Drawing.Color.Black;
-            this.btt_doanhthu_find.Size = new System.Drawing.Size(49, 44);
-            this.btt_doanhthu_find.TabIndex = 30;
-            this.btt_doanhthu_find.Click += new System.EventHandler(this.btt_doanhthu_find_Click);
-            // 
-            // dtp_doanhthu_to
-            // 
-            this.dtp_doanhthu_to.Location = new System.Drawing.Point(680, 38);
-            this.dtp_doanhthu_to.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.dtp_doanhthu_to.Name = "dtp_doanhthu_to";
-            this.dtp_doanhthu_to.Size = new System.Drawing.Size(200, 22);
-            this.dtp_doanhthu_to.TabIndex = 5;
-            // 
-            // dtp_doanhthu_from
-            // 
-            this.dtp_doanhthu_from.Location = new System.Drawing.Point(382, 38);
-            this.dtp_doanhthu_from.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
-            this.dtp_doanhthu_from.Name = "dtp_doanhthu_from";
-            this.dtp_doanhthu_from.Size = new System.Drawing.Size(200, 22);
-            this.dtp_doanhthu_from.TabIndex = 4;
-            // 
-            // lb_doanhthu_to
-            // 
-            this.lb_doanhthu_to.AutoSize = true;
-            this.lb_doanhthu_to.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_doanhthu_to.Location = new System.Drawing.Point(616, 38);
-            this.lb_doanhthu_to.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lb_doanhthu_to.Name = "lb_doanhthu_to";
-            this.lb_doanhthu_to.Size = new System.Drawing.Size(58, 25);
-            this.lb_doanhthu_to.TabIndex = 3;
-            this.lb_doanhthu_to.Text = "Đến:";
-            // 
-            // lb_doanhthu_from
-            // 
-            this.lb_doanhthu_from.AutoSize = true;
-            this.lb_doanhthu_from.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_doanhthu_from.Location = new System.Drawing.Point(332, 38);
-            this.lb_doanhthu_from.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lb_doanhthu_from.Name = "lb_doanhthu_from";
-            this.lb_doanhthu_from.Size = new System.Drawing.Size(45, 25);
-            this.lb_doanhthu_from.TabIndex = 2;
-            this.lb_doanhthu_from.Text = "Từ:";
-            // 
             // printDocument1
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
@@ -2951,48 +2993,6 @@
             this.GhiChu.Name = "GhiChu";
             this.GhiChu.Width = 150;
             // 
-            // MaGH2
-            // 
-            this.MaGH2.DataPropertyName = "MaGH";
-            this.MaGH2.HeaderText = "Mã giấy hẹn";
-            this.MaGH2.Name = "MaGH2";
-            // 
-            // MaNV
-            // 
-            this.MaNV.DataPropertyName = "MaNV";
-            this.MaNV.HeaderText = "Mã nhân viên";
-            this.MaNV.Name = "MaNV";
-            // 
-            // Mabenhnhan
-            // 
-            this.Mabenhnhan.DataPropertyName = "MaBN";
-            this.Mabenhnhan.HeaderText = "Mã bệnh nhân";
-            this.Mabenhnhan.Name = "Mabenhnhan";
-            // 
-            // TenBN2
-            // 
-            this.TenBN2.DataPropertyName = "TenBN";
-            this.TenBN2.HeaderText = "Tên bệnh nhân";
-            this.TenBN2.Name = "TenBN2";
-            // 
-            // NgNhapVien
-            // 
-            this.NgNhapVien.DataPropertyName = "NgNhapVen";
-            this.NgNhapVien.HeaderText = "Ngày nhập viện";
-            this.NgNhapVien.Name = "NgNhapVien";
-            // 
-            // SoPhong2
-            // 
-            this.SoPhong2.DataPropertyName = "SoPhong";
-            this.SoPhong2.HeaderText = "Số phòng";
-            this.SoPhong2.Name = "SoPhong2";
-            // 
-            // GhiChu2
-            // 
-            this.GhiChu2.DataPropertyName = "GhiChu";
-            this.GhiChu2.HeaderText = "Ghi chú";
-            this.GhiChu2.Name = "GhiChu2";
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -3023,6 +3023,9 @@
             this.tabp_hsbn.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHoSo)).EndInit();
+            this.tabp_dth.ResumeLayout(false);
+            this.tabp_dth.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_doanhthu)).EndInit();
             this.NhapVien.ResumeLayout(false);
             this.NhapVien.PerformLayout();
             this.groupBox5.ResumeLayout(false);
@@ -3043,9 +3046,6 @@
             this.tabp_kho.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhoThuoc)).EndInit();
-            this.tabp_dth.ResumeLayout(false);
-            this.tabp_dth.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_doanhthu)).EndInit();
             this.ResumeLayout(false);
 
         }

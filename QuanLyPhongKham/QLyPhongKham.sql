@@ -137,7 +137,7 @@ INSERT [dbo].[BenhNhan] ([MaBN], [TenBN], [SoDT], [GioiTinh], [DiaChi], [NgSinh]
 INSERT [dbo].[BenhNhan] ([MaBN], [TenBN], [SoDT], [GioiTinh], [DiaChi], [NgSinh], [TrieuChung], [KetLuanBenh], [BaoHiem]) VALUES (N'BN012', N'Ngo Duc Thang', N'0918754784', N'Nam', N'11/78/7 Pasteur,Q1 Tp.Ho Chi Minh', CAST(N'1986-03-03T00:00:00.000' AS DateTime), N'Ho, dau hong', N'Nhiem Covid19', N'Bao Hiem Nhan Tho')
 INSERT [dbo].[BenhNhan] ([MaBN], [TenBN], [SoDT], [GioiTinh], [DiaChi], [NgSinh], [TrieuChung], [KetLuanBenh], [BaoHiem]) VALUES (N'BN013', N'Le Tan Phi', N'0945165187', N'Nu', N'84 Do Xuan Hop,Q9 Tp.Ho Chi Minh', CAST(N'1995-01-02T00:00:00.000' AS DateTime), N'Ho, dau hong', N'Nhiem Covid19', N'Bao Hiem Nhan Tho')
 INSERT [dbo].[BenhNhan] ([MaBN], [TenBN], [SoDT], [GioiTinh], [DiaChi], [NgSinh], [TrieuChung], [KetLuanBenh], [BaoHiem]) VALUES (N'BN014', N'Mia Khalid', N'0945165187', N'Nam', N'11/78/7 Pasteur,Q1 Tp.Ho Chi Minh', CAST(N'1996-02-26T00:00:00.000' AS DateTime), N'Ho, dau hong', N'Nhiem Covid19', N'Bao Hiem Nhan Tho')
- 
+INSERT [dbo].[BenhNhan] ([MaBN], [TenBN], [SoDT], [GioiTinh], [DiaChi], [NgSinh], [TrieuChung], [KetLuanBenh], [BaoHiem]) VALUES (N'2', N'Mia Khalid', N'0945165187', N'Nam', N'11/78/7 Pasteur,Q1 Tp.Ho Chi Minh', CAST(N'1996-02-26T00:00:00.000' AS DateTime), N'Ho, dau hong', N'Nhiem Covid19', N'Bao Hiem Nhan Tho')
   
  -----------------------------------------------------------------------------------------------
 
@@ -271,6 +271,8 @@ Insert into HoaDon values ('HD014',14,CAST(N'2020-03-01T00:00:00.000' AS DateTim
 
 
 
+
+
 -------------------------------------------------------------------------------------
 INSERT [dbo].[Dangnhap] ([taikhoan], [matkhau], [chucvi]) VALUES (N'ADMIN', N'ADMIN', 1)
 INSERT [dbo].[Dangnhap] ([taikhoan], [matkhau], [chucvi]) VALUES (N'tt0001', N'1', 3)
@@ -322,3 +324,7 @@ Delete from BenhNhan where MaBN = '<Auto>'
 
 select DonThuoc.MaDT, NgDT , MaNV, MaBN,MaThuoc, SoLuong from DonThuoc, CTDT
 where DonThuoc.MaDT = CTDT.MaDT
+
+
+Select TOP 1 MaBN FROM BenhNhan
+order by MaBN DESC

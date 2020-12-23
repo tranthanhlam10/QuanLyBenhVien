@@ -907,14 +907,25 @@ namespace QuanLyPhongKham.GUI
         public void frmMain_Load(object sender, EventArgs e) // form main load dữ liệu
         {
             Phanquyen();
+
+            //hiển thị dữ liệu lên dgv
             dgvHoSo.DataSource = ObjBenhNhanBLL.Instance.GetData();
             dgvKhoThuoc.DataSource = ObjThuocBLL.Instance.GetData();
             dgv_hoadon.DataSource = ObjHoaDonBLL.Instance.GetData();
             dgvXetNghiem.DataSource = ObjXetNghiemBLL.Instance.GetListPXN();
-
             dgvGH.DataSource = ObjGiayHenNhapVienBLL.Instance.GetListGHNV();
-
             dgv_CTDT.DataSource = ObjDonThuocBLL.Instance.GetlistCTDT();
+
+
+            // chỉnh thuộc tính dgv
+
+            this.dgvHoSo.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvKhoThuoc.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_hoadon.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvXetNghiem.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvGH.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_doanhthu.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvDT .AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
 
             int check = CheckTabPage();
             if (check == 0)
